@@ -1,0 +1,53 @@
+{
+  "coverage": {
+    "nifty_constituents": 50,
+    "options_strikes": 41,
+    "sectors": 19
+  },
+  "data_as_of": "2026-11-16T18:34:12.618518+05:30",
+  "data_quality": {
+    "all_checks_passed": true,
+    "critic_audited": true,
+    "sanitization_verified": true
+  },
+  "file_hashes": {
+    "daily_briefing.json": "0ea86a5ef73d96922c9b017675c56d3bb27cb42e73b878253fe9febfea0828be",
+    "derivatives.json": "efbb45ce2a015e0f8833b6fd69fde5f3fc48f177a954f092cf8e04f7abda63ec",
+    "global_macro.json": "3233388cefdfc0e95f90c3f862fd41d505077ad892c5d44f3b69a7cd1fccb510",
+    "institutional_flows.json": "4b4b2d71b8621b3e3914efbddaf67b403a82e151ce1a295f5925f90b9540678a",
+    "market_breadth.json": "2b11ca65ce6f4256fe126ab74915132474ce21f45e4e206f682ac2ff95fab497",
+    "market_overview.json": "b1e2a18a0d39be1f2f92909d5cfa4203474d2bfcefa3860abeb879b10f63af7d",
+    "nifty_forecast.json": "b1624e090fcb466e7689fab5d10e03e3c2c921611b5aa55e76ee01428e5089c7",
+    "pre_open.json": "a890c97c477a5b4bc759b05952eb4053f0cb375c6433814460d1cd1ec866ec79",
+    "risk_events.json": "2e6c27127ef46fb860736d5c1c139eb184d3f28282bcddc2f473088b9ab2049b",
+    "sector_rotation.json": "e57079a50f748e0a2c3fce9726c84fe7b646b5087b077c3c5ab543fa41fcda22",
+    "stock_leadership.json": "dc4af39a25b6e68cf5096f77268198de57422d1d406217cab93de5f42a4f322b"
+  },
+  "generated_at": "2026-11-16T18:34:12.618518+05:30",
+  "market_date": "2026-11-11",
+  "publication_type": "MANUAL",
+  "schema_version": "1.0.0",
+  "sections": {
+    "daily_briefing": "data/latest/daily_briefing.json",
+    "derivatives": "data/latest/derivatives.json",
+    "global_macro": "data/latest/global_macro.json",
+    "institutional_flows": "data/latest/institutional_flows.json",
+    "market_breadth": "data/latest/market_breadth.json",
+    "market_overview": "data/latest/market_overview.json",
+    "nifty_forecast": "data/latest/nifty_forecast.json",
+    "pre_open": "data/latest/pre_open.json",
+    "risk_events": "data/latest/risk_events.json",
+    "sector_rotation": "data/latest/sector_rotation.json",
+    "stock_leadership": "data/latest/stock_leadership.json"
+  },
+  "snapshot_id": "SNAP-20261111-183412",
+  "source_status": {
+    "broad_market": "VERIFIED",
+    "forecast_ensemble": "VERIFIED",
+    "global_macro": "VERIFIED",
+    "institutional_flow": "VERIFIED",
+    "options_derivatives": "VERIFIED",
+    "specialist_agents": "VERIFIED"
+  },
+  "target_session_date": "2026-11-12"
+}

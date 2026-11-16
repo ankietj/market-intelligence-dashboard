@@ -1,0 +1,45 @@
+{
+  "cross_specialist_agreements": [
+    "Sector and Macro specialists agree on RISK_ON tilt.",
+    "Institutional and Breadth specialists agree on DEFENSIVE_ROTATION tilt.",
+    "Options and Breadth specialists agree on DEFENSIVE_ROTATION tilt.",
+    "Institutional and Options specialists agree on DEFENSIVE_ROTATION tilt."
+  ],
+  "cross_specialist_disagreements": [
+    "Index-Breadth Divergence: Macro/headline index appears resilient, but Breadth specialist detects narrow heavyweight concentration."
+  ],
+  "executive_synthesis_points": [
+    "1. As-Of Evaluation Date: 2026-11-11 (Generated: 2026-11-16T18:34:12 IST).",
+    "2. Multi-Agent Verification Status: 5/5 specialists passed independent audit (All Verified).",
+    "3. Macro Volatility Context: India VIX at 17.56 (BENIGN_EXPANSION) dictates position sizing and tail risk controls.",
+    "4. Broad Market Appetite: Multi-cap tier dispersion shows Small/Midcap relative performance vs NIFTY 50 at +0.75%.",
+    "5. Constituent Breadth Health: NIFTY 50 breadth recorded 32.0% advancing stocks (16 adv / 33 dec across 100% coverage).",
+    "6. Leadership Concentration: Breadth specialist flags 'NARROW_HEAVYWEIGHT_RALLY' with a concentration spread of +0.73%.",
+    "7. Sector Rotation Dynamics: Primary leadership in NIFTY AUTO; Cyclical vs Defensive RS spread stands at +1.05%.",
+    "8. Institutional Positioning & Liquidity: FII Index Futures Long ratio at 21.1% (BEARISH_DOMINANCE); Total institutional net cash turnover at +4,128.80 Cr (FII: +12,563.33 Cr, DII: -8,434.53 Cr).",
+    "9. Options Market Structure: Total PCR at 0.79; Key Call Wall at 25,000 and Put Wall at 24,500; Max Pain at 24,850; ATM straddle projects +/-320 pts expiry band.",
+    "10. Next-Session Watchpoint: Watch for volatility spikes above 20-DMA as an early de-risking catalyst."
+  ],
+  "generated_at": "2026-11-16T18:34:12.618518+05:30",
+  "market_date": "2026-11-11",
+  "next_session_watchpoints": [
+    "NIFTY Key Reaction Pivot: Observe whether opening price sustains above session VWAP.",
+    "Volatility Barrier: India VIX threshold at 18.6; break above triggers de-risking.",
+    "Breadth Health Gate: NIFTY 50 advance percentage must remain above 50% to validate trend continuation.",
+    "Institutional Squeeze Trigger: Watch for session high breakouts to force FII short-covering rally.",
+    "Options Gamma Wall: Monitor Put Wall at 24,500 for institutional dip buying."
+  ],
+  "schema_version": "1.0",
+  "tactical_positioning_implications": [
+    "Exposure Bias: DEFENSIVE_SELECTIVE.",
+    "Sector Preference: Focus long setups in NIFTY AUTO; avoid lagging clusters.",
+    "Institutional Safeguard: Respect FII derivatives positioning bias (BEARISH_DOMINANCE); avoid chasing gap openings unsupported by institutional flow.",
+    "Options Boundary Execution: Use Put Wall (24,500) as anchor support and scale out near Call Wall (25,000)."
+  ],
+  "verification_status": {
+    "accepted_specialist_count": 5,
+    "all_specialists_passed": true,
+    "audit_verdict": "VERIFIED_AUTHENTIC",
+    "total_specialists": 5
+  }
+}

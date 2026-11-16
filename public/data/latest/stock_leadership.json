@@ -1,0 +1,86 @@
+{
+  "generated_at": "2026-11-16T18:34:12.618518+05:30",
+  "market_date": "2026-11-11",
+  "schema_version": "1.0",
+  "top_gainers": [
+    {
+      "change_pct": 3.42,
+      "close": 2980.5,
+      "name": "Mahindra & Mahindra",
+      "symbol": "M&M",
+      "turnover_cr": 820.5
+    },
+    {
+      "change_pct": 2.85,
+      "close": 154.2,
+      "name": "Tata Steel",
+      "symbol": "TATASTEEL",
+      "turnover_cr": 640.2
+    },
+    {
+      "change_pct": 2.45,
+      "close": 685.1,
+      "name": "Hindalco Industries",
+      "symbol": "HINDALCO",
+      "turnover_cr": 510.8
+    },
+    {
+      "change_pct": 1.8,
+      "close": 1285.0,
+      "name": "ICICI Bank",
+      "symbol": "ICICIBANK",
+      "turnover_cr": 1420.0
+    },
+    {
+      "change_pct": 1.55,
+      "close": 3620.0,
+      "name": "Larsen & Toubro",
+      "symbol": "LT",
+      "turnover_cr": 780.4
+    }
+  ],
+  "top_losers": [
+    {
+      "change_pct": -1.85,
+      "close": 2240.0,
+      "name": "Nestle India",
+      "symbol": "NESTLEIND",
+      "turnover_cr": 320.1
+    },
+    {
+      "change_pct": -1.4,
+      "close": 2410.5,
+      "name": "Hindustan Unilever",
+      "symbol": "HINDUNILVR",
+      "turnover_cr": 580.6
+    },
+    {
+      "change_pct": -1.15,
+      "close": 5120.0,
+      "name": "Britannia Industries",
+      "symbol": "BRITANNIA",
+      "turnover_cr": 210.4
+    },
+    {
+      "change_pct": -0.95,
+      "close": 1245.0,
+      "name": "Dr. Reddy's Lab",
+      "symbol": "DRREDDY",
+      "turnover_cr": 290.8
+    }
+  ],
+  "volume_breakouts": [
+    {
+      "breakout_level": 295.0,
+      "relative_volume": 2.4,
+      "status": "CONFIRMED",
+      "symbol": "BEL"
+    },
+    {
+      "breakout_level": 7100.0,
+      "relative_volume": 1.9,
+      "status": "CONFIRMED",
+      "symbol": "TRENT"
+    }
+  ]
+}

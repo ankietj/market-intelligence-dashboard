@@ -1,0 +1,26 @@
+{
+  "auction_action_rules": [
+    "FLAT OPEN EXECUTION: Expected open at ~25267.5 (+12.5 pts). Market is opening near previous close balance.",
+    "Directional bias is BULLISH. Monitor whether 25258.2 acts as support or resistance.",
+    "Focus trades on relative strength leader sectors identified in latest EOD specialist intelligence.",
+    "OPTIONS BOUNDARIES: Call Wall resistance at 25,000 | Put Wall support at 24,500 | PCR: 0.79 | Max Pain: 24,850."
+  ],
+  "auction_bracket_high": 25297.55,
+  "auction_bracket_low": 25237.55,
+  "derivatives_boundaries": {
+    "call_wall_strike": 25000.0,
+    "options_max_pain": 24850.0,
+    "options_pcr": 0.785,
+    "put_wall_strike": 24500.0
+  },
+  "expected_open": 25267.55,
+  "gap_classification": "FLAT",
+  "generated_at": "2026-11-16T18:34:12.618518+05:30",
+  "key_inflection_level": 25258.25,
+  "macro_headwind_level": "MODERATE",
+  "overnight_gap_points": 12.5,
+  "report_hash": "ccbfb2ed0057280b230d19a5aeeb21467c4a2212498da9dca648ff5d84692ed3",
+  "schema_version": "1.0",
+  "snapshot_type": "PRE_OPEN",
+  "target_session_date": "2026-11-12"
+}

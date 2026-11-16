@@ -1,0 +1,59 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "PublicSnapshotManifest",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "snapshot_id",
+    "market_date",
+    "target_session_date",
+    "generated_at",
+    "data_as_of",
+    "publication_type",
+    "source_status",
+    "coverage",
+    "data_quality",
+    "sections",
+    "file_hashes"
+  ],
+  "properties": {
+    "schema_version": { "type": "string" },
+    "snapshot_id": { "type": "string" },
+    "market_date": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+    "target_session_date": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+    "generated_at": { "type": "string" },
+    "data_as_of": { "type": "string" },
+    "publication_type": { "type": "string", "enum": ["MANUAL", "AUTOMATED"] },
+    "source_status": {
+      "type": "object",
+      "additionalProperties": { "type": "string" }
+    },
+    "coverage": {
+      "type": "object",
+      "required": ["nifty_constituents", "sectors", "options_strikes"],
+      "properties": {
+        "nifty_constituents": { "type": "integer", "minimum": 1 },
+        "sectors": { "type": "integer", "minimum": 1 },
+        "options_strikes": { "type": "integer", "minimum": 1 }
+      }
+    },
+    "data_quality": {
+      "type": "object",
+      "required": ["all_checks_passed", "sanitization_verified", "critic_audited"],
+      "properties": {
+        "all_checks_passed": { "type": "boolean" },
+        "sanitization_verified": { "type": "boolean" },
+        "critic_audited": { "type": "boolean" }
+      }
+    },
+    "sections": {
+      "type": "object",
+      "additionalProperties": { "type": "string" }
+    },
+    "file_hashes": {
+      "type": "object",
+      "additionalProperties": { "type": "string", "minLength": 64, "maxLength": 64 }
+    }
+  },
+  "additionalProperties": false
+}

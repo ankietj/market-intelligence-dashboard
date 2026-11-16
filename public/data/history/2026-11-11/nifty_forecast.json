@@ -1,0 +1,47 @@
+{
+  "as_of_session_date": "2026-11-11",
+  "directional_probability": {
+    "bias": "BULLISH",
+    "is_statistically_calibrated": false,
+    "p_down": 0.1433,
+    "p_sideways": 0.3334,
+    "p_up": 0.5233,
+    "rule_score": 0.52
+  },
+  "expected_range": {
+    "atr_14": 338.96,
+    "confidence_interval": "68% (1-sigma)",
+    "high": 25450.42,
+    "low": 25135.3,
+    "range_points": 315.12
+  },
+  "generated_at": "2026-11-16T18:34:12.618518+05:30",
+  "reference_close": 25255.05,
+  "scenarios": {
+    "bearish_target": 25092.15,
+    "bullish_target": 25421.15,
+    "invalidation_level": 24929.25
+  },
+  "schema_version": "1.0",
+  "snapshot_hash": "4405819b0c1c773c4742f09137a77759d8cbf7db83f47cb4120bae58ed686777",
+  "snapshot_type": "POST_CLOSE",
+  "target_session_date": "2026-11-12",
+  "technical_levels": {
+    "classic_pivots": {
+      "pivot": 25258.25,
+      "r1": 25421.15,
+      "r2": 25587.25,
+      "s1": 25092.15,
+      "s2": 24929.25
+    },
+    "master_pivot": 25258.25,
+    "resistance_zone": [
+      25421.15,
+      25594.01
+    ],
+    "support_zone": [
+      24916.09,
+      25092.15
+    ]
+  }
+}
