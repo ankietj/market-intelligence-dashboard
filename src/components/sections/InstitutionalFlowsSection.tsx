@@ -42,7 +42,7 @@ export const InstitutionalFlowsSection: React.FC<Props> = ({ data }) => {
         <StatCard
           title="FII Net Cash"
           value={`₹${cash_market.fii_net_cr > 0 ? '+' : ''}${cash_market.fii_net_cr.toFixed(1)} Cr`}
-          subValue="Net Turnover"
+          subValue="Net Cash Flow"
           trend={cash_market.fii_net_cr >= 0 ? 'BULLISH' : 'BEARISH'}
           badge={<Badge variant={cash_market.fii_net_cr >= 0 ? 'success' : 'danger'} size="sm">FII</Badge>}
         />
@@ -50,15 +50,15 @@ export const InstitutionalFlowsSection: React.FC<Props> = ({ data }) => {
         <StatCard
           title="DII Net Cash"
           value={`₹${cash_market.dii_net_cr > 0 ? '+' : ''}${cash_market.dii_net_cr.toFixed(1)} Cr`}
-          subValue="Net Domestic"
+          subValue="Net Domestic Flow"
           trend={cash_market.dii_net_cr >= 0 ? 'BULLISH' : 'BEARISH'}
           badge={<Badge variant={cash_market.dii_net_cr >= 0 ? 'success' : 'danger'} size="sm">DII</Badge>}
         />
 
         <StatCard
-          title="FII Futures Long Ratio"
+          title="FII Futures Long Share"
           value={`${derivatives_positioning.fii_long_pct.toFixed(1)}%`}
-          subValue={`${derivatives_positioning.fii_index_fut_long.toLocaleString()} Longs`}
+          subValue={`${derivatives_positioning.fii_index_fut_long.toLocaleString()} Longs (L/(L+S))`}
           trend={derivatives_positioning.fii_long_pct > 50 ? 'BULLISH' : 'BEARISH'}
           badge={<Badge variant={derivatives_positioning.fii_long_pct < 25 ? 'danger' : 'neutral'} size="sm">INDEX FUT</Badge>}
         />

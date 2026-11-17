@@ -1,31 +1,39 @@
 {
   "atm_straddle": {
+    "description": "Weekly expiry breakeven bounds (ATM strike +/- straddle premium), distinct from 1-sigma daily statistical ATR bounds.",
     "implied_lower_breakeven": 24530.0,
     "implied_upper_breakeven": 25170.0,
     "iv_pct": 13.25,
-    "premium_pts": 320.0
+    "premium_pts": 320.0,
+    "range_type": "EXPIRY_STRADDLE_BREAKEVEN"
   },
   "atm_strike": 24850.0,
   "call_wall": {
     "distance_pct": 0.6,
     "distance_pts": 150.0,
+    "methodology_disclosure": "Peak open interest call strike; acts as supply ceiling, distinct from empirical dealer continuous GEX curve.",
     "open_interest": 714103,
     "role": "PRIMARY_RESISTANCE_CEILING",
     "strike": 25000.0
   },
-  "generated_at": "2026-11-16T18:34:12.618518+05:30",
+  "generated_at": "2026-11-16T20:23:56.344509+05:30",
   "market_date": "2026-11-11",
   "max_pain_strike": 24850.0,
   "order_flow_imbalance": {
     "bias": "BEARISH_PRESSURE",
+    "inventory_vs_flow_note": "Total OI reflects cumulative open contracts; change in OI reflects net new writing/unwinding during this session.",
     "net_ce_oi_change": 311287,
-    "net_pe_oi_change": 285935
+    "net_pe_oi_change": 285935,
+    "session_writing_type": "ACTIVE_CALL_WRITING",
+    "total_ce_oi": 2778089,
+    "total_pe_oi": 2181574
   },
   "pcr_oi": 0.785,
   "pcr_volume": 0.733,
   "put_wall": {
     "distance_pct": 1.41,
     "distance_pts": 350.0,
+    "methodology_disclosure": "Peak open interest put strike; acts as systematic demand floor, distinct from empirical dealer continuous GEX curve.",
     "open_interest": 157000,
     "role": "PRIMARY_SUPPORT_FLOOR",
     "strike": 24500.0

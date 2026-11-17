@@ -134,11 +134,11 @@ export const MarketCommandCentre: React.FC<Props> = ({ data, forecast, breadth }
 
           <div className="grid grid-cols-3 gap-3 text-xs">
             <div className="bg-slate-900/60 p-2.5 rounded border border-slate-800">
-              <div className="text-slate-400 text-[11px]">FII Long Ratio</div>
+              <div className="text-slate-400 text-[11px]">FII Long Share</div>
               <div className="text-base font-bold font-mono mt-0.5 text-slate-100">
                 {institutional_summary.fii_long_ratio_pct.toFixed(1)}%
               </div>
-              <div className="text-[10px] text-slate-400">Index Futures</div>
+              <div className="text-[10px] text-slate-400 font-mono">L / (L + S)</div>
             </div>
 
             <div className="bg-slate-900/60 p-2.5 rounded border border-slate-800">
@@ -146,7 +146,7 @@ export const MarketCommandCentre: React.FC<Props> = ({ data, forecast, breadth }
               <div className={`text-base font-bold font-mono mt-0.5 ${institutional_summary.fii_net_cash_cr >= 0 ? 'text-emerald-400' : 'text-rose-400'}`}>
                 ₹{institutional_summary.fii_net_cash_cr > 0 ? '+' : ''}{institutional_summary.fii_net_cash_cr.toFixed(0)} Cr
               </div>
-              <div className="text-[10px] text-slate-400">Cash Turnover</div>
+              <div className="text-[10px] text-slate-400 font-mono">Net Cash Flow</div>
             </div>
 
             <div className="bg-slate-900/60 p-2.5 rounded border border-slate-800">

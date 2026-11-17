@@ -1,8 +1,8 @@
 import React from 'react';
-import { DerivativesData } from '../../types/market';
+import { DerivativesData, StrikeItem } from '../../types/market';
 import { StatCard } from '../common/StatCard';
 import { Badge } from '../common/Badge';
-import { Target } from 'lucide-react';
+import { Target, Calendar, Clock, CheckCircle2 } from 'lucide-react';
 
 interface Props {
   data: DerivativesData | null;
@@ -14,22 +14,46 @@ export const DerivativesSection: React.FC<Props> = ({ data }) => {
   }
 
   const {
-    underlying_price,
-    atm_strike,
-    pcr_oi,
-    pcr_volume,
-    max_pain_strike,
-    call_wall,
-    put_wall,
-    atm_straddle,
-    order_flow_imbalance,
-    strike_table,
+    underlying_price = 0,
+    atm_strike = 0,
+    pcr_oi = 0,
+    pcr_volume = 0,
+    max_pain_strike = 0,
+    call_wall = { strike: 0, open_interest: 0, distance_pts: 0, distance_pct: 0, role: '' },
+    put_wall = { strike: 0, open_interest: 0, distance_pts: 0, distance_pct: 0, role: '' },
+    atm_straddle = { iv_pct: 0, premium_pts: 0, implied_upper_breakeven: 0, implied_lower_breakeven: 0 },
+    order_flow_imbalance = { net_ce_oi_change: 0, net_pe_oi_change: 0, bias: 'NEUTRAL' },
   } = data;
+
+  const strikeList: StrikeItem[] = data.strike_table || data.strike_distribution || [];
 
   const pcrVariant = pcr_oi > 1.2 ? 'success' : pcr_oi < 0.75 ? 'danger' : 'warning';
 
   return (
     <div className="space-y-6">
+      {/* 0. Section Date Used & Publication Metadata Banner */}
+      <div className="terminal-card p-3.5 bg-slate-900/60 border-sky-900/40 flex flex-wrap items-center justify-between gap-3 text-xs">
+        <div className="flex items-center gap-2">
+          <Calendar className="w-4 h-4 text-sky-400" />
+          <span className="text-slate-400">Date Used (Market As-Of):</span>
+          <span className="font-mono font-bold text-sky-400 bg-sky-500/10 px-2 py-0.5 rounded border border-sky-500/20">
+            {data.market_date || '—'}
+          </span>
+          <span className="text-slate-500 text-[11px]">(NSE Calibrated Volatility Surface)</span>
+        </div>
+        <div className="flex items-center gap-2">
+          <Clock className="w-4 h-4 text-slate-400" />
+          <span className="text-slate-400">Published:</span>
+          <span className="font-mono text-slate-200">
+            {data.published_at || data.generated_at || '—'}
+          </span>
+          <span className="ml-2 px-2 py-0.5 text-[10px] font-mono font-semibold rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 flex items-center gap-1">
+            <CheckCircle2 className="w-3 h-3" />
+            CURRENT
+          </span>
+        </div>
+      </div>
+
       {/* 1. Primary Derivatives KPI Grid */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         <StatCard
@@ -118,7 +142,7 @@ export const DerivativesSection: React.FC<Props> = ({ data }) => {
               </tr>
             </thead>
             <tbody className="divide-y divide-slate-800/60">
-              {strike_table.map((row) => {
+              {strikeList.map((row) => {
                 const isATM = row.strike === atm_strike;
                 const isCallWall = row.strike === call_wall.strike;
                 const isPutWall = row.strike === put_wall.strike;

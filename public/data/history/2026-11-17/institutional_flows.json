@@ -1,0 +1,67 @@
+{
+  "cash_market": {
+    "dii_net_cr": 196.93,
+    "fii_net_cr": 4195.38,
+    "flow_definition": "Net cash purchases minus sales (Buy - Sell); turnover refers to gross traded value.",
+    "flow_type": "NET_CASH_FLOW",
+    "total_institutional_net_cr": 4392.31,
+    "unit": "INR Crores"
+  },
+  "contrarian_short_squeeze_alert": {
+    "active": true,
+    "current_fii_long_pct": 21.1,
+    "implication": "Extreme short crowding creates asymmetric upside via forced short covering on high-volume breakouts.",
+    "threshold_pct": 25.0
+  },
+  "derivatives_positioning": {
+    "client_index_fut_long": 284100,
+    "client_index_fut_short": 142300,
+    "client_long_pct": 66.6,
+    "client_long_share_pct": 66.63,
+    "client_long_short_ratio": 0.6663,
+    "client_long_to_short_ratio": 1.996,
+    "fii_index_fut_long": 58420,
+    "fii_index_fut_short": 218540,
+    "fii_long_pct": 21.1,
+    "fii_long_share_pct": 21.09,
+    "fii_long_short_ratio": 0.2109,
+    "fii_long_to_short_ratio": 0.267,
+    "long_share_formula": "Long / (Long + Short)",
+    "long_to_short_formula": "Long / Short",
+    "positioning_bias": "BEARISH_DOMINANCE"
+  },
+  "evaluation_as_of": "2026-11-17",
+  "generated_at": "2026-11-17T19:55:50.454971+05:30",
+  "market_data_as_of": "2026-11-17",
+  "market_date": "2026-11-17",
+  "published_at": "2026-11-17T19:55:50.454971+05:30",
+  "recent_flow_history": [
+    {
+      "date": "2026-11-17",
+      "dii_cash": 196.93,
+      "fii_cash": 4195.38
+    },
+    {
+      "date": "2026-11-10",
+      "dii_cash": 2890.4,
+      "fii_cash": -2105.2
+    },
+    {
+      "date": "2026-11-09",
+      "dii_cash": 1120.5,
+      "fii_cash": 450.8
+    },
+    {
+      "date": "2026-11-06",
+      "dii_cash": 1850.7,
+      "fii_cash": -980.3
+    },
+    {
+      "date": "2026-11-05",
+      "dii_cash": 2140.0,
+      "fii_cash": -1520.1
+    }
+  ],
+  "schema_version": "1.0",
+  "source_freshness": "CURRENT"
+}

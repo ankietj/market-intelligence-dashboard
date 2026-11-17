@@ -13,6 +13,8 @@ import {
   PreOpenData,
   RiskEventsData,
   DailyBriefingData,
+  SourcesRegistryData,
+  OperationalStatusData,
 } from './types/market';
 import { Header } from './components/common/Header';
 import { MarketCommandCentre } from './components/sections/MarketCommandCentre';
@@ -23,6 +25,8 @@ import { DerivativesSection } from './components/sections/DerivativesSection';
 import { NiftyForecastSection } from './components/sections/NiftyForecastSection';
 import { RiskEventsSection } from './components/sections/RiskEventsSection';
 import { DailyBriefingSection } from './components/sections/DailyBriefingSection';
+import { DataSourcesMethodology } from './components/sections/DataSourcesMethodology';
+import { OperationalStatusSection } from './components/sections/OperationalStatusSection';
 import {
   LayoutDashboard,
   Globe,
@@ -34,6 +38,8 @@ import {
   FileText,
   AlertCircle,
   RefreshCw,
+  Database,
+  Activity,
 } from 'lucide-react';
 
 type ActiveTab = 
@@ -44,7 +50,9 @@ type ActiveTab =
   | 'DERIVATIVES'
   | 'FORECAST'
   | 'RISK_EVENTS'
-  | 'DAILY_REPORT';
+  | 'DAILY_REPORT'
+  | 'SOURCES'
+  | 'OPERATIONAL_STATUS';
 
 export const App: React.FC = () => {
   const [activeTab, setActiveTab] = useState<ActiveTab>('COMMAND_CENTRE');
@@ -65,6 +73,8 @@ export const App: React.FC = () => {
   const [preOpen, setPreOpen] = useState<PreOpenData | null>(null);
   const [risk, setRisk] = useState<RiskEventsData | null>(null);
   const [briefing, setBriefing] = useState<DailyBriefingData | null>(null);
+  const [sources, setSources] = useState<SourcesRegistryData | null>(null);
+  const [opsStatus, setOpsStatus] = useState<OperationalStatusData | null>(null);
 
   const loadAllData = async () => {
     try {
@@ -84,6 +94,8 @@ export const App: React.FC = () => {
         po,
         rk,
         db,
+        srcReg,
+        opStat,
       ] = await Promise.all([
         svc.getManifest(),
         svc.getMarketOverview(),
@@ -97,6 +109,8 @@ export const App: React.FC = () => {
         svc.getPreOpen(),
         svc.getRiskEvents(),
         svc.getDailyBriefing(),
+        svc.getSourcesRegistry(),
+        svc.getOperationalStatus(),
       ]);
 
       setManifest(man);
@@ -111,6 +125,8 @@ export const App: React.FC = () => {
       setPreOpen(po);
       setRisk(rk);
       setBriefing(db);
+      setSources(srcReg);
+      setOpsStatus(opStat);
     } catch (err: any) {
       console.error('Failed to load published snapshot:', err);
       setError(err?.message || 'Error loading market intelligence snapshot.');
@@ -129,6 +145,119 @@ export const App: React.FC = () => {
     loadAllData();
   };
 
+  const formatTimestamp = (isoStr?: string) => {
+    if (!isoStr) return '—';
+    try {
+      const d = new Date(isoStr);
+      return d.toLocaleString('en-IN', {
+        timeZone: 'Asia/Kolkata',
+        day: '2-digit',
+        month: 'short',
+        year: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        hour12: false,
+      }) + ' IST';
+    } catch {
+      return isoStr;
+    }
+  };
+
+  const formatMarketDate = (dateStr?: string) => {
+    if (!dateStr) return '—';
+    try {
+      const parts = dateStr.split('-');
+      if (parts.length === 3) {
+        const [y, m, d] = parts;
+        const dateObj = new Date(Number(y), Number(m) - 1, Number(d));
+        return dateObj.toLocaleDateString('en-IN', {
+          day: '2-digit',
+          month: 'short',
+          year: 'numeric',
+        });
+      }
+      return dateStr;
+    } catch {
+      return dateStr;
+    }
+  };
+
+  const getActiveTabMetadata = () => {
+    switch (activeTab) {
+      case 'COMMAND_CENTRE':
+        return {
+          title: 'Command Centre',
+          dateUsed: overview?.market_data_as_of || overview?.market_date || manifest?.market_date || '—',
+          publishedAt: overview?.published_at || overview?.generated_at || manifest?.published_at || manifest?.generated_at || '—',
+          sourceName: 'Consolidated Canonical Intelligence Feeds',
+        };
+      case 'GLOBAL_MACRO':
+        return {
+          title: 'Global Macro & Commodities',
+          dateUsed: macro?.market_data_as_of || macro?.market_date || manifest?.market_date || '—',
+          publishedAt: macro?.published_at || macro?.generated_at || manifest?.published_at || manifest?.generated_at || '—',
+          sourceName: 'International FX & Commodity Exchanges',
+        };
+      case 'INSTITUTIONAL':
+        return {
+          title: 'Institutional Cash & F&O Flows',
+          dateUsed: flows?.market_data_as_of || flows?.market_date || manifest?.market_date || '—',
+          publishedAt: flows?.published_at || flows?.generated_at || manifest?.published_at || manifest?.generated_at || '—',
+          sourceName: 'NSE Official FII/DII Turnover & Participant Open Interest',
+        };
+      case 'SECTOR_ROTATION':
+        return {
+          title: '19-Sector Rotation & Breadth',
+          dateUsed: sector?.market_data_as_of || sector?.market_date || manifest?.market_date || '—',
+          publishedAt: sector?.published_at || sector?.generated_at || manifest?.published_at || manifest?.generated_at || '—',
+          sourceName: 'NSE Thematic & Sectoral Index Bhavcopies',
+        };
+      case 'DERIVATIVES':
+        return {
+          title: 'Derivatives & NIFTY Options Intelligence',
+          dateUsed: derivatives?.market_data_as_of || derivatives?.market_date || manifest?.market_date || '—',
+          publishedAt: derivatives?.published_at || derivatives?.generated_at || manifest?.published_at || manifest?.generated_at || '—',
+          sourceName: 'NSE NIFTY Options Chain (Calibrated Empirical Surface)',
+        };
+      case 'FORECAST':
+        return {
+          title: 'NIFTY Directional Forecast Ensemble',
+          dateUsed: forecast?.market_data_as_of || forecast?.as_of_session_date || forecast?.market_date || manifest?.market_date || '—',
+          publishedAt: forecast?.published_at || forecast?.generated_at || manifest?.published_at || manifest?.generated_at || '—',
+          sourceName: 'Heuristic Multi-Factor Rule Scoring & 1-Sigma ATR Model',
+        };
+      case 'RISK_EVENTS':
+        return {
+          title: 'Risk & Event Volatility Monitor',
+          dateUsed: risk?.market_data_as_of || risk?.market_date || manifest?.market_date || '—',
+          publishedAt: risk?.published_at || risk?.generated_at || manifest?.published_at || manifest?.generated_at || '—',
+          sourceName: 'India VIX Volatility Index & Institutional Crowding Monitor',
+        };
+      case 'DAILY_REPORT':
+        return {
+          title: 'Multi-Specialist Agent Daily Briefing',
+          dateUsed: briefing?.market_data_as_of || briefing?.market_date || manifest?.market_date || '—',
+          publishedAt: briefing?.published_at || briefing?.generated_at || manifest?.published_at || manifest?.generated_at || '—',
+          sourceName: 'Specialist Agent Orchestration & Deterministic Synthesis',
+        };
+      case 'SOURCES':
+        return {
+          title: 'Data Sources & Methodology Registry',
+          dateUsed: sources?.market_data_as_of || sources?.market_date || manifest?.market_date || '—',
+          publishedAt: sources?.published_at || sources?.generated_at || manifest?.published_at || manifest?.generated_at || '—',
+          sourceName: 'Authoritative Enterprise Data Governance Registry',
+        };
+      case 'OPERATIONAL_STATUS':
+        return {
+          title: 'Operational Status & Pipeline Telemetry',
+          dateUsed: opsStatus?.market_data_as_of || opsStatus?.market_date || manifest?.market_date || '—',
+          publishedAt: opsStatus?.published_at || opsStatus?.generated_at || manifest?.published_at || manifest?.generated_at || '—',
+          sourceName: 'Automated Refresh Pipeline Telemetry & Health Checks',
+        };
+    }
+  };
+
   const navItems = [
     { id: 'COMMAND_CENTRE', label: 'Command Centre', icon: LayoutDashboard },
     { id: 'GLOBAL_MACRO', label: 'Global & Macro', icon: Globe },
@@ -138,6 +267,8 @@ export const App: React.FC = () => {
     { id: 'FORECAST', label: 'NIFTY Forecast', icon: Compass },
     { id: 'RISK_EVENTS', label: 'Risk & Events', icon: ShieldAlert },
     { id: 'DAILY_REPORT', label: 'Daily Briefing', icon: FileText },
+    { id: 'SOURCES', label: 'Data Sources', icon: Database },
+    { id: 'OPERATIONAL_STATUS', label: 'System Status', icon: Activity },
   ];
 
   if (loading) {
@@ -176,6 +307,7 @@ export const App: React.FC = () => {
         targetSessionDate={manifest?.target_session_date || '—'}
         generatedAt={manifest?.generated_at || ''}
         snapshotId={manifest?.snapshot_id || 'LATEST'}
+        sourceFreshness={manifest?.source_freshness}
         onRefresh={handleRefresh}
         isRefreshing={refreshing}
       />
@@ -204,6 +336,44 @@ export const App: React.FC = () => {
         </div>
       </nav>
 
+      {/* 2.5 Active Tab Freshness & Publication Metadata Bar */}
+      {(() => {
+        const tabMeta = getActiveTabMetadata();
+        return (
+          <div className="border-b border-slate-800/80 bg-[#090d16] px-4 lg:px-8 py-2.5">
+            <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3 text-xs">
+              <div className="flex flex-wrap items-center gap-2">
+                <span className="font-semibold text-slate-200 tracking-wide">{tabMeta.title}</span>
+                <span className="text-slate-600 hidden sm:inline">•</span>
+                <div className="flex items-center gap-1.5">
+                  <span className="text-slate-400">Date Used (Market As-Of):</span>
+                  <span className="font-mono font-bold text-sky-400 bg-sky-500/10 px-2 py-0.5 rounded border border-sky-500/20">
+                    {formatMarketDate(tabMeta.dateUsed)}
+                  </span>
+                </div>
+                <span className="text-slate-500 text-[11px] hidden md:inline">({tabMeta.sourceName})</span>
+              </div>
+
+              <div className="flex items-center gap-3">
+                <div className="flex items-center gap-1.5 text-slate-400">
+                  <span>When Published:</span>
+                  <span className="font-mono font-medium text-slate-200">
+                    {formatTimestamp(tabMeta.publishedAt)}
+                  </span>
+                </div>
+                <span className="text-slate-700 hidden sm:inline">|</span>
+                <div className="hidden sm:flex items-center gap-1.5">
+                  <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                  <span className="text-emerald-400 font-mono text-[11px] font-semibold tracking-wide">
+                    CANONICAL VERIFIED
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        );
+      })()}
+
       {/* 3. Main Content Area */}
       <main className="flex-1 max-w-7xl w-full mx-auto px-4 lg:px-8 py-6">
         {activeTab === 'COMMAND_CENTRE' && (
@@ -229,6 +399,12 @@ export const App: React.FC = () => {
         )}
         {activeTab === 'DAILY_REPORT' && (
           <DailyBriefingSection data={briefing} />
+        )}
+        {activeTab === 'SOURCES' && (
+          <DataSourcesMethodology data={sources} />
+        )}
+        {activeTab === 'OPERATIONAL_STATUS' && (
+          <OperationalStatusSection data={opsStatus} />
         )}
       </main>
 

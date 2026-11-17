@@ -7,6 +7,7 @@ interface HeaderProps {
   targetSessionDate: string;
   generatedAt: string;
   snapshotId: string;
+  sourceFreshness?: string;
   onRefresh?: () => void;
   isRefreshing?: boolean;
 }
@@ -16,6 +17,7 @@ export const Header: React.FC<HeaderProps> = ({
   targetSessionDate,
   generatedAt,
   snapshotId,
+  sourceFreshness,
   onRefresh,
   isRefreshing,
 }) => {
@@ -66,6 +68,12 @@ export const Header: React.FC<HeaderProps> = ({
             <ShieldCheck className="w-3 h-3" />
             CRITIC VERIFIED
           </Badge>
+
+          {sourceFreshness && (
+            <Badge variant={sourceFreshness === 'CURRENT' ? 'success' : 'warning'} size="sm">
+              DATA: {sourceFreshness}
+            </Badge>
+          )}
 
           <Badge variant="neutral" size="sm">
             MANUAL PUBLISH

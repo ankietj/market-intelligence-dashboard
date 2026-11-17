@@ -10,6 +10,12 @@ export interface SnapshotManifest {
   target_session_date: string;
   generated_at: string;
   data_as_of: string;
+  market_data_as_of?: string;
+  evaluation_as_of?: string;
+  published_at?: string;
+  source_freshness?: 'CURRENT' | 'STALE' | 'DEGRADED';
+  coverage_status?: Record<string, string>;
+  authenticity_status?: Record<string, string>;
   publication_type: string;
   source_status: Record<string, string>;
   coverage: {
@@ -21,6 +27,7 @@ export interface SnapshotManifest {
     all_checks_passed: boolean;
     sanitization_verified: boolean;
     critic_audited: boolean;
+    freshness_verified?: boolean;
   };
   sections: Record<string, string>;
   file_hashes: Record<string, string>;
@@ -38,7 +45,11 @@ export interface MarketIndexItem {
 export interface MarketOverviewData {
   schema_version: string;
   market_date: string;
+  market_data_as_of?: string;
+  evaluation_as_of?: string;
   generated_at: string;
+  published_at?: string;
+  source_freshness?: string;
   headline_regime: {
     overall_tilt: string;
     volatility_regime: string;
@@ -71,7 +82,11 @@ export interface MarketOverviewData {
 export interface GlobalMacroData {
   schema_version: string;
   market_date: string;
+  market_data_as_of?: string;
+  evaluation_as_of?: string;
   generated_at: string;
+  published_at?: string;
+  source_freshness?: string;
   macro_risk_score: number;
   macro_risk_tilt: string;
   headwind_level: string;
@@ -118,7 +133,11 @@ export interface GlobalMacroData {
 export interface InstitutionalFlowsData {
   schema_version: string;
   market_date: string;
+  market_data_as_of?: string;
+  evaluation_as_of?: string;
   generated_at: string;
+  published_at?: string;
+  source_freshness?: string;
   cash_market: {
     fii_net_cr: number;
     dii_net_cr: number;
@@ -152,7 +171,11 @@ export interface InstitutionalFlowsData {
 export interface MarketBreadthData {
   schema_version: string;
   market_date: string;
+  market_data_as_of?: string;
+  evaluation_as_of?: string;
   generated_at: string;
+  published_at?: string;
+  source_freshness?: string;
   advances: number;
   declines: number;
   unchanged: number;
@@ -180,7 +203,11 @@ export interface SectorItem {
 export interface SectorRotationData {
   schema_version: string;
   market_date: string;
+  market_data_as_of?: string;
+  evaluation_as_of?: string;
   generated_at: string;
+  published_at?: string;
+  source_freshness?: string;
   spread_cyclical_defensive: number;
   leading_sector: string;
   sectors: SectorItem[];
@@ -198,7 +225,11 @@ export interface StockLeaderItem {
 export interface StockLeadershipData {
   schema_version: string;
   market_date: string;
+  market_data_as_of?: string;
+  evaluation_as_of?: string;
   generated_at: string;
+  published_at?: string;
+  source_freshness?: string;
   top_gainers: StockLeaderItem[];
   top_losers: StockLeaderItem[];
   volume_breakouts: Array<{
@@ -209,10 +240,24 @@ export interface StockLeadershipData {
   }>;
 }
 
+export interface StrikeItem {
+  strike: number;
+  ce_oi: number;
+  pe_oi: number;
+  ce_change_oi: number;
+  pe_change_oi: number;
+  ce_ltp: number;
+  pe_ltp: number;
+}
+
 export interface DerivativesData {
   schema_version: string;
   market_date: string;
+  market_data_as_of?: string;
+  evaluation_as_of?: string;
   generated_at: string;
+  published_at?: string;
+  source_freshness?: string;
   underlying_price: number;
   atm_strike: number;
   pcr_oi: number;
@@ -243,19 +288,17 @@ export interface DerivativesData {
     net_pe_oi_change: number;
     bias: string;
   };
-  strike_table: Array<{
-    strike: number;
-    ce_oi: number;
-    pe_oi: number;
-    ce_change_oi: number;
-    pe_change_oi: number;
-    ce_ltp: number;
-    pe_ltp: number;
-  }>;
+  strike_table?: StrikeItem[];
+  strike_distribution?: StrikeItem[];
 }
 
 export interface NiftyForecastData {
   schema_version: string;
+  market_date?: string;
+  market_data_as_of?: string;
+  evaluation_as_of?: string;
+  published_at?: string;
+  source_freshness?: string;
   as_of_session_date: string;
   target_session_date: string;
   generated_at: string;
@@ -298,6 +341,11 @@ export interface NiftyForecastData {
 
 export interface PreOpenData {
   schema_version: string;
+  market_date?: string;
+  market_data_as_of?: string;
+  evaluation_as_of?: string;
+  published_at?: string;
+  source_freshness?: string;
   target_session_date: string;
   generated_at: string;
   snapshot_type: string;
@@ -321,6 +369,10 @@ export interface PreOpenData {
 export interface RiskEventsData {
   schema_version: string;
   market_date: string;
+  market_data_as_of?: string;
+  evaluation_as_of?: string;
+  published_at?: string;
+  source_freshness?: string;
   generated_at: string;
   macro_risk_level: string;
   volatility_monitor: {
@@ -349,6 +401,10 @@ export interface RiskEventsData {
 export interface DailyBriefingData {
   schema_version: string;
   market_date: string;
+  market_data_as_of?: string;
+  evaluation_as_of?: string;
+  published_at?: string;
+  source_freshness?: string;
   generated_at: string;
   verification_status: {
     all_specialists_passed: boolean;
@@ -361,4 +417,79 @@ export interface DailyBriefingData {
   cross_specialist_disagreements: string[];
   tactical_positioning_implications: string[];
   next_session_watchpoints: string[];
+}
+
+export interface SourceRegistryItem {
+  id: string;
+  name: string;
+  category: string;
+  provider: string;
+  cadence: string;
+  latency: string;
+  status: string;
+  verification: string;
+  methodology: string;
+}
+
+export interface SourcesRegistryData {
+  schema_version: string;
+  market_date: string;
+  market_data_as_of?: string;
+  evaluation_as_of?: string;
+  published_at?: string;
+  source_freshness?: string;
+  generated_at: string;
+  sources_count: number;
+  sources: SourceRegistryItem[];
+}
+
+export interface OperationalStatusData {
+  schema_version: string;
+  market_date: string;
+  market_data_as_of?: string;
+  evaluation_as_of?: string;
+  published_at?: string;
+  source_freshness?: string;
+  target_session_date: string;
+  generated_at: string;
+  overall_system_status: 'HEALTHY' | 'DEGRADED' | 'CRITICAL';
+  last_successful_refresh: string;
+  pipeline_stages: {
+    pre_open_pipeline: {
+      status: string;
+      target_session: string;
+      execution_mode: string;
+      report_hash: string;
+    };
+    specialist_orchestrator: {
+      status: string;
+      active_specialists: number;
+      accepted_specialists: number;
+      all_passed: boolean;
+      critic_audit_verdict: string;
+    };
+    forecast_ensemble: {
+      status: string;
+      snapshot_type: string;
+      snapshot_hash: string;
+    };
+    public_snapshot_exporter: {
+      status: string;
+      sections_published: number;
+      sanitization_verified: boolean;
+    };
+  };
+  data_freshness: {
+    cash_market: string;
+    derivatives_options: string;
+    institutional_flows: string;
+    global_macro: string;
+  };
+  data_quality_warnings: string[];
+  critic_audit_summary: {
+    total_specialists_audited: number;
+    accepted_count: number;
+    all_passed: boolean;
+    audit_decision: string;
+  };
 }

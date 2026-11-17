@@ -1,86 +1,97 @@
 {
-  "generated_at": "2026-11-16T18:34:12.618518+05:30",
-  "market_date": "2026-11-11",
+  "evaluation_as_of": "2026-11-17",
+  "generated_at": "2026-11-17T19:55:50.454971+05:30",
+  "market_data_as_of": "2026-11-17",
+  "market_date": "2026-11-17",
+  "published_at": "2026-11-17T19:55:50.454971+05:30",
   "schema_version": "1.0",
+  "source_freshness": "CURRENT",
   "top_gainers": [
     {
-      "change_pct": 3.42,
-      "close": 2980.5,
-      "name": "Mahindra & Mahindra",
-      "symbol": "M&M",
-      "turnover_cr": 820.5
+      "change_pct": 3.24,
+      "close": 2745.1,
+      "name": "ADANIENT",
+      "symbol": "ADANIENT",
+      "turnover_cr": 546.67
     },
     {
-      "change_pct": 2.85,
-      "close": 154.2,
-      "name": "Tata Steel",
-      "symbol": "TATASTEEL",
-      "turnover_cr": 640.2
+      "change_pct": 3.01,
+      "close": 7828.0,
+      "name": "EICHERMOT",
+      "symbol": "EICHERMOT",
+      "turnover_cr": 575.79
     },
     {
-      "change_pct": 2.45,
-      "close": 685.1,
-      "name": "Hindalco Industries",
-      "symbol": "HINDALCO",
-      "turnover_cr": 510.8
+      "change_pct": 2.08,
+      "close": 1030.9,
+      "name": "MAXHEALTH",
+      "symbol": "MAXHEALTH",
+      "turnover_cr": 610.96
     },
     {
-      "change_pct": 1.8,
-      "close": 1285.0,
-      "name": "ICICI Bank",
-      "symbol": "ICICIBANK",
-      "turnover_cr": 1420.0
+      "change_pct": 2.02,
+      "close": 2625.0,
+      "name": "ASIANPAINT",
+      "symbol": "ASIANPAINT",
+      "turnover_cr": 373.01
     },
     {
-      "change_pct": 1.55,
-      "close": 3620.0,
-      "name": "Larsen & Toubro",
-      "symbol": "LT",
-      "turnover_cr": 780.4
+      "change_pct": 1.98,
+      "close": 1369.0,
+      "name": "AXISBANK",
+      "symbol": "AXISBANK",
+      "turnover_cr": 954.65
     }
   ],
   "top_losers": [
     {
-      "change_pct": -1.85,
-      "close": 2240.0,
-      "name": "Nestle India",
-      "symbol": "NESTLEIND",
-      "turnover_cr": 320.1
+      "change_pct": -2.09,
+      "close": 1355.7,
+      "name": "HCLTECH",
+      "symbol": "HCLTECH",
+      "turnover_cr": 399.8
     },
     {
-      "change_pct": -1.4,
-      "close": 2410.5,
-      "name": "Hindustan Unilever",
-      "symbol": "HINDUNILVR",
-      "turnover_cr": 580.6
+      "change_pct": -1.89,
+      "close": 189.89,
+      "name": "WIPRO",
+      "symbol": "WIPRO",
+      "turnover_cr": 319.01
     },
     {
-      "change_pct": -1.15,
-      "close": 5120.0,
-      "name": "Britannia Industries",
-      "symbol": "BRITANNIA",
-      "turnover_cr": 210.4
+      "change_pct": -1.6,
+      "close": 258.0,
+      "name": "POWERGRID",
+      "symbol": "POWERGRID",
+      "turnover_cr": 282.3
     },
     {
-      "change_pct": -0.95,
-      "close": 1245.0,
-      "name": "Dr. Reddy's Lab",
-      "symbol": "DRREDDY",
-      "turnover_cr": 290.8
+      "change_pct": -1.56,
+      "close": 595.05,
+      "name": "HDFCLIFE",
+      "symbol": "HDFCLIFE",
+      "turnover_cr": 113.54
+    },
+    {
+      "change_pct": -1.53,
+      "close": 223.52,
+      "name": "ONGC",
+      "symbol": "ONGC",
+      "turnover_cr": 235.11
     }
   ],
   "volume_breakouts": [
     {
-      "breakout_level": 295.0,
-      "relative_volume": 2.4,
+      "breakout_level": 2700.0,
+      "relative_volume": 2.2,
       "status": "CONFIRMED",
-      "symbol": "BEL"
+      "symbol": "ADANIENT"
     },
     {
-      "breakout_level": 7100.0,
-      "relative_volume": 1.9,
+      "breakout_level": 1350.0,
+      "relative_volume": 1.8,
       "status": "CONFIRMED",
-      "symbol": "TRENT"
+      "symbol": "AXISBANK"
     }
   ]
 }

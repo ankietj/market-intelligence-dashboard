@@ -133,9 +133,12 @@ export const NiftyForecastSection: React.FC<Props> = ({ forecast, preOpen }) => 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {/* Probability Calibration */}
             <div className="terminal-card p-4">
-              <span className="text-xs uppercase tracking-wider text-slate-400 font-medium block mb-3">
-                Calibrated Directional Probability Distribution
-              </span>
+              <div className="flex items-center justify-between mb-3">
+                <span className="text-xs uppercase tracking-wider text-slate-400 font-medium">
+                  Directional Probability Distribution
+                </span>
+                <Badge variant="neutral" size="sm">Uncalibrated Heuristic Rule</Badge>
+              </div>
 
               <div className="space-y-3 font-mono text-xs">
                 <div>
@@ -168,6 +171,10 @@ export const NiftyForecastSection: React.FC<Props> = ({ forecast, preOpen }) => 
                   </div>
                 </div>
               </div>
+
+              <p className="text-[10px] text-slate-400 mt-3 font-sans italic border-t border-slate-800/80 pt-2">
+                Directional probabilities represent a deterministic multi-factor heuristic rule score (HeuristicMultiFactor_v1). They are uncalibrated and should not be interpreted as empirical frequentist odds.
+              </p>
             </div>
 
             {/* Pivot Matrix */}

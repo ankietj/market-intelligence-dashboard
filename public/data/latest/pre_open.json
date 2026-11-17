@@ -1,26 +1,31 @@
 {
   "auction_action_rules": [
-    "FLAT OPEN EXECUTION: Expected open at ~25267.5 (+12.5 pts). Market is opening near previous close balance.",
-    "Directional bias is BULLISH. Monitor whether 25258.2 acts as support or resistance.",
+    "FLAT OPEN EXECUTION: Expected open at ~25399.9 (+12.5 pts). Market is opening near previous close balance.",
+    "Directional bias is NEUTRAL. Monitor whether 25385.3 acts as support or resistance.",
     "Focus trades on relative strength leader sectors identified in latest EOD specialist intelligence.",
-    "OPTIONS BOUNDARIES: Call Wall resistance at 25,000 | Put Wall support at 24,500 | PCR: 0.79 | Max Pain: 24,850."
+    "OPTIONS BOUNDARIES: Call Wall resistance at 25,500 | Put Wall support at 25,000 | PCR: 0.95 | Max Pain: 25,400."
   ],
-  "auction_bracket_high": 25297.55,
-  "auction_bracket_low": 25237.55,
+  "auction_bracket_high": 25429.9,
+  "auction_bracket_low": 25369.9,
   "derivatives_boundaries": {
-    "call_wall_strike": 25000.0,
-    "options_max_pain": 24850.0,
-    "options_pcr": 0.785,
-    "put_wall_strike": 24500.0
+    "call_wall_strike": 25500.0,
+    "options_max_pain": 25400.0,
+    "options_pcr": 0.948,
+    "put_wall_strike": 25000.0
   },
-  "expected_open": 25267.55,
+  "evaluation_as_of": "2026-11-17",
+  "expected_open": 25399.9,
   "gap_classification": "FLAT",
-  "generated_at": "2026-11-16T18:34:12.618518+05:30",
-  "key_inflection_level": 25258.25,
+  "generated_at": "2026-11-17T19:55:50.454971+05:30",
+  "key_inflection_level": 25385.35,
   "macro_headwind_level": "MODERATE",
+  "market_data_as_of": "2026-11-17",
+  "market_date": "2026-11-17",
   "overnight_gap_points": 12.5,
-  "report_hash": "ccbfb2ed0057280b230d19a5aeeb21467c4a2212498da9dca648ff5d84692ed3",
+  "published_at": "2026-11-17T19:55:50.454971+05:30",
+  "report_hash": "481830fcd81c60b4ecba99025f8cef8a356c269bfd4cdea47a2aa1af00a495c2",
   "schema_version": "1.0",
   "snapshot_type": "PRE_OPEN",
-  "target_session_date": "2026-11-12"
+  "source_freshness": "CURRENT",
+  "target_session_date": "2026-11-18"
 }

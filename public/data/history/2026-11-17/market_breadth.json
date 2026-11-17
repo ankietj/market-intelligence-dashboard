@@ -1,0 +1,26 @@
+{
+  "advance_percentage": 54.0,
+  "advances": 27,
+  "breadth_regime": "SELECTIVE",
+  "concentration_spread": -0.14,
+  "declines": 23,
+  "divergence_signal": "BALANCED_CHOP",
+  "evaluation_as_of": "2026-11-17",
+  "generated_at": "2026-11-17T19:55:50.454971+05:30",
+  "market_data_as_of": "2026-11-17",
+  "market_date": "2026-11-17",
+  "missing": 0,
+  "moving_averages": {
+    "pct_above_200dma": 67.3,
+    "pct_above_20dma": 84.0,
+    "pct_above_50dma": 82.0
+  },
+  "published_at": "2026-11-17T19:55:50.454971+05:30",
+  "reconciled_sum": 50,
+  "reconciliation_status": "EXACT",
+  "schema_version": "1.0",
+  "source_freshness": "CURRENT",
+  "unchanged": 0,
+  "universe_coverage_percentage": 100.0,
+  "universe_size": 50
+}

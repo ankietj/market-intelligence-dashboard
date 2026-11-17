@@ -11,6 +11,8 @@ import {
   PreOpenData,
   RiskEventsData,
   DailyBriefingData,
+  SourcesRegistryData,
+  OperationalStatusData,
 } from '../types/market';
 
 /**
@@ -138,6 +140,20 @@ export class MarketDataService {
       ? `data/history/${historyDate}/daily_briefing.json`
       : 'data/latest/daily_briefing.json';
     return fetchJson<DailyBriefingData>(path);
+  }
+
+  public async getSourcesRegistry(historyDate?: string): Promise<SourcesRegistryData> {
+    const path = historyDate
+      ? `data/history/${historyDate}/sources_registry.json`
+      : 'data/latest/sources_registry.json';
+    return fetchJson<SourcesRegistryData>(path);
+  }
+
+  public async getOperationalStatus(historyDate?: string): Promise<OperationalStatusData> {
+    const path = historyDate
+      ? `data/history/${historyDate}/operational_status.json`
+      : 'data/latest/operational_status.json';
+    return fetchJson<OperationalStatusData>(path);
   }
 
   public getCachedManifest(): SnapshotManifest | null {

@@ -1,0 +1,46 @@
+{
+  "critic_audit_summary": {
+    "accepted_count": 5,
+    "all_passed": true,
+    "audit_decision": "PASS",
+    "total_specialists_audited": 5
+  },
+  "data_freshness": {
+    "cash_market": "EOD_SETTLEMENT_VERIFIED",
+    "derivatives_options": "CALIBRATED_SURFACE_ACTIVE",
+    "global_macro": "AS_OF_DATE_ALIGNED",
+    "institutional_flows": "VERIFIED_CANONICAL"
+  },
+  "data_quality_warnings": [],
+  "generated_at": "2026-11-16T20:23:56.344509+05:30",
+  "last_successful_refresh": "2026-11-16T20:23:56.344509+05:30",
+  "market_date": "2026-11-11",
+  "overall_system_status": "HEALTHY",
+  "pipeline_stages": {
+    "forecast_ensemble": {
+      "snapshot_hash": "4405819b0c1c773c4742f09137a77759d8cbf7db83f47cb4120bae58ed686777",
+      "snapshot_type": "POST_CLOSE",
+      "status": "COMPLETED"
+    },
+    "pre_open_pipeline": {
+      "execution_mode": "DETERMINISTIC_OFFLINE_VERIFIED",
+      "report_hash": "ccbfb2ed0057280b230d19a5aeeb21467c4a2212498da9dca648ff5d84692ed3",
+      "status": "COMPLETED",
+      "target_session": "2026-11-12"
+    },
+    "public_snapshot_exporter": {
+      "sanitization_verified": true,
+      "sections_published": 14,
+      "status": "COMPLETED"
+    },
+    "specialist_orchestrator": {
+      "accepted_specialists": 5,
+      "active_specialists": 5,
+      "all_passed": true,
+      "critic_audit_verdict": "VERIFIED_AUTHENTIC",
+      "status": "COMPLETED"
+    }
+  },
+  "schema_version": "1.0",
+  "target_session_date": "2026-11-12"
+}

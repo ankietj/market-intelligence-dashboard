@@ -1,47 +1,60 @@
 {
-  "as_of_session_date": "2026-11-11",
+  "as_of_session_date": "2026-11-17",
   "directional_probability": {
-    "bias": "BULLISH",
+    "bias": "NEUTRAL",
+    "calibration_label": "Heuristic Rule Score (Uncalibrated)",
     "is_statistically_calibrated": false,
-    "p_down": 0.1433,
+    "p_down": 0.3333,
     "p_sideways": 0.3334,
-    "p_up": 0.5233,
-    "rule_score": 0.52
+    "p_up": 0.3333,
+    "rule_score": 0.33
   },
+  "evaluation_as_of": "2026-11-17",
   "expected_range": {
-    "atr_14": 338.96,
-    "confidence_interval": "68% (1-sigma)",
-    "high": 25450.42,
-    "low": 25135.3,
-    "range_points": 315.12
+    "atr_14": 317.87,
+    "confidence_interval": "68% (1-sigma empirical Daily ATR)",
+    "high": 25532.4,
+    "low": 25242.4,
+    "range_points": 290.0,
+    "range_type": "STATISTICAL_ATR_EXPECTED_RANGE"
   },
-  "generated_at": "2026-11-16T18:34:12.618518+05:30",
-  "reference_close": 25255.05,
+  "generated_at": "2026-11-17T19:55:50.454971+05:30",
+  "market_data_as_of": "2026-11-17",
+  "market_date": "2026-11-17",
+  "model_metadata": {
+    "calibration_disclosure": "Directional probabilities are derived from an uncalibrated multi-factor heuristic rule scoring system and should not be interpreted as empirical frequentist or Bayesian probabilities.",
+    "calibration_status": "UNCALIBRATED_HEURISTIC_RULE_SCORE",
+    "is_statistically_calibrated": false,
+    "model_id": "HeuristicMultiFactor_v1"
+  },
+  "published_at": "2026-11-17T19:55:50.454971+05:30",
+  "reference_close": 25387.4,
   "scenarios": {
-    "bearish_target": 25092.15,
-    "bullish_target": 25421.15,
-    "invalidation_level": 24929.25
+    "bearish_target": 25269.35,
+    "bullish_target": 25503.4,
+    "invalidation_level": 25151.3
   },
   "schema_version": "1.0",
-  "snapshot_hash": "4405819b0c1c773c4742f09137a77759d8cbf7db83f47cb4120bae58ed686777",
+  "snapshot_hash": "20352cf3247c78f03acfd50efc8b7aa66fbe6d2803133f328acbef1db49f2145",
   "snapshot_type": "POST_CLOSE",
-  "target_session_date": "2026-11-12",
+  "source_freshness": "CURRENT",
+  "target_session_date": "2026-11-18",
   "technical_levels": {
     "classic_pivots": {
-      "pivot": 25258.25,
-      "r1": 25421.15,
-      "r2": 25587.25,
-      "s1": 25092.15,
-      "s2": 24929.25
+      "pivot": 25385.35,
+      "r1": 25503.4,
+      "r2": 25619.4,
+      "s1": 25269.35,
+      "s2": 25151.3
     },
-    "master_pivot": 25258.25,
+    "master_pivot": 25385.35,
     "resistance_zone": [
-      25421.15,
-      25594.01
+      25503.4,
+      25705.27
     ],
     "support_zone": [
-      24916.09,
-      25092.15
+      25069.53,
+      25269.35
     ]
   }
 }

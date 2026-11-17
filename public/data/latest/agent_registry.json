@@ -1,0 +1,143 @@
+{
+  "agents": [
+    {
+      "domain": "Cross-sector rotation, leadership persistence, and cyclical vs. defensive spreads",
+      "evaluation_logic": "Cyclical vs. defensive RS spread > +0.40% triggers RISK_ON; < -0.40% triggers DEFENSIVE_ROTATION.",
+      "execution_mode": "DETERMINISTIC_PYTHON",
+      "id": "SECTOR_SPECIALIST",
+      "is_critic_audited": true,
+      "name": "Sector Relative Strength & Rotation Specialist",
+      "output_schema": "SpecialistAnalysisOutput (RegimeTilt, market_implications, tactical_positioning, evidence_records)",
+      "reasoning_engine": "DuckDB SQL + Python NumPy Matrix Formulations",
+      "role_category": "QUANTITATIVE_SPECIALIST",
+      "tools_and_inputs": [
+        "data/canonical/macro/sector_indices_daily.parquet",
+        "data/canonical/macro/broad_market_daily.parquet",
+        "DuckDB LAG window queries",
+        "RS 1D and 5D divergence calculations"
+      ]
+    },
+    {
+      "domain": "Crude oil, foreign exchange (USD/INR), US 10-year Treasury yields, and Dollar Index",
+      "evaluation_logic": "Base 0.50 risk score with +/-0.15 crude, +/-0.15 USD/INR, +/-0.10 US 10Y stepped additions.",
+      "execution_mode": "DETERMINISTIC_PYTHON",
+      "id": "MACRO_SPECIALIST",
+      "is_critic_audited": true,
+      "name": "Global Macro & Sovereign Yields Specialist",
+      "output_schema": "SpecialistAnalysisOutput (RegimeTilt, macro_risk_score, evidence_records)",
+      "reasoning_engine": "Python Deterministic Scoring Engine",
+      "role_category": "QUANTITATIVE_SPECIALIST",
+      "tools_and_inputs": [
+        "GlobalMacroAdapter (yfinance live / deterministic benchmark replay)",
+        "Step-function heuristic macro scoring rules",
+        "Monotonic point-in-time timestamp filtering"
+      ]
+    },
+    {
+      "domain": "NIFTY 50 constituent participation, advance-decline ratios, heavyweight concentration, and moving average breadth",
+      "evaluation_logic": "NIFTY rally with advance % < 42% triggers Bearish Divergence; advance % >= 65% triggers Broad Expansion.",
+      "execution_mode": "DETERMINISTIC_PYTHON",
+      "id": "BREADTH_SPECIALIST",
+      "is_critic_audited": true,
+      "name": "Market Breadth & Participation Specialist",
+      "output_schema": "SpecialistAnalysisOutput (RegimeTilt, adv_pct, cov_pct, ad_ratio, moving_averages)",
+      "reasoning_engine": "DuckDB Analytical Engine",
+      "role_category": "QUANTITATIVE_SPECIALIST",
+      "tools_and_inputs": [
+        "data/canonical/prices/stock_daily.parquet",
+        "Constituent tracked equities catalog",
+        "DuckDB rolling 20/50/200 DMA window functions",
+        "Top-5 heavyweight concentration divergence"
+      ]
+    },
+    {
+      "domain": "FII/DII net cash flow absorption, index futures open interest, and participant long-short ratios",
+      "evaluation_logic": "FII Long Share < 25.0% triggers Contrarian Short-Squeeze Alert; Net institutional flow absorption triggers positioning bias.",
+      "execution_mode": "DETERMINISTIC_PYTHON",
+      "id": "INSTITUTIONAL_SPECIALIST",
+      "is_critic_audited": true,
+      "name": "Institutional Flows & Derivatives Specialist",
+      "output_schema": "SpecialistAnalysisOutput (RegimeTilt, fii_long_pct, net_cash_cr, contrarian_squeeze_alert)",
+      "reasoning_engine": "Python Vectorized Accounting Engine",
+      "role_category": "QUANTITATIVE_SPECIALIST",
+      "tools_and_inputs": [
+        "data/canonical/derivatives/participant_oi_daily.parquet",
+        "FiiDiiCashAdapter / Participant OI records",
+        "FII Long Share (L/(L+S)) vs Long-to-Short Ratio (L/S)"
+      ]
+    },
+    {
+      "domain": "Strike-level Call/Put open interest, Max Pain, Call/Put Walls, and ATM straddle implied breakevens",
+      "evaluation_logic": "PCR OI < 0.65 triggers EXTREME_BEARISH_CALL_WALL; PCR OI > 1.40 triggers EXTREME_BULLISH_PUT_WALL.",
+      "execution_mode": "DETERMINISTIC_PYTHON",
+      "id": "OPTIONS_SPECIALIST",
+      "is_critic_audited": true,
+      "name": "NIFTY Options Chain & Volatility Specialist",
+      "output_schema": "SpecialistAnalysisOutput (RegimeTilt, pcr_oi, max_pain, call_wall, put_wall, implied_breakevens)",
+      "reasoning_engine": "Python Numeric Optimization + Parquet Storage",
+      "role_category": "QUANTITATIVE_SPECIALIST",
+      "tools_and_inputs": [
+        "data/canonical/macro/nifty_option_chain.parquet",
+        "NseOptionsAdapter (Calibrated Surface Model / Live F&O)",
+        "calculate_max_pain() cumulative intrinsic optimization"
+      ]
+    },
+    {
+      "domain": "Point-in-Time causality, SHA-256 evidence provenance, arithmetic sanity, and logical consistency",
+      "evaluation_logic": "Rejects any specialist with future lookahead, missing hashes, or contradictory metadata.",
+      "execution_mode": "DETERMINISTIC_PYTHON",
+      "id": "CRITIC_AGENT",
+      "is_critic_audited": false,
+      "name": "Independent Specialist Verification Critic",
+      "output_schema": "Dict[str, SpecialistVerificationResult] (decision: PASS/REVISE/FAIL, confidence, audit_notes)",
+      "reasoning_engine": "Deterministic Rule-Based Verification Suite",
+      "role_category": "GATEKEEPER_AUDITOR",
+      "tools_and_inputs": [
+        "SpecialistCritic.verify_specialists()",
+        "SHA-256 hash match verification",
+        "Timestamp monotonicity and schedule alignment checks"
+      ]
+    },
+    {
+      "domain": "Specialist pipeline coordination, consensus synthesis, and authoritative 10-point briefing generation",
+      "evaluation_logic": "Synthesizes accepted specialist outputs; records minority dissents and flags unverified claims.",
+      "execution_mode": "LANGGRAPH_WORKFLOW",
+      "id": "SYNTHESIS_ORCHESTRATOR",
+      "is_critic_audited": false,
+      "name": "Master Market Intelligence Orchestrator",
+      "output_schema": "MultiSpecialistBriefingReport (consensus_regime, tactical_implications, briefing_points)",
+      "reasoning_engine": "LangGraph StateGraph + Python Consensus Synthesis",
+      "role_category": "SYNTHESIS_COORDINATOR",
+      "tools_and_inputs": [
+        "SpecialistOrchestrator.run_pipeline()",
+        "LangGraph StateGraph workflow engine",
+        "Cross-specialist agreement and disagreement matrix"
+      ]
+    },
+    {
+      "domain": "Multi-factor directional probability forecasting, expected intraday range, and classic floor pivots",
+      "evaluation_logic": "Synthesizes specialist regime scores, trend momentum, and macro headwinds into directional probabilities.",
+      "execution_mode": "DETERMINISTIC_PYTHON",
+      "id": "FORECAST_ENSEMBLE",
+      "is_critic_audited": true,
+      "name": "Multi-Factor NIFTY Forecast Ensemble",
+      "output_schema": "NiftyForecastSnapshot (p_up, p_sideways, p_down, technical_levels, expected_ranges)",
+      "reasoning_engine": "Multi-Factor Heuristic Scoring Engine",
+      "role_category": "FORECAST_ENSEMBLE",
+      "tools_and_inputs": [
+        "NiftyForecastService (Post-close and Pre-open modes)",
+        "Classic Floor Pivot Formulas (P, R1, S1)",
+        "Empirical Daily Average True Range (ATR) bounds"
+      ]
+    }
+  ],
+  "evaluation_as_of": "2026-11-17",
+  "generated_at": "2026-11-17T19:55:51.945881+05:30",
+  "market_data_as_of": "2026-11-17",
+  "market_date": "2026-11-17",
+  "published_at": "2026-11-17T19:55:50.454971+05:30",
+  "recent_executions": [],
+  "schema_version": "1.0",
+  "source_freshness": "CURRENT",
+  "total_registered_agents": 8
+}

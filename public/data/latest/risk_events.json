@@ -1,18 +1,22 @@
 {
   "data_freshness_warnings": [],
+  "evaluation_as_of": "2026-11-17",
   "gamma_flip_levels": {
-    "call_wall_resistance": 25000.0,
-    "max_pain": 24850.0,
-    "put_wall_support": 24500.0
+    "call_wall_resistance": 25500.0,
+    "max_pain": 25400.0,
+    "put_wall_support": 25000.0
   },
-  "generated_at": "2026-11-16T18:34:12.618518+05:30",
+  "generated_at": "2026-11-17T19:55:50.454971+05:30",
   "institutional_crowding": {
     "alert": "SHORT_CROWDING_SQUEEZE_RISK",
     "fii_long_pct": 21.1
   },
   "macro_risk_level": "MODERATE",
-  "market_date": "2026-11-11",
+  "market_data_as_of": "2026-11-17",
+  "market_date": "2026-11-17",
+  "published_at": "2026-11-17T19:55:50.454971+05:30",
   "schema_version": "1.0",
+  "source_freshness": "CURRENT",
   "upcoming_catalysts": [
     {
       "date": "2026-11-18",
@@ -25,15 +29,15 @@
       "impact": "HIGH"
     },
     {
-      "date": "2026-11-12",
+      "date": "2026-11-18",
       "event": "NSE Weekly Expiry",
       "impact": "MEDIUM"
     }
   ],
   "volatility_monitor": {
     "guideline": "De-risk if India VIX sustains above threshold.",
-    "risk_threshold": 18.6,
-    "vix_level": 17.56,
+    "risk_threshold": 16.5,
+    "vix_level": 15.52,
     "vix_regime": "BENIGN_EXPANSION"
   }
 }

@@ -1,19 +1,24 @@
 {
   "breadth_summary": {
-    "advance_percentage": 32.0,
-    "advances": 16,
+    "advance_percentage": 70.0,
+    "advances": 35,
     "coverage_percentage": 100.0,
-    "declines": 33
+    "declines": 15,
+    "missing": 0,
+    "reconciled_sum": 50,
+    "reconciliation_status": "EXACT",
+    "unchanged": 0,
+    "universe_size": 50
   },
   "data_provenance": {
     "pit_enforced": true,
     "source": "CANONICAL_DUCKDB_AND_EXCHANGE_FEEDS",
     "verification_status": "VERIFIED"
   },
-  "generated_at": "2026-11-16T18:34:12.618518+05:30",
+  "generated_at": "2026-11-16T20:23:56.344509+05:30",
   "headline_regime": {
     "cyclical_defensive_spread": 1.05,
-    "overall_tilt": "DEFENSIVE_ROTATION",
+    "overall_tilt": "RISK_ON",
     "vix_level": 17.56,
     "volatility_regime": "BENIGN_EXPANSION"
   },
@@ -52,20 +57,24 @@
     }
   ],
   "institutional_summary": {
+    "cash_flow_type": "NET_CASH_FLOW",
     "dii_net_cash_cr": -8434.53,
-    "fii_long_ratio_pct": 21.09,
+    "fii_long_ratio_pct": 21.1,
+    "fii_long_share_pct": 21.1,
     "fii_net_cash_cr": 12563.33,
-    "positioning_bias": "BEARISH_DOMINANCE"
+    "positioning_bias": "BEARISH_DOMINANCE",
+    "total_net_cash_cr": 4128.8
   },
   "market_date": "2026-11-11",
-  "overall_takeaway": "1. As-Of Evaluation Date: 2026-11-11 (Generated: 2026-11-16T18:34:12 IST).",
+  "overall_takeaway": "Exposure Bias: AGGRESSIVE_BULLISH. Sector Preference: Focus long setups in NIFTY AUTO; avoid lagging clusters. Key options support anchored at Put Wall 24,500.",
   "schema_version": "1.0",
   "top_drivers_positive": [
-    "Domestic liquidity absorption remains solid with DII net buying at \u20b9-8,434.5 Cr.",
+    "Foreign institutions recorded net cash inflows of \u20b912,563.3 Cr.",
     "Sector leadership firmly anchored in NIFTY AUTO (RS spread +1.05%).",
     "Options Put Wall at 24,500 provides strong systematic downside demand floor."
   ],
   "top_risks_negative": [
+    "Domestic institutions recorded net cash selling of \u20b98,434.5 Cr.",
     "FII Index Futures positioning reflects net short crowding (21.1% longs).",
     "Heavy Call writing concentration at 25,000 forms immediate overhead supply barrier.",
     "Overnight crude & dollar volatility (Brent: $74.20, USD/INR: \u20b984.42)."
