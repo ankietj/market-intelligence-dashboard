@@ -8,31 +8,31 @@
   "data_freshness": {
     "cash_market": "EOD_SETTLEMENT_VERIFIED",
     "derivatives_options": "CALIBRATED_SURFACE_ACTIVE",
-    "evaluation_as_of": "2026-11-17",
-    "generated_at": "2026-11-17T19:55:50.454971+05:30",
+    "evaluation_as_of": "2026-11-18",
+    "generated_at": "2026-11-18T22:25:08.540097+05:30",
     "global_macro": "AS_OF_DATE_ALIGNED",
     "institutional_flows": "VERIFIED_CANONICAL",
-    "market_data_as_of": "2026-11-17",
+    "market_data_as_of": "2026-11-18",
     "source_freshness": "CURRENT"
   },
   "data_quality_warnings": [],
-  "evaluation_as_of": "2026-11-17",
-  "generated_at": "2026-11-17T19:55:50.454971+05:30",
-  "last_successful_refresh": "2026-11-17T19:55:50.454971+05:30",
-  "market_data_as_of": "2026-11-17",
-  "market_date": "2026-11-17",
+  "evaluation_as_of": "2026-11-18",
+  "generated_at": "2026-11-18T22:25:08.540097+05:30",
+  "last_successful_refresh": "2026-11-18T22:25:08.540097+05:30",
+  "market_data_as_of": "2026-11-18",
+  "market_date": "2026-11-18",
   "overall_system_status": "HEALTHY",
   "pipeline_stages": {
     "forecast_ensemble": {
-      "snapshot_hash": "20352cf3247c78f03acfd50efc8b7aa66fbe6d2803133f328acbef1db49f2145",
+      "snapshot_hash": "f53d06aa0fa3a82d0984cfb99268805d4883c5c4e170c6837a3a1f491baf91b0",
       "snapshot_type": "POST_CLOSE",
       "status": "COMPLETED"
     },
     "pre_open_pipeline": {
       "execution_mode": "DETERMINISTIC_OFFLINE_VERIFIED",
-      "report_hash": "481830fcd81c60b4ecba99025f8cef8a356c269bfd4cdea47a2aa1af00a495c2",
+      "report_hash": "b458bb4f54ac2078e44a56da6aeb462b5b936cedeb390968412836c129364522",
       "status": "COMPLETED",
-      "target_session": "2026-11-18"
+      "target_session": "2026-11-19"
     },
     "public_snapshot_exporter": {
       "sanitization_verified": true,
@@ -47,8 +47,8 @@
       "status": "COMPLETED"
     }
   },
-  "published_at": "2026-11-17T19:55:50.454971+05:30",
+  "published_at": "2026-11-18T22:25:08.540097+05:30",
   "schema_version": "1.0",
   "source_freshness": "CURRENT",
-  "target_session_date": "2026-11-18"
+  "target_session_date": "2026-11-19"
 }

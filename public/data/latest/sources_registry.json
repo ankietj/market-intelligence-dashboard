@@ -1,9 +1,9 @@
 {
-  "evaluation_as_of": "2026-11-17",
-  "generated_at": "2026-11-17T19:55:51.941880+05:30",
-  "market_data_as_of": "2026-11-17",
-  "market_date": "2026-11-17",
-  "published_at": "2026-11-17T19:55:50.454971+05:30",
+  "evaluation_as_of": "2026-11-18",
+  "generated_at": "2026-11-18T22:25:10.425711+05:30",
+  "market_data_as_of": "2026-11-18",
+  "market_date": "2026-11-18",
+  "published_at": "2026-11-18T22:25:08.540097+05:30",
   "schema_version": "1.0",
   "source_freshness": "CURRENT",
   "sources": [

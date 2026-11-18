@@ -1,0 +1,81 @@
+{
+  "authenticity_status": {
+    "broad_market": "OFFICIAL_NSE_INDEX_BHAVCOPY",
+    "delivery": "OFFICIAL_NSE_SEC_BHAVDATA_FULL",
+    "fii_dii_cash": "OFFICIAL_NSE_EXCHANGE_API",
+    "india_vix": "OFFICIAL_NSE_INDEX_BHAVCOPY",
+    "options_derivatives": "CALIBRATED_EMPIRICAL_SURFACE_MODEL",
+    "stock_equities": "OFFICIAL_NSE_SEC_BHAVDATA_FULL"
+  },
+  "coverage": {
+    "nifty_constituents": 50,
+    "options_strikes": 41,
+    "sectors": 19
+  },
+  "coverage_status": {
+    "broad_market_indices": "29_VERIFIED",
+    "delivery_bhavcopy": "CURRENT",
+    "fii_dii_cash": "CURRENT",
+    "india_vix": "CURRENT",
+    "nifty_constituents": "50/50_EXACT",
+    "options_derivatives": "CURRENT",
+    "sector_indices": "19_TRACKED_VERIFIED"
+  },
+  "data_as_of": "2026-11-18",
+  "data_quality": {
+    "all_checks_passed": true,
+    "critic_audited": true,
+    "freshness_verified": true,
+    "sanitization_verified": true
+  },
+  "evaluation_as_of": "2026-11-18",
+  "file_hashes": {
+    "agent_registry.json": "5aad1ec5f15a381de7172b7c8e740578f8ab7adc1c972b81dbe9fa91f45e19c5",
+    "daily_briefing.json": "40d09f8bf41bee962f4a8eba45f008cf537824e64ee867f56ca23e7997b769a0",
+    "derivatives.json": "97f7a3f5ae93660e624ce1986c0f54af84115c64f89d31260362ab8b1169c2fc",
+    "global_macro.json": "e296689e8d8cf8693b2bade9fa89e0c2c97c1ebfc881de6fce1ed8e7f2fbadb8",
+    "institutional_flows.json": "22899568652ee2d0dbe73366ce1e70f374dba827cd639eee71dcfadc70d25054",
+    "market_breadth.json": "0fb0f411727f0a36f9a08b28571336403fca51ea3460ab7cbd6c1c61dc662a4a",
+    "market_overview.json": "036aa6db4508f1659409affd3049c9c9863d1ac54c7b05ef33869f5e48ff41ac",
+    "nifty_forecast.json": "856732cfa00e0525d516627a8068201eec1359b4a3d48340b266c8bd0f875567",
+    "operational_status.json": "a3f0f8332728641ffcd677c969cca0f15b6c7827205a88a3247394e0a5459545",
+    "pre_open.json": "2e0624871ed542283b3ac28a338b342290d65430aa393b8027575a753236689c",
+    "risk_events.json": "3c0534c957226619b0299370e4485232f33f030f9a12e912406c3483029c95c1",
+    "sector_rotation.json": "f26994686a01be96a92c42d8e9983d5e695dfc6ebd9202b8b0df0ae5aa122570",
+    "sources_registry.json": "f9dd6bc8a81856525dbe2f7a9f43eb38e5d97291508566afb262645ae77bd495",
+    "stock_leadership.json": "191da50e7fd221dfb31c807c6dc58f81c17225a40d77a3c37539e35e2c3fd3d7"
+  },
+  "generated_at": "2026-11-18T22:25:08.540097+05:30",
+  "market_data_as_of": "2026-11-18",
+  "market_date": "2026-11-18",
+  "publication_type": "MANUAL",
+  "published_at": "2026-11-18T22:25:08.540097+05:30",
+  "schema_version": "1.1.0",
+  "sections": {
+    "agent_registry": "data/latest/agent_registry.json",
+    "daily_briefing": "data/latest/daily_briefing.json",
+    "derivatives": "data/latest/derivatives.json",
+    "global_macro": "data/latest/global_macro.json",
+    "institutional_flows": "data/latest/institutional_flows.json",
+    "market_breadth": "data/latest/market_breadth.json",
+    "market_overview": "data/latest/market_overview.json",
+    "nifty_forecast": "data/latest/nifty_forecast.json",
+    "operational_status": "data/latest/operational_status.json",
+    "pre_open": "data/latest/pre_open.json",
+    "risk_events": "data/latest/risk_events.json",
+    "sector_rotation": "data/latest/sector_rotation.json",
+    "sources_registry": "data/latest/sources_registry.json",
+    "stock_leadership": "data/latest/stock_leadership.json"
+  },
+  "snapshot_id": "SNAP-20261118-222508",
+  "source_freshness": "CURRENT",
+  "source_status": {
+    "broad_market": "VERIFIED",
+    "forecast_ensemble": "VERIFIED",
+    "global_macro": "VERIFIED",
+    "institutional_flow": "VERIFIED",
+    "options_derivatives": "VERIFIED",
+    "specialist_agents": "VERIFIED"
+  },
+  "target_session_date": "2026-11-19"
+}

@@ -21,35 +21,35 @@
     "options_derivatives": "CURRENT",
     "sector_indices": "19_TRACKED_VERIFIED"
   },
-  "data_as_of": "2026-11-17",
+  "data_as_of": "2026-11-18",
   "data_quality": {
     "all_checks_passed": true,
     "critic_audited": true,
     "freshness_verified": true,
     "sanitization_verified": true
   },
-  "evaluation_as_of": "2026-11-17",
+  "evaluation_as_of": "2026-11-18",
   "file_hashes": {
-    "agent_registry.json": "aac292c5b40415aa8f5b11662b520f4c8b941b6d749f23886b56e52343f21f61",
-    "daily_briefing.json": "92eff96b164804c84435c235f2743a8c1f3c7fab2d45b4eb3de6931e6521fad1",
-    "derivatives.json": "0381291379127ee939a5c50c987f91d66e9b47a38709011259cdde66324e263e",
-    "global_macro.json": "242eeb654de2ab70012edb4f6b7f2ab8c10ec3c32a7131d28f8ae0f3ea7cf007",
-    "institutional_flows.json": "addfe1ab0b3ed135d9dd37915e6bcefee2535f2a92ee6b143deca64e761c4baa",
-    "market_breadth.json": "d9fb663897bc48cc330b2993d5c623e4be68ad401e7b9747132605cdb7ce7dba",
-    "market_overview.json": "366dee89ddf33ab4c7fc71b003f6834c1cabdcdba099c26b9219be69e522f70f",
-    "nifty_forecast.json": "ef59e5414bc6b026850214215cf55505fc3d9935ba8969c7a3ce19e8c11ebc58",
-    "operational_status.json": "dbc9a8e555e1c51f312c0bbf36d50ac667d14be011e8dda251cfa0a2ac614c18",
-    "pre_open.json": "8c1d8e60489a83f32d23a225cf3dc6bcb6fb838e5e65eae9b41ddee9311f235e",
-    "risk_events.json": "a6f93865ad7bd6ce3b10bf538c8f208661c83be09b0b928c523d82626d3395c5",
-    "sector_rotation.json": "c5934c4696456dbaf9de331cddc53626890bc03bc2c352527e76cb8eafc2ec2b",
-    "sources_registry.json": "ac429074055584d5fd9c3fe8d09f95349ea1b7f6bc3aeeddd5e2be79effe29c5",
-    "stock_leadership.json": "f94e079091722074bee8dc05442704f00547c67d7da1a7f0030e81b33e4d6444"
+    "agent_registry.json": "5aad1ec5f15a381de7172b7c8e740578f8ab7adc1c972b81dbe9fa91f45e19c5",
+    "daily_briefing.json": "40d09f8bf41bee962f4a8eba45f008cf537824e64ee867f56ca23e7997b769a0",
+    "derivatives.json": "97f7a3f5ae93660e624ce1986c0f54af84115c64f89d31260362ab8b1169c2fc",
+    "global_macro.json": "e296689e8d8cf8693b2bade9fa89e0c2c97c1ebfc881de6fce1ed8e7f2fbadb8",
+    "institutional_flows.json": "22899568652ee2d0dbe73366ce1e70f374dba827cd639eee71dcfadc70d25054",
+    "market_breadth.json": "0fb0f411727f0a36f9a08b28571336403fca51ea3460ab7cbd6c1c61dc662a4a",
+    "market_overview.json": "036aa6db4508f1659409affd3049c9c9863d1ac54c7b05ef33869f5e48ff41ac",
+    "nifty_forecast.json": "856732cfa00e0525d516627a8068201eec1359b4a3d48340b266c8bd0f875567",
+    "operational_status.json": "a3f0f8332728641ffcd677c969cca0f15b6c7827205a88a3247394e0a5459545",
+    "pre_open.json": "2e0624871ed542283b3ac28a338b342290d65430aa393b8027575a753236689c",
+    "risk_events.json": "3c0534c957226619b0299370e4485232f33f030f9a12e912406c3483029c95c1",
+    "sector_rotation.json": "f26994686a01be96a92c42d8e9983d5e695dfc6ebd9202b8b0df0ae5aa122570",
+    "sources_registry.json": "f9dd6bc8a81856525dbe2f7a9f43eb38e5d97291508566afb262645ae77bd495",
+    "stock_leadership.json": "191da50e7fd221dfb31c807c6dc58f81c17225a40d77a3c37539e35e2c3fd3d7"
   },
-  "generated_at": "2026-11-17T19:55:50.454971+05:30",
-  "market_data_as_of": "2026-11-17",
-  "market_date": "2026-11-17",
+  "generated_at": "2026-11-18T22:25:08.540097+05:30",
+  "market_data_as_of": "2026-11-18",
+  "market_date": "2026-11-18",
   "publication_type": "MANUAL",
-  "published_at": "2026-11-17T19:55:50.454971+05:30",
+  "published_at": "2026-11-18T22:25:08.540097+05:30",
   "schema_version": "1.1.0",
   "sections": {
     "agent_registry": "data/latest/agent_registry.json",
@@ -67,7 +67,7 @@
     "sources_registry": "data/latest/sources_registry.json",
     "stock_leadership": "data/latest/stock_leadership.json"
   },
-  "snapshot_id": "SNAP-20261117-195550",
+  "snapshot_id": "SNAP-20261118-222508",
   "source_freshness": "CURRENT",
   "source_status": {
     "broad_market": "VERIFIED",
@@ -77,5 +77,5 @@
     "options_derivatives": "VERIFIED",
     "specialist_agents": "VERIFIED"
   },
-  "target_session_date": "2026-11-18"
+  "target_session_date": "2026-11-19"
 }

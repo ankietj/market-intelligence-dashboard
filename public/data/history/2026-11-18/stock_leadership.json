@@ -1,0 +1,97 @@
+{
+  "evaluation_as_of": "2026-11-18",
+  "generated_at": "2026-11-18T22:25:08.540097+05:30",
+  "market_data_as_of": "2026-11-18",
+  "market_date": "2026-11-18",
+  "published_at": "2026-11-18T22:25:08.540097+05:30",
+  "schema_version": "1.0",
+  "source_freshness": "CURRENT",
+  "top_gainers": [
+    {
+      "change_pct": 8.0,
+      "close": 1022.85,
+      "name": "MAXHEALTH",
+      "symbol": "MAXHEALTH",
+      "turnover_cr": 203.32
+    },
+    {
+      "change_pct": 6.25,
+      "close": 1360.0,
+      "name": "AXISBANK",
+      "symbol": "AXISBANK",
+      "turnover_cr": 900.73
+    },
+    {
+      "change_pct": 3.47,
+      "close": 1130.9,
+      "name": "TATACONSUM",
+      "symbol": "TATACONSUM",
+      "turnover_cr": 145.34
+    },
+    {
+      "change_pct": 2.38,
+      "close": 1135.0,
+      "name": "SBIN",
+      "symbol": "SBIN",
+      "turnover_cr": 3983.25
+    },
+    {
+      "change_pct": 1.81,
+      "close": 1417.0,
+      "name": "CIPLA",
+      "symbol": "CIPLA",
+      "turnover_cr": 412.82
+    }
+  ],
+  "top_losers": [
+    {
+      "change_pct": -5.43,
+      "close": 179.0,
+      "name": "TATASTEEL",
+      "symbol": "TATASTEEL",
+      "turnover_cr": 311.73
+    },
+    {
+      "change_pct": -5.3,
+      "close": 4648.1,
+      "name": "TITAN",
+      "symbol": "TITAN",
+      "turnover_cr": 625.68
+    },
+    {
+      "change_pct": -3.75,
+      "close": 2379.5,
+      "name": "TCS",
+      "symbol": "TCS",
+      "turnover_cr": 328.73
+    },
+    {
+      "change_pct": -3.61,
+      "close": 1344.7,
+      "name": "HCLTECH",
+      "symbol": "HCLTECH",
+      "turnover_cr": 226.33
+    },
+    {
+      "change_pct": -2.99,
+      "close": 900.0,
+      "name": "HINDALCO",
+      "symbol": "HINDALCO",
+      "turnover_cr": 701.98
+    }
+  ],
+  "volume_breakouts": [
+    {
+      "breakout_level": 2700.0,
+      "relative_volume": 2.2,
+      "status": "CONFIRMED",
+      "symbol": "ADANIENT"
+    },
+    {
+      "breakout_level": 1350.0,
+      "relative_volume": 1.8,
+      "status": "CONFIRMED",
+      "symbol": "AXISBANK"
+    }
+  ]
+}

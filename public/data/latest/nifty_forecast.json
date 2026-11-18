@@ -1,60 +1,60 @@
 {
-  "as_of_session_date": "2026-11-17",
+  "as_of_session_date": "2026-11-18",
   "directional_probability": {
-    "bias": "NEUTRAL",
+    "bias": "BEARISH",
     "calibration_label": "Heuristic Rule Score (Uncalibrated)",
     "is_statistically_calibrated": false,
-    "p_down": 0.3333,
+    "p_down": 0.6033,
     "p_sideways": 0.3334,
-    "p_up": 0.3333,
-    "rule_score": 0.33
+    "p_up": 0.0633,
+    "rule_score": 0.6
   },
-  "evaluation_as_of": "2026-11-17",
+  "evaluation_as_of": "2026-11-18",
   "expected_range": {
-    "atr_14": 317.87,
+    "atr_14": 249.0,
     "confidence_interval": "68% (1-sigma empirical Daily ATR)",
-    "high": 25532.4,
-    "low": 25242.4,
-    "range_points": 290.0,
+    "high": 25322.33,
+    "low": 25073.95,
+    "range_points": 248.38,
     "range_type": "STATISTICAL_ATR_EXPECTED_RANGE"
   },
-  "generated_at": "2026-11-17T19:55:50.454971+05:30",
-  "market_data_as_of": "2026-11-17",
-  "market_date": "2026-11-17",
+  "generated_at": "2026-11-18T22:25:08.540097+05:30",
+  "market_data_as_of": "2026-11-18",
+  "market_date": "2026-11-18",
   "model_metadata": {
     "calibration_disclosure": "Directional probabilities are derived from an uncalibrated multi-factor heuristic rule scoring system and should not be interpreted as empirical frequentist or Bayesian probabilities.",
     "calibration_status": "UNCALIBRATED_HEURISTIC_RULE_SCORE",
     "is_statistically_calibrated": false,
     "model_id": "HeuristicMultiFactor_v1"
   },
-  "published_at": "2026-11-17T19:55:50.454971+05:30",
-  "reference_close": 25387.4,
+  "published_at": "2026-11-18T22:25:08.540097+05:30",
+  "reference_close": 25227.95,
   "scenarios": {
-    "bearish_target": 25269.35,
-    "bullish_target": 25503.4,
-    "invalidation_level": 25151.3
+    "bearish_target": 25116.24,
+    "bullish_target": 25365.24,
+    "invalidation_level": 25004.52
   },
   "schema_version": "1.0",
-  "snapshot_hash": "20352cf3247c78f03acfd50efc8b7aa66fbe6d2803133f328acbef1db49f2145",
+  "snapshot_hash": "f53d06aa0fa3a82d0984cfb99268805d4883c5c4e170c6837a3a1f491baf91b0",
   "snapshot_type": "POST_CLOSE",
   "source_freshness": "CURRENT",
-  "target_session_date": "2026-11-18",
+  "target_session_date": "2026-11-19",
   "technical_levels": {
     "classic_pivots": {
-      "pivot": 25385.35,
-      "r1": 25503.4,
-      "r2": 25619.4,
-      "s1": 25269.35,
-      "s2": 25151.3
+      "pivot": 25253.52,
+      "r1": 25365.24,
+      "r2": 25502.52,
+      "s1": 25116.24,
+      "s2": 25004.52
     },
-    "master_pivot": 25385.35,
+    "master_pivot": 25253.52,
     "resistance_zone": [
-      25503.4,
-      25705.27
+      25365.24,
+      25476.95
     ],
     "support_zone": [
-      25069.53,
-      25269.35
+      24978.95,
+      25116.24
     ]
   }
 }

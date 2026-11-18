@@ -1,10 +1,10 @@
 {
   "cash_market": {
-    "dii_net_cr": 196.93,
-    "fii_net_cr": 4195.38,
+    "dii_net_cr": -3159.9,
+    "fii_net_cr": 5866.78,
     "flow_definition": "Net cash purchases minus sales (Buy - Sell); turnover refers to gross traded value.",
     "flow_type": "NET_CASH_FLOW",
-    "total_institutional_net_cr": 4392.31,
+    "total_institutional_net_cr": 2706.88,
     "unit": "INR Crores"
   },
   "contrarian_short_squeeze_alert": {
@@ -30,16 +30,16 @@
     "long_to_short_formula": "Long / Short",
     "positioning_bias": "BEARISH_DOMINANCE"
   },
-  "evaluation_as_of": "2026-11-17",
-  "generated_at": "2026-11-17T19:55:50.454971+05:30",
-  "market_data_as_of": "2026-11-17",
-  "market_date": "2026-11-17",
-  "published_at": "2026-11-17T19:55:50.454971+05:30",
+  "evaluation_as_of": "2026-11-18",
+  "generated_at": "2026-11-18T22:25:08.540097+05:30",
+  "market_data_as_of": "2026-11-18",
+  "market_date": "2026-11-18",
+  "published_at": "2026-11-18T22:25:08.540097+05:30",
   "recent_flow_history": [
     {
-      "date": "2026-11-17",
-      "dii_cash": 196.93,
-      "fii_cash": 4195.38
+      "date": "2026-11-18",
+      "dii_cash": -3159.9,
+      "fii_cash": 5866.78
     },
     {
       "date": "2026-11-10",

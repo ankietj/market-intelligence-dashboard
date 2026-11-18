@@ -1,83 +1,83 @@
 {
-  "evaluation_as_of": "2026-11-17",
-  "generated_at": "2026-11-17T19:55:50.454971+05:30",
-  "market_data_as_of": "2026-11-17",
-  "market_date": "2026-11-17",
-  "published_at": "2026-11-17T19:55:50.454971+05:30",
+  "evaluation_as_of": "2026-11-18",
+  "generated_at": "2026-11-18T22:25:08.540097+05:30",
+  "market_data_as_of": "2026-11-18",
+  "market_date": "2026-11-18",
+  "published_at": "2026-11-18T22:25:08.540097+05:30",
   "schema_version": "1.0",
   "source_freshness": "CURRENT",
   "top_gainers": [
     {
-      "change_pct": 3.24,
-      "close": 2745.1,
-      "name": "ADANIENT",
-      "symbol": "ADANIENT",
-      "turnover_cr": 546.67
-    },
-    {
-      "change_pct": 3.01,
-      "close": 7828.0,
-      "name": "EICHERMOT",
-      "symbol": "EICHERMOT",
-      "turnover_cr": 575.79
-    },
-    {
-      "change_pct": 2.08,
-      "close": 1030.9,
+      "change_pct": 8.0,
+      "close": 1022.85,
       "name": "MAXHEALTH",
       "symbol": "MAXHEALTH",
-      "turnover_cr": 610.96
+      "turnover_cr": 203.32
     },
     {
-      "change_pct": 2.02,
-      "close": 2625.0,
-      "name": "ASIANPAINT",
-      "symbol": "ASIANPAINT",
-      "turnover_cr": 373.01
-    },
-    {
-      "change_pct": 1.98,
-      "close": 1369.0,
+      "change_pct": 6.25,
+      "close": 1360.0,
       "name": "AXISBANK",
       "symbol": "AXISBANK",
-      "turnover_cr": 954.65
+      "turnover_cr": 900.73
+    },
+    {
+      "change_pct": 3.47,
+      "close": 1130.9,
+      "name": "TATACONSUM",
+      "symbol": "TATACONSUM",
+      "turnover_cr": 145.34
+    },
+    {
+      "change_pct": 2.38,
+      "close": 1135.0,
+      "name": "SBIN",
+      "symbol": "SBIN",
+      "turnover_cr": 3983.25
+    },
+    {
+      "change_pct": 1.81,
+      "close": 1417.0,
+      "name": "CIPLA",
+      "symbol": "CIPLA",
+      "turnover_cr": 412.82
     }
   ],
   "top_losers": [
     {
-      "change_pct": -2.09,
-      "close": 1355.7,
+      "change_pct": -5.43,
+      "close": 179.0,
+      "name": "TATASTEEL",
+      "symbol": "TATASTEEL",
+      "turnover_cr": 311.73
+    },
+    {
+      "change_pct": -5.3,
+      "close": 4648.1,
+      "name": "TITAN",
+      "symbol": "TITAN",
+      "turnover_cr": 625.68
+    },
+    {
+      "change_pct": -3.75,
+      "close": 2379.5,
+      "name": "TCS",
+      "symbol": "TCS",
+      "turnover_cr": 328.73
+    },
+    {
+      "change_pct": -3.61,
+      "close": 1344.7,
       "name": "HCLTECH",
       "symbol": "HCLTECH",
-      "turnover_cr": 399.8
+      "turnover_cr": 226.33
     },
     {
-      "change_pct": -1.89,
-      "close": 189.89,
-      "name": "WIPRO",
-      "symbol": "WIPRO",
-      "turnover_cr": 319.01
-    },
-    {
-      "change_pct": -1.6,
-      "close": 258.0,
-      "name": "POWERGRID",
-      "symbol": "POWERGRID",
-      "turnover_cr": 282.3
-    },
-    {
-      "change_pct": -1.56,
-      "close": 595.05,
-      "name": "HDFCLIFE",
-      "symbol": "HDFCLIFE",
-      "turnover_cr": 113.54
-    },
-    {
-      "change_pct": -1.53,
-      "close": 223.52,
-      "name": "ONGC",
-      "symbol": "ONGC",
-      "turnover_cr": 235.11
+      "change_pct": -2.99,
+      "close": 900.0,
+      "name": "HINDALCO",
+      "symbol": "HINDALCO",
+      "turnover_cr": 701.98
     }
   ],
   "volume_breakouts": [
