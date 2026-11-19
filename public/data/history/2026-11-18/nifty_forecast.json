@@ -4,21 +4,21 @@
     "bias": "BEARISH",
     "calibration_label": "Heuristic Rule Score (Uncalibrated)",
     "is_statistically_calibrated": false,
-    "p_down": 0.6033,
+    "p_down": 0.5233,
     "p_sideways": 0.3334,
-    "p_up": 0.0633,
-    "rule_score": 0.6
+    "p_up": 0.1433,
+    "rule_score": 0.52
   },
   "evaluation_as_of": "2026-11-18",
   "expected_range": {
-    "atr_14": 249.0,
+    "atr_14": 315.78,
     "confidence_interval": "68% (1-sigma empirical Daily ATR)",
-    "high": 25322.33,
-    "low": 25073.95,
-    "range_points": 248.38,
+    "high": 25337.56,
+    "low": 25049.12,
+    "range_points": 288.44,
     "range_type": "STATISTICAL_ATR_EXPECTED_RANGE"
   },
-  "generated_at": "2026-11-18T22:25:08.540097+05:30",
+  "generated_at": "2026-11-19T11:10:27.377657+05:30",
   "market_data_as_of": "2026-11-18",
   "market_date": "2026-11-18",
   "model_metadata": {
@@ -27,7 +27,7 @@
     "is_statistically_calibrated": false,
     "model_id": "HeuristicMultiFactor_v1"
   },
-  "published_at": "2026-11-18T22:25:08.540097+05:30",
+  "published_at": "2026-11-19T11:10:27.377657+05:30",
   "reference_close": 25227.95,
   "scenarios": {
     "bearish_target": 25116.24,
@@ -35,7 +35,7 @@
     "invalidation_level": 25004.52
   },
   "schema_version": "1.0",
-  "snapshot_hash": "f53d06aa0fa3a82d0984cfb99268805d4883c5c4e170c6837a3a1f491baf91b0",
+  "snapshot_hash": "08075bb54d9eee6ec6d3062a8501e4d12d4b729640293cfe50f9b713a5119abe",
   "snapshot_type": "POST_CLOSE",
   "source_freshness": "CURRENT",
   "target_session_date": "2026-11-19",
@@ -50,10 +50,10 @@
     "master_pivot": 25253.52,
     "resistance_zone": [
       25365.24,
-      25476.95
+      25543.73
     ],
     "support_zone": [
-      24978.95,
+      24912.17,
       25116.24
     ]
   }

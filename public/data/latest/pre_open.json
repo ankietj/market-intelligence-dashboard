@@ -1,31 +1,31 @@
 {
   "auction_action_rules": [
-    "FLAT OPEN EXECUTION: Expected open at ~25240.5 (+12.5 pts). Market is opening near previous close balance.",
-    "Directional bias is BEARISH. Monitor whether 25253.5 acts as support or resistance.",
+    "FLAT OPEN EXECUTION: Expected open at ~25526.8 (+12.5 pts). Market is opening near previous close balance.",
+    "Directional bias is NEUTRAL. Monitor whether 25377.8 acts as support or resistance.",
     "Focus trades on relative strength leader sectors identified in latest EOD specialist intelligence.",
-    "OPTIONS BOUNDARIES: Call Wall resistance at 25,500 | Put Wall support at 25,000 | PCR: 1.06 | Max Pain: 25,250."
+    "OPTIONS BOUNDARIES: Call Wall resistance at 26,000 | Put Wall support at 25,500 | PCR: 0.89 | Max Pain: 25,500."
   ],
-  "auction_bracket_high": 25270.45,
-  "auction_bracket_low": 25210.45,
+  "auction_bracket_high": 25556.8,
+  "auction_bracket_low": 25496.8,
   "derivatives_boundaries": {
-    "call_wall_strike": 25500.0,
-    "options_max_pain": 25250.0,
-    "options_pcr": 1.059,
-    "put_wall_strike": 25000.0
+    "call_wall_strike": 26000.0,
+    "options_max_pain": 25500.0,
+    "options_pcr": 0.893,
+    "put_wall_strike": 25500.0
   },
-  "evaluation_as_of": "2026-11-18",
-  "expected_open": 25240.45,
+  "evaluation_as_of": "2026-11-19",
+  "expected_open": 25526.8,
   "gap_classification": "FLAT",
-  "generated_at": "2026-11-18T22:25:08.540097+05:30",
-  "key_inflection_level": 25253.52,
+  "generated_at": "2026-11-19T20:01:04.786592+05:30",
+  "key_inflection_level": 25377.8,
   "macro_headwind_level": "MODERATE",
-  "market_data_as_of": "2026-11-18",
-  "market_date": "2026-11-18",
+  "market_data_as_of": "2026-11-19",
+  "market_date": "2026-11-19",
   "overnight_gap_points": 12.5,
-  "published_at": "2026-11-18T22:25:08.540097+05:30",
-  "report_hash": "b458bb4f54ac2078e44a56da6aeb462b5b936cedeb390968412836c129364522",
+  "published_at": "2026-11-19T20:01:04.786592+05:30",
+  "report_hash": "c4678d37cc7d2442ec4eca6a14b4afd31a620bbab4604c19724b172ab37037ba",
   "schema_version": "1.0",
   "snapshot_type": "PRE_OPEN",
   "source_freshness": "CURRENT",
-  "target_session_date": "2026-11-19"
+  "target_session_date": "2026-11-20"
 }

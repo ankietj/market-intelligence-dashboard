@@ -1,0 +1,76 @@
+{
+  "evaluation_as_of": "2026-11-19",
+  "generated_at": "2026-11-19T20:01:04.786592+05:30",
+  "global_indices": [
+    {
+      "change_pct": 0.42,
+      "name": "S&P 500",
+      "region": "US",
+      "status": "CLOSED"
+    },
+    {
+      "change_pct": 0.65,
+      "name": "Nasdaq 100",
+      "region": "US",
+      "status": "CLOSED"
+    },
+    {
+      "change_pct": 0.15,
+      "name": "FTSE 100",
+      "region": "Europe",
+      "status": "CLOSED"
+    },
+    {
+      "change_pct": 0.88,
+      "name": "Nikkei 225",
+      "region": "Asia",
+      "status": "ACTIVE"
+    },
+    {
+      "change_pct": -0.25,
+      "name": "Hang Seng",
+      "region": "Asia",
+      "status": "ACTIVE"
+    }
+  ],
+  "headwind_level": "MODERATE",
+  "indicators": {
+    "brent_crude": {
+      "change_1d_pct": -0.45,
+      "price_usd": 74.2,
+      "source": "COMMODITY_EXCHANGE",
+      "unit": "USD/bbl"
+    },
+    "dxy_index": {
+      "change_1d_pct": -0.12,
+      "level": 104.85,
+      "source": "ICE",
+      "unit": "Points"
+    },
+    "gift_nifty_proxy": {
+      "disclaimer": "GIFT Nifty implied spread is derived from observable international benchmarks prior to NSE auction.",
+      "implied_spread_points": 12.5,
+      "methodology": "Proxy derivation from international index futures and currency adjustments",
+      "unit": "Index Points"
+    },
+    "us_10y_yield": {
+      "change_1d_bps": -1.5,
+      "source": "US_TREASURY",
+      "unit": "%",
+      "yield_pct": 4.42
+    },
+    "usd_inr": {
+      "change_1d_pct": 0.04,
+      "rate": 84.42,
+      "source": "FX_INTERBANK",
+      "unit": "INR"
+    }
+  },
+  "macro_risk_score": 0.45,
+  "macro_risk_tilt": "NEUTRAL",
+  "market_data_as_of": "2026-11-19",
+  "market_date": "2026-11-19",
+  "published_at": "2026-11-19T20:01:04.786592+05:30",
+  "schema_version": "1.0",
+  "source_freshness": "CURRENT"
+}

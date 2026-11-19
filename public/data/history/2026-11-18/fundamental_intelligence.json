@@ -1,0 +1,1135 @@
+{
+  "authenticity_tier_status": {
+    "governance_verification": "OFFICIAL_NSE_SHAREHOLDING_PATTERN_PARQUET",
+    "quarantined_datasets": [
+      "quarterly_financials_ind_as.parquet",
+      "bse_xbrl_financial_statements"
+    ],
+    "tier_1_verified_primary": "UNAVAILABLE_QUARANTINED",
+    "tier_2_verified_exchange": "OFFICIAL_NSE_SHAREHOLDING_AND_PRICES",
+    "tier_3_verified_secondary": "OFFICIAL_NSE_RESULTS_METADATA"
+  },
+  "candidates": [
+    {
+      "canonical_sector": "generic",
+      "company_name": "Greaves Cotton Limited",
+      "disagreement_detail": "Score not computed \u2014 insufficient data.",
+      "fundamental": {
+        "alignment_rationale": "Insufficient fundamental data to assess alignment.",
+        "as_of_date": "2026-11-18",
+        "assessment_id": "252846b2-5f2f-4677-99ed-1ab2db7edee7",
+        "authenticity_summary": "VERIFIED_SECONDARY",
+        "balance_sheet": {
+          "current_ratio": null,
+          "is_net_cash": null,
+          "limitations": [],
+          "net_debt_to_ebitda": null,
+          "status": "INSUFFICIENT_DATA"
+        },
+        "business_quality": {
+          "ebitda_margin_pct": null,
+          "limitations": [
+            "Fewer than 2 periods with revenue data available."
+          ],
+          "pat_cagr_pct": null,
+          "revenue_cagr_pct": null,
+          "roce_pct": null,
+          "sector_note": "",
+          "status": "INSUFFICIENT_DATA"
+        },
+        "cache_expires_at": "2026-12-19T05:38:39.741276+00:00",
+        "canonical_sector": "generic",
+        "company_name": "Greaves Cotton Limited",
+        "composite_score": null,
+        "created_at": "2026-11-19T05:38:39.741276+00:00",
+        "earnings_quality": {
+          "accrual_ratio": null,
+          "cfo_to_pat_ratio": null,
+          "fcf_margin_pct": null,
+          "forensic_flags": [],
+          "limitations": [
+            "No period data available."
+          ],
+          "status": "INSUFFICIENT_DATA"
+        },
+        "evidence": {
+          "coverage_pct": 50.0,
+          "data_confidence": "MODERATE",
+          "intake_gate_status": "PASS_WITH_WARNINGS",
+          "known_limitations": [
+            "Quarterly financial statement data (quarterly_financials_ind_as) is QUARANTINED and cannot be used in authentic assessments. Financial ratios will show INSUFFICIENT_DATA. This is intentional \u2014 not a system error."
+          ],
+          "metrics_missing": []
+        },
+        "governance": {
+          "governance_veto": false,
+          "limitations": [
+            "Quarterly financial statement data (quarterly_financials_ind_as) is QUARANTINED and cannot be used in authentic assessments. Financial ratios will show INSUFFICIENT_DATA. This is intentional \u2014 not a system error."
+          ],
+          "material_events": [],
+          "promoter_holding_pct": 55.77,
+          "promoter_pledge_pct": null,
+          "status": "AVAILABLE"
+        },
+        "governance_veto": false,
+        "governance_veto_reason": "",
+        "is_investable": false,
+        "isin": "INE224A01026",
+        "missing_evidence": "Quarterly financial statement data (quarterly_financials_ind_as) is QUARANTINED and cannot be used in authentic assessments. Financial ratios will show INSUFFICIENT_DATA. This is intentional \u2014 not a system error.",
+        "schema_version": "1.0",
+        "score_coverage_pct": 0.0,
+        "score_grade": null,
+        "score_indicative_only": true,
+        "score_suppressed_by_gate": false,
+        "sector_key": "generic",
+        "security_id": "SEC_INE224A01026",
+        "signal_alignment": "INSUFFICIENT_DATA",
+        "status": "PARTIAL",
+        "strategy_id": "VOLUME_BREAKOUT_V1",
+        "strategy_signal_date": "2026-11-18",
+        "thesis_risks": "Cannot assess risks without fundamental data.",
+        "thesis_support": "Fundamental data insufficient for thesis support.",
+        "ticker": "GREAVESCOT",
+        "valuation": {
+          "ev_ebitda_x": null,
+          "limitations": [],
+          "pb_x": null,
+          "pe_x": null,
+          "sector_note": "",
+          "status": "AVAILABLE"
+        }
+      },
+      "fundamental_status": "PARTIAL",
+      "governance_veto": false,
+      "governance_veto_reason": "",
+      "is_investable": false,
+      "isin": "INE224A01026",
+      "missing_evidence": "Quarterly financial statement data (quarterly_financials_ind_as) is QUARANTINED and cannot be used in authentic assessments. Financial ratios will show INSUFFICIENT_DATA. This is intentional \u2014 not a system error.",
+      "signal_alignment": "INSUFFICIENT_DATA",
+      "signal_date": "2026-11-18",
+      "technical": {
+        "breakout_strength": 6.96,
+        "price_at_signal": 266.63,
+        "relative_volume": 10.96,
+        "rs_percentile": 83.9,
+        "strategy_rank": 1,
+        "strategy_score": 9.5
+      },
+      "technical_fundamental_agreement": "UNKNOWN",
+      "thesis_risks": "Cannot assess risks without fundamental data.",
+      "thesis_support": "Fundamental data insufficient for thesis support.",
+      "ticker": "GREAVESCOT"
+    },
+    {
+      "canonical_sector": "generic",
+      "company_name": "Angel One Limited",
+      "disagreement_detail": "Score not computed \u2014 insufficient data.",
+      "fundamental": {
+        "alignment_rationale": "Insufficient fundamental data to assess alignment.",
+        "as_of_date": "2026-11-18",
+        "assessment_id": "1e42e8e6-aa43-4670-98c9-c8f144284f56",
+        "authenticity_summary": "VERIFIED_SECONDARY",
+        "balance_sheet": {
+          "current_ratio": null,
+          "is_net_cash": null,
+          "limitations": [],
+          "net_debt_to_ebitda": null,
+          "status": "INSUFFICIENT_DATA"
+        },
+        "business_quality": {
+          "ebitda_margin_pct": null,
+          "limitations": [
+            "Fewer than 2 periods with revenue data available."
+          ],
+          "pat_cagr_pct": null,
+          "revenue_cagr_pct": null,
+          "roce_pct": null,
+          "sector_note": "",
+          "status": "INSUFFICIENT_DATA"
+        },
+        "cache_expires_at": "2026-12-19T05:38:39.783213+00:00",
+        "canonical_sector": "generic",
+        "company_name": "Angel One Limited",
+        "composite_score": null,
+        "created_at": "2026-11-19T05:38:39.783213+00:00",
+        "earnings_quality": {
+          "accrual_ratio": null,
+          "cfo_to_pat_ratio": null,
+          "fcf_margin_pct": null,
+          "forensic_flags": [],
+          "limitations": [
+            "No period data available."
+          ],
+          "status": "INSUFFICIENT_DATA"
+        },
+        "evidence": {
+          "coverage_pct": 50.0,
+          "data_confidence": "MODERATE",
+          "intake_gate_status": "PASS_WITH_WARNINGS",
+          "known_limitations": [
+            "Quarterly financial statement data (quarterly_financials_ind_as) is QUARANTINED and cannot be used in authentic assessments. Financial ratios will show INSUFFICIENT_DATA. This is intentional \u2014 not a system error."
+          ],
+          "metrics_missing": []
+        },
+        "governance": {
+          "governance_veto": false,
+          "limitations": [
+            "Quarterly financial statement data (quarterly_financials_ind_as) is QUARANTINED and cannot be used in authentic assessments. Financial ratios will show INSUFFICIENT_DATA. This is intentional \u2014 not a system error."
+          ],
+          "material_events": [],
+          "promoter_holding_pct": 28.55,
+          "promoter_pledge_pct": null,
+          "status": "AVAILABLE"
+        },
+        "governance_veto": false,
+        "governance_veto_reason": "",
+        "is_investable": false,
+        "isin": "INE732I01021",
+        "missing_evidence": "Quarterly financial statement data (quarterly_financials_ind_as) is QUARANTINED and cannot be used in authentic assessments. Financial ratios will show INSUFFICIENT_DATA. This is intentional \u2014 not a system error.",
+        "schema_version": "1.0",
+        "score_coverage_pct": 0.0,
+        "score_grade": null,
+        "score_indicative_only": true,
+        "score_suppressed_by_gate": false,
+        "sector_key": "generic",
+        "security_id": "SEC_INE732I01021",
+        "signal_alignment": "INSUFFICIENT_DATA",
+        "status": "PARTIAL",
+        "strategy_id": "VOLUME_BREAKOUT_V1",
+        "strategy_signal_date": "2026-11-18",
+        "thesis_risks": "Cannot assess risks without fundamental data.",
+        "thesis_support": "Fundamental data insufficient for thesis support.",
+        "ticker": "ANGELONE",
+        "valuation": {
+          "ev_ebitda_x": null,
+          "limitations": [],
+          "pb_x": null,
+          "pe_x": null,
+          "sector_note": "",
+          "status": "AVAILABLE"
+        }
+      },
+      "fundamental_status": "PARTIAL",
+      "governance_veto": false,
+      "governance_veto_reason": "",
+      "is_investable": false,
+      "isin": "INE732I01021",
+      "missing_evidence": "Quarterly financial statement data (quarterly_financials_ind_as) is QUARANTINED and cannot be used in authentic assessments. Financial ratios will show INSUFFICIENT_DATA. This is intentional \u2014 not a system error.",
+      "signal_alignment": "INSUFFICIENT_DATA",
+      "signal_date": "2026-11-18",
+      "technical": {
+        "breakout_strength": -10.77,
+        "price_at_signal": 338.3,
+        "relative_volume": 2.92,
+        "rs_percentile": 48.5,
+        "strategy_rank": 2,
+        "strategy_score": 8.5
+      },
+      "technical_fundamental_agreement": "UNKNOWN",
+      "thesis_risks": "Cannot assess risks without fundamental data.",
+      "thesis_support": "Fundamental data insufficient for thesis support.",
+      "ticker": "ANGELONE"
+    },
+    {
+      "canonical_sector": "banks",
+      "company_name": "State Bank of India",
+      "disagreement_detail": "Score not computed \u2014 insufficient data.",
+      "fundamental": {
+        "alignment_rationale": "Insufficient fundamental data to assess alignment.",
+        "as_of_date": "2026-11-18",
+        "assessment_id": "eb938595-4db0-4d8c-946f-992c3968a72b",
+        "authenticity_summary": "VERIFIED_SECONDARY",
+        "balance_sheet": {
+          "current_ratio": null,
+          "is_net_cash": null,
+          "limitations": [],
+          "net_debt_to_ebitda": null,
+          "status": "INSUFFICIENT_DATA"
+        },
+        "business_quality": {
+          "ebitda_margin_pct": null,
+          "limitations": [
+            "Fewer than 2 periods with revenue data available."
+          ],
+          "pat_cagr_pct": null,
+          "revenue_cagr_pct": null,
+          "roce_pct": null,
+          "sector_note": "BANK: Debt is raw material, not financing. ROCE/ROIC/EV/EBITDA suppressed. Use ROA + ROE with NIM, cost-to-income, credit cost, CET1.",
+          "status": "INSUFFICIENT_DATA"
+        },
+        "cache_expires_at": "2026-12-19T05:38:39.830060+00:00",
+        "canonical_sector": "banks",
+        "company_name": "State Bank of India",
+        "composite_score": null,
+        "created_at": "2026-11-19T05:38:39.830060+00:00",
+        "earnings_quality": {
+          "accrual_ratio": null,
+          "cfo_to_pat_ratio": null,
+          "fcf_margin_pct": null,
+          "forensic_flags": [],
+          "limitations": [
+            "No period data available."
+          ],
+          "status": "INSUFFICIENT_DATA"
+        },
+        "evidence": {
+          "coverage_pct": 50.0,
+          "data_confidence": "MODERATE",
+          "intake_gate_status": "PASS_WITH_WARNINGS",
+          "known_limitations": [
+            "Quarterly financial statement data (quarterly_financials_ind_as) is QUARANTINED and cannot be used in authentic assessments. Financial ratios will show INSUFFICIENT_DATA. This is intentional \u2014 not a system error."
+          ],
+          "metrics_missing": []
+        },
+        "governance": {
+          "governance_veto": false,
+          "limitations": [
+            "Quarterly financial statement data (quarterly_financials_ind_as) is QUARANTINED and cannot be used in authentic assessments. Financial ratios will show INSUFFICIENT_DATA. This is intentional \u2014 not a system error."
+          ],
+          "material_events": [],
+          "promoter_holding_pct": 55.45,
+          "promoter_pledge_pct": null,
+          "status": "AVAILABLE"
+        },
+        "governance_veto": false,
+        "governance_veto_reason": "",
+        "is_investable": false,
+        "isin": "INE062A01020",
+        "missing_evidence": "Quarterly financial statement data (quarterly_financials_ind_as) is QUARANTINED and cannot be used in authentic assessments. Financial ratios will show INSUFFICIENT_DATA. This is intentional \u2014 not a system error.",
+        "schema_version": "1.0",
+        "score_coverage_pct": 0.0,
+        "score_grade": null,
+        "score_indicative_only": true,
+        "score_suppressed_by_gate": false,
+        "sector_key": "banks",
+        "security_id": "SEC_INE062A01020",
+        "signal_alignment": "INSUFFICIENT_DATA",
+        "status": "PARTIAL",
+        "strategy_id": "VOLUME_BREAKOUT_V1",
+        "strategy_signal_date": "2026-11-18",
+        "thesis_risks": "Cannot assess risks without fundamental data.",
+        "thesis_support": "Fundamental data insufficient for thesis support.",
+        "ticker": "SBIN",
+        "valuation": {
+          "ev_ebitda_x": null,
+          "limitations": [],
+          "pb_x": null,
+          "pe_x": null,
+          "sector_note": "BANK: Debt is raw material, not financing. ROCE/ROIC/EV/EBITDA suppressed. Use ROA + ROE with NIM, cost-to-income, credit cost, CET1.",
+          "status": "AVAILABLE"
+        }
+      },
+      "fundamental_status": "PARTIAL",
+      "governance_veto": false,
+      "governance_veto_reason": "",
+      "is_investable": false,
+      "isin": "INE062A01020",
+      "missing_evidence": "Quarterly financial statement data (quarterly_financials_ind_as) is QUARANTINED and cannot be used in authentic assessments. Financial ratios will show INSUFFICIENT_DATA. This is intentional \u2014 not a system error.",
+      "signal_alignment": "INSUFFICIENT_DATA",
+      "signal_date": "2026-11-18",
+      "technical": {
+        "breakout_strength": 1.89,
+        "price_at_signal": 1135.0,
+        "relative_volume": 2.44,
+        "rs_percentile": 73.8,
+        "strategy_rank": 3,
+        "strategy_score": 8.2
+      },
+      "technical_fundamental_agreement": "UNKNOWN",
+      "thesis_risks": "Cannot assess risks without fundamental data.",
+      "thesis_support": "Fundamental data insufficient for thesis support.",
+      "ticker": "SBIN"
+    },
+    {
+      "canonical_sector": "banks",
+      "company_name": "Bank of Maharashtra",
+      "disagreement_detail": "Score not computed \u2014 insufficient data.",
+      "fundamental": {
+        "alignment_rationale": "Insufficient fundamental data to assess alignment.",
+        "as_of_date": "2026-11-18",
+        "assessment_id": "553a3af1-5b85-4336-a3e2-d2ff57d46c21",
+        "authenticity_summary": "VERIFIED_SECONDARY",
+        "balance_sheet": {
+          "current_ratio": null,
+          "is_net_cash": null,
+          "limitations": [],
+          "net_debt_to_ebitda": null,
+          "status": "INSUFFICIENT_DATA"
+        },
+        "business_quality": {
+          "ebitda_margin_pct": null,
+          "limitations": [
+            "Fewer than 2 periods with revenue data available."
+          ],
+          "pat_cagr_pct": null,
+          "revenue_cagr_pct": null,
+          "roce_pct": null,
+          "sector_note": "BANK: Debt is raw material, not financing. ROCE/ROIC/EV/EBITDA suppressed. Use ROA + ROE with NIM, cost-to-income, credit cost, CET1.",
+          "status": "INSUFFICIENT_DATA"
+        },
+        "cache_expires_at": "2026-12-19T05:38:39.877448+00:00",
+        "canonical_sector": "banks",
+        "company_name": "Bank of Maharashtra",
+        "composite_score": null,
+        "created_at": "2026-11-19T05:38:39.877448+00:00",
+        "earnings_quality": {
+          "accrual_ratio": null,
+          "cfo_to_pat_ratio": null,
+          "fcf_margin_pct": null,
+          "forensic_flags": [],
+          "limitations": [
+            "No period data available."
+          ],
+          "status": "INSUFFICIENT_DATA"
+        },
+        "evidence": {
+          "coverage_pct": 50.0,
+          "data_confidence": "MODERATE",
+          "intake_gate_status": "PASS_WITH_WARNINGS",
+          "known_limitations": [
+            "Quarterly financial statement data (quarterly_financials_ind_as) is QUARANTINED and cannot be used in authentic assessments. Financial ratios will show INSUFFICIENT_DATA. This is intentional \u2014 not a system error."
+          ],
+          "metrics_missing": []
+        },
+        "governance": {
+          "governance_veto": false,
+          "limitations": [
+            "Quarterly financial statement data (quarterly_financials_ind_as) is QUARANTINED and cannot be used in authentic assessments. Financial ratios will show INSUFFICIENT_DATA. This is intentional \u2014 not a system error."
+          ],
+          "material_events": [],
+          "promoter_holding_pct": 73.6,
+          "promoter_pledge_pct": null,
+          "status": "AVAILABLE"
+        },
+        "governance_veto": false,
+        "governance_veto_reason": "",
+        "is_investable": false,
+        "isin": "INE457A01014",
+        "missing_evidence": "Quarterly financial statement data (quarterly_financials_ind_as) is QUARANTINED and cannot be used in authentic assessments. Financial ratios will show INSUFFICIENT_DATA. This is intentional \u2014 not a system error.",
+        "schema_version": "1.0",
+        "score_coverage_pct": 0.0,
+        "score_grade": null,
+        "score_indicative_only": true,
+        "score_suppressed_by_gate": false,
+        "sector_key": "banks",
+        "security_id": "SEC_INE457A01014",
+        "signal_alignment": "INSUFFICIENT_DATA",
+        "status": "PARTIAL",
+        "strategy_id": "VOLUME_BREAKOUT_V1",
+        "strategy_signal_date": "2026-11-18",
+        "thesis_risks": "Cannot assess risks without fundamental data.",
+        "thesis_support": "Fundamental data insufficient for thesis support.",
+        "ticker": "MAHABANK",
+        "valuation": {
+          "ev_ebitda_x": null,
+          "limitations": [],
+          "pb_x": null,
+          "pe_x": null,
+          "sector_note": "BANK: Debt is raw material, not financing. ROCE/ROIC/EV/EBITDA suppressed. Use ROA + ROE with NIM, cost-to-income, credit cost, CET1.",
+          "status": "AVAILABLE"
+        }
+      },
+      "fundamental_status": "PARTIAL",
+      "governance_veto": false,
+      "governance_veto_reason": "",
+      "is_investable": false,
+      "isin": "INE457A01014",
+      "missing_evidence": "Quarterly financial statement data (quarterly_financials_ind_as) is QUARANTINED and cannot be used in authentic assessments. Financial ratios will show INSUFFICIENT_DATA. This is intentional \u2014 not a system error.",
+      "signal_alignment": "INSUFFICIENT_DATA",
+      "signal_date": "2026-11-18",
+      "technical": {
+        "breakout_strength": 3.67,
+        "price_at_signal": 96.0,
+        "relative_volume": 1.76,
+        "rs_percentile": 77.3,
+        "strategy_rank": 4,
+        "strategy_score": 7.9
+      },
+      "technical_fundamental_agreement": "UNKNOWN",
+      "thesis_risks": "Cannot assess risks without fundamental data.",
+      "thesis_support": "Fundamental data insufficient for thesis support.",
+      "ticker": "MAHABANK"
+    },
+    {
+      "canonical_sector": "generic",
+      "company_name": "GAIL (India) Limited",
+      "disagreement_detail": "Score not computed \u2014 insufficient data.",
+      "fundamental": {
+        "alignment_rationale": "Insufficient fundamental data to assess alignment.",
+        "as_of_date": "2026-11-18",
+        "assessment_id": "95b50d24-103a-4216-9090-03bef07dee6c",
+        "authenticity_summary": "VERIFIED_SECONDARY",
+        "balance_sheet": {
+          "current_ratio": null,
+          "is_net_cash": null,
+          "limitations": [],
+          "net_debt_to_ebitda": null,
+          "status": "INSUFFICIENT_DATA"
+        },
+        "business_quality": {
+          "ebitda_margin_pct": null,
+          "limitations": [
+            "Fewer than 2 periods with revenue data available."
+          ],
+          "pat_cagr_pct": null,
+          "revenue_cagr_pct": null,
+          "roce_pct": null,
+          "sector_note": "",
+          "status": "INSUFFICIENT_DATA"
+        },
+        "cache_expires_at": "2026-12-19T05:38:39.912339+00:00",
+        "canonical_sector": "generic",
+        "company_name": "GAIL (India) Limited",
+        "composite_score": null,
+        "created_at": "2026-11-19T05:38:39.912339+00:00",
+        "earnings_quality": {
+          "accrual_ratio": null,
+          "cfo_to_pat_ratio": null,
+          "fcf_margin_pct": null,
+          "forensic_flags": [],
+          "limitations": [
+            "No period data available."
+          ],
+          "status": "INSUFFICIENT_DATA"
+        },
+        "evidence": {
+          "coverage_pct": 50.0,
+          "data_confidence": "MODERATE",
+          "intake_gate_status": "PASS_WITH_WARNINGS",
+          "known_limitations": [
+            "Quarterly financial statement data (quarterly_financials_ind_as) is QUARANTINED and cannot be used in authentic assessments. Financial ratios will show INSUFFICIENT_DATA. This is intentional \u2014 not a system error."
+          ],
+          "metrics_missing": []
+        },
+        "governance": {
+          "governance_veto": false,
+          "limitations": [
+            "Quarterly financial statement data (quarterly_financials_ind_as) is QUARANTINED and cannot be used in authentic assessments. Financial ratios will show INSUFFICIENT_DATA. This is intentional \u2014 not a system error."
+          ],
+          "material_events": [],
+          "promoter_holding_pct": 51.85,
+          "promoter_pledge_pct": null,
+          "status": "AVAILABLE"
+        },
+        "governance_veto": false,
+        "governance_veto_reason": "",
+        "is_investable": false,
+        "isin": "INE129A01019",
+        "missing_evidence": "Quarterly financial statement data (quarterly_financials_ind_as) is QUARANTINED and cannot be used in authentic assessments. Financial ratios will show INSUFFICIENT_DATA. This is intentional \u2014 not a system error.",
+        "schema_version": "1.0",
+        "score_coverage_pct": 0.0,
+        "score_grade": null,
+        "score_indicative_only": true,
+        "score_suppressed_by_gate": false,
+        "sector_key": "generic",
+        "security_id": "SEC_INE129A01019",
+        "signal_alignment": "INSUFFICIENT_DATA",
+        "status": "PARTIAL",
+        "strategy_id": "VOLUME_BREAKOUT_V1",
+        "strategy_signal_date": "2026-11-18",
+        "thesis_risks": "Cannot assess risks without fundamental data.",
+        "thesis_support": "Fundamental data insufficient for thesis support.",
+        "ticker": "GAIL",
+        "valuation": {
+          "ev_ebitda_x": null,
+          "limitations": [],
+          "pb_x": null,
+          "pe_x": null,
+          "sector_note": "",
+          "status": "AVAILABLE"
+        }
+      },
+      "fundamental_status": "PARTIAL",
+      "governance_veto": false,
+      "governance_veto_reason": "",
+      "is_investable": false,
+      "isin": "INE129A01019",
+      "missing_evidence": "Quarterly financial statement data (quarterly_financials_ind_as) is QUARANTINED and cannot be used in authentic assessments. Financial ratios will show INSUFFICIENT_DATA. This is intentional \u2014 not a system error.",
+      "signal_alignment": "INSUFFICIENT_DATA",
+      "signal_date": "2026-11-18",
+      "technical": {
+        "breakout_strength": 0.05,
+        "price_at_signal": 190.0,
+        "relative_volume": 1.59,
+        "rs_percentile": 70.1,
+        "strategy_rank": 5,
+        "strategy_score": 7.8
+      },
+      "technical_fundamental_agreement": "UNKNOWN",
+      "thesis_risks": "Cannot assess risks without fundamental data.",
+      "thesis_support": "Fundamental data insufficient for thesis support.",
+      "ticker": "GAIL"
+    },
+    {
+      "canonical_sector": "generic",
+      "company_name": "Meesho Limited",
+      "disagreement_detail": "Score not computed \u2014 insufficient data.",
+      "fundamental": {
+        "alignment_rationale": "Insufficient fundamental data to assess alignment.",
+        "as_of_date": "2026-11-18",
+        "assessment_id": "416cc26a-c258-4215-a8b9-21af3d0b87e4",
+        "authenticity_summary": "VERIFIED_SECONDARY",
+        "balance_sheet": {
+          "current_ratio": null,
+          "is_net_cash": null,
+          "limitations": [],
+          "net_debt_to_ebitda": null,
+          "status": "INSUFFICIENT_DATA"
+        },
+        "business_quality": {
+          "ebitda_margin_pct": null,
+          "limitations": [
+            "Fewer than 2 periods with revenue data available."
+          ],
+          "pat_cagr_pct": null,
+          "revenue_cagr_pct": null,
+          "roce_pct": null,
+          "sector_note": "",
+          "status": "INSUFFICIENT_DATA"
+        },
+        "cache_expires_at": "2026-12-19T05:38:39.966488+00:00",
+        "canonical_sector": "generic",
+        "company_name": "Meesho Limited",
+        "composite_score": null,
+        "created_at": "2026-11-19T05:38:39.966488+00:00",
+        "earnings_quality": {
+          "accrual_ratio": null,
+          "cfo_to_pat_ratio": null,
+          "fcf_margin_pct": null,
+          "forensic_flags": [],
+          "limitations": [
+            "No period data available."
+          ],
+          "status": "INSUFFICIENT_DATA"
+        },
+        "evidence": {
+          "coverage_pct": 50.0,
+          "data_confidence": "MODERATE",
+          "intake_gate_status": "PASS_WITH_WARNINGS",
+          "known_limitations": [
+            "Quarterly financial statement data (quarterly_financials_ind_as) is QUARANTINED and cannot be used in authentic assessments. Financial ratios will show INSUFFICIENT_DATA. This is intentional \u2014 not a system error."
+          ],
+          "metrics_missing": []
+        },
+        "governance": {
+          "governance_veto": false,
+          "limitations": [
+            "Quarterly financial statement data (quarterly_financials_ind_as) is QUARANTINED and cannot be used in authentic assessments. Financial ratios will show INSUFFICIENT_DATA. This is intentional \u2014 not a system error."
+          ],
+          "material_events": [
+            "Note: Promoter holding at 16.3% \u2014 relatively low."
+          ],
+          "promoter_holding_pct": 16.34,
+          "promoter_pledge_pct": null,
+          "status": "AVAILABLE"
+        },
+        "governance_veto": false,
+        "governance_veto_reason": "",
+        "is_investable": false,
+        "isin": "INE0VDM01015",
+        "missing_evidence": "Quarterly financial statement data (quarterly_financials_ind_as) is QUARANTINED and cannot be used in authentic assessments. Financial ratios will show INSUFFICIENT_DATA. This is intentional \u2014 not a system error.",
+        "schema_version": "1.0",
+        "score_coverage_pct": 0.0,
+        "score_grade": null,
+        "score_indicative_only": true,
+        "score_suppressed_by_gate": false,
+        "sector_key": "generic",
+        "security_id": "SEC_INE0VDM01015",
+        "signal_alignment": "INSUFFICIENT_DATA",
+        "status": "PARTIAL",
+        "strategy_id": "VOLUME_BREAKOUT_V1",
+        "strategy_signal_date": "2026-11-18",
+        "thesis_risks": "Cannot assess risks without fundamental data.",
+        "thesis_support": "Fundamental data insufficient for thesis support.",
+        "ticker": "MEESHO",
+        "valuation": {
+          "ev_ebitda_x": null,
+          "limitations": [],
+          "pb_x": null,
+          "pe_x": null,
+          "sector_note": "",
+          "status": "AVAILABLE"
+        }
+      },
+      "fundamental_status": "PARTIAL",
+      "governance_veto": false,
+      "governance_veto_reason": "",
+      "is_investable": false,
+      "isin": "INE0VDM01015",
+      "missing_evidence": "Quarterly financial statement data (quarterly_financials_ind_as) is QUARANTINED and cannot be used in authentic assessments. Financial ratios will show INSUFFICIENT_DATA. This is intentional \u2014 not a system error.",
+      "signal_alignment": "INSUFFICIENT_DATA",
+      "signal_date": "2026-11-18",
+      "technical": {
+        "breakout_strength": -2.89,
+        "price_at_signal": 253.55,
+        "relative_volume": 1.58,
+        "rs_percentile": 64.2,
+        "strategy_rank": 6,
+        "strategy_score": 7.8
+      },
+      "technical_fundamental_agreement": "UNKNOWN",
+      "thesis_risks": "Cannot assess risks without fundamental data.",
+      "thesis_support": "Fundamental data insufficient for thesis support.",
+      "ticker": "MEESHO"
+    },
+    {
+      "canonical_sector": "generic",
+      "company_name": "GMR AIRPORTS LIMITED",
+      "disagreement_detail": "Score not computed \u2014 insufficient data.",
+      "fundamental": {
+        "alignment_rationale": "Insufficient fundamental data to assess alignment.",
+        "as_of_date": "2026-11-18",
+        "assessment_id": "a557a6c5-c910-4a2c-b5c2-94bd4958c492",
+        "authenticity_summary": "VERIFIED_SECONDARY",
+        "balance_sheet": {
+          "current_ratio": null,
+          "is_net_cash": null,
+          "limitations": [],
+          "net_debt_to_ebitda": null,
+          "status": "INSUFFICIENT_DATA"
+        },
+        "business_quality": {
+          "ebitda_margin_pct": null,
+          "limitations": [
+            "Fewer than 2 periods with revenue data available."
+          ],
+          "pat_cagr_pct": null,
+          "revenue_cagr_pct": null,
+          "roce_pct": null,
+          "sector_note": "",
+          "status": "INSUFFICIENT_DATA"
+        },
+        "cache_expires_at": "2026-12-19T05:38:40.004889+00:00",
+        "canonical_sector": "generic",
+        "company_name": "GMR AIRPORTS LIMITED",
+        "composite_score": null,
+        "created_at": "2026-11-19T05:38:40.004889+00:00",
+        "earnings_quality": {
+          "accrual_ratio": null,
+          "cfo_to_pat_ratio": null,
+          "fcf_margin_pct": null,
+          "forensic_flags": [],
+          "limitations": [
+            "No period data available."
+          ],
+          "status": "INSUFFICIENT_DATA"
+        },
+        "evidence": {
+          "coverage_pct": 50.0,
+          "data_confidence": "MODERATE",
+          "intake_gate_status": "PASS_WITH_WARNINGS",
+          "known_limitations": [
+            "Quarterly financial statement data (quarterly_financials_ind_as) is QUARANTINED and cannot be used in authentic assessments. Financial ratios will show INSUFFICIENT_DATA. This is intentional \u2014 not a system error."
+          ],
+          "metrics_missing": []
+        },
+        "governance": {
+          "governance_veto": false,
+          "limitations": [
+            "Quarterly financial statement data (quarterly_financials_ind_as) is QUARANTINED and cannot be used in authentic assessments. Financial ratios will show INSUFFICIENT_DATA. This is intentional \u2014 not a system error."
+          ],
+          "material_events": [],
+          "promoter_holding_pct": 67.48,
+          "promoter_pledge_pct": null,
+          "status": "AVAILABLE"
+        },
+        "governance_veto": false,
+        "governance_veto_reason": "",
+        "is_investable": false,
+        "isin": "INE776C01039",
+        "missing_evidence": "Quarterly financial statement data (quarterly_financials_ind_as) is QUARANTINED and cannot be used in authentic assessments. Financial ratios will show INSUFFICIENT_DATA. This is intentional \u2014 not a system error.",
+        "schema_version": "1.0",
+        "score_coverage_pct": 0.0,
+        "score_grade": null,
+        "score_indicative_only": true,
+        "score_suppressed_by_gate": false,
+        "sector_key": "generic",
+        "security_id": "SEC_INE776C01039",
+        "signal_alignment": "INSUFFICIENT_DATA",
+        "status": "PARTIAL",
+        "strategy_id": "VOLUME_BREAKOUT_V1",
+        "strategy_signal_date": "2026-11-18",
+        "thesis_risks": "Cannot assess risks without fundamental data.",
+        "thesis_support": "Fundamental data insufficient for thesis support.",
+        "ticker": "GMRAIRPORT",
+        "valuation": {
+          "ev_ebitda_x": null,
+          "limitations": [],
+          "pb_x": null,
+          "pe_x": null,
+          "sector_note": "",
+          "status": "AVAILABLE"
+        }
+      },
+      "fundamental_status": "PARTIAL",
+      "governance_veto": false,
+      "governance_veto_reason": "",
+      "is_investable": false,
+      "isin": "INE776C01039",
+      "missing_evidence": "Quarterly financial statement data (quarterly_financials_ind_as) is QUARANTINED and cannot be used in authentic assessments. Financial ratios will show INSUFFICIENT_DATA. This is intentional \u2014 not a system error.",
+      "signal_alignment": "INSUFFICIENT_DATA",
+      "signal_date": "2026-11-18",
+      "technical": {
+        "breakout_strength": -0.82,
+        "price_at_signal": 104.4,
+        "relative_volume": 1.4,
+        "rs_percentile": 68.4,
+        "strategy_rank": 7,
+        "strategy_score": 7.7
+      },
+      "technical_fundamental_agreement": "UNKNOWN",
+      "thesis_risks": "Cannot assess risks without fundamental data.",
+      "thesis_support": "Fundamental data insufficient for thesis support.",
+      "ticker": "GMRAIRPORT"
+    },
+    {
+      "canonical_sector": "banks",
+      "company_name": "Kotak Mahindra Bank Limited",
+      "disagreement_detail": "Score not computed \u2014 insufficient data.",
+      "fundamental": {
+        "alignment_rationale": "Insufficient fundamental data to assess alignment.",
+        "as_of_date": "2026-11-18",
+        "assessment_id": "9168434e-84d7-4a14-9f6d-74df4f4cea26",
+        "authenticity_summary": "VERIFIED_SECONDARY",
+        "balance_sheet": {
+          "current_ratio": null,
+          "is_net_cash": null,
+          "limitations": [],
+          "net_debt_to_ebitda": null,
+          "status": "INSUFFICIENT_DATA"
+        },
+        "business_quality": {
+          "ebitda_margin_pct": null,
+          "limitations": [
+            "Fewer than 2 periods with revenue data available."
+          ],
+          "pat_cagr_pct": null,
+          "revenue_cagr_pct": null,
+          "roce_pct": null,
+          "sector_note": "BANK: Debt is raw material, not financing. ROCE/ROIC/EV/EBITDA suppressed. Use ROA + ROE with NIM, cost-to-income, credit cost, CET1.",
+          "status": "INSUFFICIENT_DATA"
+        },
+        "cache_expires_at": "2026-12-19T05:38:40.051764+00:00",
+        "canonical_sector": "banks",
+        "company_name": "Kotak Mahindra Bank Limited",
+        "composite_score": null,
+        "created_at": "2026-11-19T05:38:40.051764+00:00",
+        "earnings_quality": {
+          "accrual_ratio": null,
+          "cfo_to_pat_ratio": null,
+          "fcf_margin_pct": null,
+          "forensic_flags": [],
+          "limitations": [
+            "No period data available."
+          ],
+          "status": "INSUFFICIENT_DATA"
+        },
+        "evidence": {
+          "coverage_pct": 50.0,
+          "data_confidence": "MODERATE",
+          "intake_gate_status": "PASS_WITH_WARNINGS",
+          "known_limitations": [
+            "Quarterly financial statement data (quarterly_financials_ind_as) is QUARANTINED and cannot be used in authentic assessments. Financial ratios will show INSUFFICIENT_DATA. This is intentional \u2014 not a system error."
+          ],
+          "metrics_missing": []
+        },
+        "governance": {
+          "governance_veto": false,
+          "limitations": [
+            "Quarterly financial statement data (quarterly_financials_ind_as) is QUARANTINED and cannot be used in authentic assessments. Financial ratios will show INSUFFICIENT_DATA. This is intentional \u2014 not a system error."
+          ],
+          "material_events": [],
+          "promoter_holding_pct": 25.87,
+          "promoter_pledge_pct": null,
+          "status": "AVAILABLE"
+        },
+        "governance_veto": false,
+        "governance_veto_reason": "",
+        "is_investable": false,
+        "isin": "INE237A01036",
+        "missing_evidence": "Quarterly financial statement data (quarterly_financials_ind_as) is QUARANTINED and cannot be used in authentic assessments. Financial ratios will show INSUFFICIENT_DATA. This is intentional \u2014 not a system error.",
+        "schema_version": "1.0",
+        "score_coverage_pct": 0.0,
+        "score_grade": null,
+        "score_indicative_only": true,
+        "score_suppressed_by_gate": false,
+        "sector_key": "banks",
+        "security_id": "SEC_INE237A01036",
+        "signal_alignment": "INSUFFICIENT_DATA",
+        "status": "PARTIAL",
+        "strategy_id": "VOLUME_BREAKOUT_V1",
+        "strategy_signal_date": "2026-11-18",
+        "thesis_risks": "Cannot assess risks without fundamental data.",
+        "thesis_support": "Fundamental data insufficient for thesis support.",
+        "ticker": "KOTAKBANK",
+        "valuation": {
+          "ev_ebitda_x": null,
+          "limitations": [],
+          "pb_x": null,
+          "pe_x": null,
+          "sector_note": "BANK: Debt is raw material, not financing. ROCE/ROIC/EV/EBITDA suppressed. Use ROA + ROE with NIM, cost-to-income, credit cost, CET1.",
+          "status": "AVAILABLE"
+        }
+      },
+      "fundamental_status": "PARTIAL",
+      "governance_veto": false,
+      "governance_veto_reason": "",
+      "is_investable": false,
+      "isin": "INE237A01036",
+      "missing_evidence": "Quarterly financial statement data (quarterly_financials_ind_as) is QUARANTINED and cannot be used in authentic assessments. Financial ratios will show INSUFFICIENT_DATA. This is intentional \u2014 not a system error.",
+      "signal_alignment": "INSUFFICIENT_DATA",
+      "signal_date": "2026-11-18",
+      "technical": {
+        "breakout_strength": -1.01,
+        "price_at_signal": 494.85,
+        "relative_volume": 1.32,
+        "rs_percentile": 68.0,
+        "strategy_rank": 8,
+        "strategy_score": 7.7
+      },
+      "technical_fundamental_agreement": "UNKNOWN",
+      "thesis_risks": "Cannot assess risks without fundamental data.",
+      "thesis_support": "Fundamental data insufficient for thesis support.",
+      "ticker": "KOTAKBANK"
+    },
+    {
+      "canonical_sector": "banks",
+      "company_name": "Bank of India",
+      "disagreement_detail": "Score not computed \u2014 insufficient data.",
+      "fundamental": {
+        "alignment_rationale": "Insufficient fundamental data to assess alignment.",
+        "as_of_date": "2026-11-18",
+        "assessment_id": "714be516-0436-43db-8f5a-7cc984d74d76",
+        "authenticity_summary": "VERIFIED_SECONDARY",
+        "balance_sheet": {
+          "current_ratio": null,
+          "is_net_cash": null,
+          "limitations": [],
+          "net_debt_to_ebitda": null,
+          "status": "INSUFFICIENT_DATA"
+        },
+        "business_quality": {
+          "ebitda_margin_pct": null,
+          "limitations": [
+            "Fewer than 2 periods with revenue data available."
+          ],
+          "pat_cagr_pct": null,
+          "revenue_cagr_pct": null,
+          "roce_pct": null,
+          "sector_note": "BANK: Debt is raw material, not financing. ROCE/ROIC/EV/EBITDA suppressed. Use ROA + ROE with NIM, cost-to-income, credit cost, CET1.",
+          "status": "INSUFFICIENT_DATA"
+        },
+        "cache_expires_at": "2026-12-19T05:38:40.098750+00:00",
+        "canonical_sector": "banks",
+        "company_name": "Bank of India",
+        "composite_score": null,
+        "created_at": "2026-11-19T05:38:40.083124+00:00",
+        "earnings_quality": {
+          "accrual_ratio": null,
+          "cfo_to_pat_ratio": null,
+          "fcf_margin_pct": null,
+          "forensic_flags": [],
+          "limitations": [
+            "No period data available."
+          ],
+          "status": "INSUFFICIENT_DATA"
+        },
+        "evidence": {
+          "coverage_pct": 50.0,
+          "data_confidence": "MODERATE",
+          "intake_gate_status": "PASS_WITH_WARNINGS",
+          "known_limitations": [
+            "Quarterly financial statement data (quarterly_financials_ind_as) is QUARANTINED and cannot be used in authentic assessments. Financial ratios will show INSUFFICIENT_DATA. This is intentional \u2014 not a system error."
+          ],
+          "metrics_missing": []
+        },
+        "governance": {
+          "governance_veto": false,
+          "limitations": [
+            "Quarterly financial statement data (quarterly_financials_ind_as) is QUARANTINED and cannot be used in authentic assessments. Financial ratios will show INSUFFICIENT_DATA. This is intentional \u2014 not a system error."
+          ],
+          "material_events": [],
+          "promoter_holding_pct": 73.38,
+          "promoter_pledge_pct": null,
+          "status": "AVAILABLE"
+        },
+        "governance_veto": false,
+        "governance_veto_reason": "",
+        "is_investable": false,
+        "isin": "INE084A01016",
+        "missing_evidence": "Quarterly financial statement data (quarterly_financials_ind_as) is QUARANTINED and cannot be used in authentic assessments. Financial ratios will show INSUFFICIENT_DATA. This is intentional \u2014 not a system error.",
+        "schema_version": "1.0",
+        "score_coverage_pct": 0.0,
+        "score_grade": null,
+        "score_indicative_only": true,
+        "score_suppressed_by_gate": false,
+        "sector_key": "banks",
+        "security_id": "SEC_INE084A01016",
+        "signal_alignment": "INSUFFICIENT_DATA",
+        "status": "PARTIAL",
+        "strategy_id": "VOLUME_BREAKOUT_V1",
+        "strategy_signal_date": "2026-11-18",
+        "thesis_risks": "Cannot assess risks without fundamental data.",
+        "thesis_support": "Fundamental data insufficient for thesis support.",
+        "ticker": "BANKINDIA",
+        "valuation": {
+          "ev_ebitda_x": null,
+          "limitations": [],
+          "pb_x": null,
+          "pe_x": null,
+          "sector_note": "BANK: Debt is raw material, not financing. ROCE/ROIC/EV/EBITDA suppressed. Use ROA + ROE with NIM, cost-to-income, credit cost, CET1.",
+          "status": "AVAILABLE"
+        }
+      },
+      "fundamental_status": "PARTIAL",
+      "governance_veto": false,
+      "governance_veto_reason": "",
+      "is_investable": false,
+      "isin": "INE084A01016",
+      "missing_evidence": "Quarterly financial statement data (quarterly_financials_ind_as) is QUARANTINED and cannot be used in authentic assessments. Financial ratios will show INSUFFICIENT_DATA. This is intentional \u2014 not a system error.",
+      "signal_alignment": "INSUFFICIENT_DATA",
+      "signal_date": "2026-11-18",
+      "technical": {
+        "breakout_strength": -1.23,
+        "price_at_signal": 158.0,
+        "relative_volume": 1.17,
+        "rs_percentile": 67.5,
+        "strategy_rank": 9,
+        "strategy_score": 7.6
+      },
+      "technical_fundamental_agreement": "UNKNOWN",
+      "thesis_risks": "Cannot assess risks without fundamental data.",
+      "thesis_support": "Fundamental data insufficient for thesis support.",
+      "ticker": "BANKINDIA"
+    },
+    {
+      "canonical_sector": "generic",
+      "company_name": "SBC Exports Limited",
+      "disagreement_detail": "Score not computed \u2014 insufficient data.",
+      "fundamental": {
+        "alignment_rationale": "Insufficient fundamental data to assess alignment.",
+        "as_of_date": "2026-11-18",
+        "assessment_id": "94276242-d678-4568-ada0-cb18e1e11722",
+        "authenticity_summary": "VERIFIED_SECONDARY",
+        "balance_sheet": {
+          "current_ratio": null,
+          "is_net_cash": null,
+          "limitations": [],
+          "net_debt_to_ebitda": null,
+          "status": "INSUFFICIENT_DATA"
+        },
+        "business_quality": {
+          "ebitda_margin_pct": null,
+          "limitations": [
+            "Fewer than 2 periods with revenue data available."
+          ],
+          "pat_cagr_pct": null,
+          "revenue_cagr_pct": null,
+          "roce_pct": null,
+          "sector_note": "",
+          "status": "INSUFFICIENT_DATA"
+        },
+        "cache_expires_at": "2026-12-19T05:38:40.167789+00:00",
+        "canonical_sector": "generic",
+        "company_name": "SBC Exports Limited",
+        "composite_score": null,
+        "created_at": "2026-11-19T05:38:40.167789+00:00",
+        "earnings_quality": {
+          "accrual_ratio": null,
+          "cfo_to_pat_ratio": null,
+          "fcf_margin_pct": null,
+          "forensic_flags": [],
+          "limitations": [
+            "No period data available."
+          ],
+          "status": "INSUFFICIENT_DATA"
+        },
+        "evidence": {
+          "coverage_pct": 50.0,
+          "data_confidence": "MODERATE",
+          "intake_gate_status": "PASS_WITH_WARNINGS",
+          "known_limitations": [
+            "Quarterly financial statement data (quarterly_financials_ind_as) is QUARANTINED and cannot be used in authentic assessments. Financial ratios will show INSUFFICIENT_DATA. This is intentional \u2014 not a system error."
+          ],
+          "metrics_missing": []
+        },
+        "governance": {
+          "governance_veto": false,
+          "limitations": [
+            "Quarterly financial statement data (quarterly_financials_ind_as) is QUARANTINED and cannot be used in authentic assessments. Financial ratios will show INSUFFICIENT_DATA. This is intentional \u2014 not a system error."
+          ],
+          "material_events": [],
+          "promoter_holding_pct": 50.97,
+          "promoter_pledge_pct": null,
+          "status": "AVAILABLE"
+        },
+        "governance_veto": false,
+        "governance_veto_reason": "",
+        "is_investable": false,
+        "isin": "INE04AK01028",
+        "missing_evidence": "Quarterly financial statement data (quarterly_financials_ind_as) is QUARANTINED and cannot be used in authentic assessments. Financial ratios will show INSUFFICIENT_DATA. This is intentional \u2014 not a system error.",
+        "schema_version": "1.0",
+        "score_coverage_pct": 0.0,
+        "score_grade": null,
+        "score_indicative_only": true,
+        "score_suppressed_by_gate": false,
+        "sector_key": "generic",
+        "security_id": "SEC_INE04AK01028",
+        "signal_alignment": "INSUFFICIENT_DATA",
+        "status": "PARTIAL",
+        "strategy_id": "VOLUME_BREAKOUT_V1",
+        "strategy_signal_date": "2026-11-18",
+        "thesis_risks": "Cannot assess risks without fundamental data.",
+        "thesis_support": "Fundamental data insufficient for thesis support.",
+        "ticker": "SBC",
+        "valuation": {
+          "ev_ebitda_x": null,
+          "limitations": [],
+          "pb_x": null,
+          "pe_x": null,
+          "sector_note": "",
+          "status": "AVAILABLE"
+        }
+      },
+      "fundamental_status": "PARTIAL",
+      "governance_veto": false,
+      "governance_veto_reason": "",
+      "is_investable": false,
+      "isin": "INE04AK01028",
+      "missing_evidence": "Quarterly financial statement data (quarterly_financials_ind_as) is QUARANTINED and cannot be used in authentic assessments. Financial ratios will show INSUFFICIENT_DATA. This is intentional \u2014 not a system error.",
+      "signal_alignment": "INSUFFICIENT_DATA",
+      "signal_date": "2026-11-18",
+      "technical": {
+        "breakout_strength": -4.54,
+        "price_at_signal": 68.05,
+        "relative_volume": 1.15,
+        "rs_percentile": 60.9,
+        "strategy_rank": 10,
+        "strategy_score": 7.6
+      },
+      "technical_fundamental_agreement": "UNKNOWN",
+      "thesis_risks": "Cannot assess risks without fundamental data.",
+      "thesis_support": "Fundamental data insufficient for thesis support.",
+      "ticker": "SBC"
+    }
+  ],
+  "disclaimer": "Research and educational analysis only. Past performance does not guarantee future results. No live capital allocation is authorized.",
+  "evaluation_as_of": "2026-11-18",
+  "generated_at": "2026-11-19T11:10:28.809625+05:30",
+  "is_investable": false,
+  "market_data_as_of": "2026-11-18",
+  "market_date": "2026-11-18",
+  "provenance_statement": "Fundamental analysis generated by the 7-agent interpretative engine with deterministic fallbacks. Financial statements remain quarantined due to publication timestamp verification gaps. Governance and ownership metrics are sourced from official NSE shareholding disclosures. This assessment is strictly for research and education. Invariant: is_investable = False.",
+  "published_at": "2026-11-19T11:10:28.809625+05:30",
+  "schema_version": "1.0",
+  "source_freshness": "CURRENT",
+  "strategy_id": "VOLUME_BREAKOUT_V1",
+  "strategy_name": "Volume-Confirmed Breakout Strategy",
+  "summary": {
+    "aligned_count": 0,
+    "caution_count": 0,
+    "insufficient_data_count": 10,
+    "total_candidates": 10,
+    "veto_count": 0
+  }
+}

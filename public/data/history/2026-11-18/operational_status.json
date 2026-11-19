@@ -9,7 +9,7 @@
     "cash_market": "EOD_SETTLEMENT_VERIFIED",
     "derivatives_options": "CALIBRATED_SURFACE_ACTIVE",
     "evaluation_as_of": "2026-11-18",
-    "generated_at": "2026-11-18T22:25:08.540097+05:30",
+    "generated_at": "2026-11-19T11:10:27.377657+05:30",
     "global_macro": "AS_OF_DATE_ALIGNED",
     "institutional_flows": "VERIFIED_CANONICAL",
     "market_data_as_of": "2026-11-18",
@@ -17,26 +17,32 @@
   },
   "data_quality_warnings": [],
   "evaluation_as_of": "2026-11-18",
-  "generated_at": "2026-11-18T22:25:08.540097+05:30",
-  "last_successful_refresh": "2026-11-18T22:25:08.540097+05:30",
+  "generated_at": "2026-11-19T11:10:27.377657+05:30",
+  "last_successful_refresh": "2026-11-19T11:10:27.377657+05:30",
   "market_data_as_of": "2026-11-18",
   "market_date": "2026-11-18",
   "overall_system_status": "HEALTHY",
   "pipeline_stages": {
     "forecast_ensemble": {
-      "snapshot_hash": "f53d06aa0fa3a82d0984cfb99268805d4883c5c4e170c6837a3a1f491baf91b0",
+      "snapshot_hash": "08075bb54d9eee6ec6d3062a8501e4d12d4b729640293cfe50f9b713a5119abe",
       "snapshot_type": "POST_CLOSE",
       "status": "COMPLETED"
     },
+    "fundamental_intelligence": {
+      "candidates_assessed": 10,
+      "is_investable": false,
+      "status": "COMPLETED",
+      "strategy": "VOLUME_BREAKOUT_V1"
+    },
     "pre_open_pipeline": {
       "execution_mode": "DETERMINISTIC_OFFLINE_VERIFIED",
-      "report_hash": "b458bb4f54ac2078e44a56da6aeb462b5b936cedeb390968412836c129364522",
+      "report_hash": "311dac8e2f9865e09ece46684e4a86f1ac44e6fed63bb12804d1678c3c0e19bf",
       "status": "COMPLETED",
       "target_session": "2026-11-19"
     },
     "public_snapshot_exporter": {
       "sanitization_verified": true,
-      "sections_published": 14,
+      "sections_published": 15,
       "status": "COMPLETED"
     },
     "specialist_orchestrator": {
@@ -47,7 +53,7 @@
       "status": "COMPLETED"
     }
   },
-  "published_at": "2026-11-18T22:25:08.540097+05:30",
+  "published_at": "2026-11-19T11:10:27.377657+05:30",
   "schema_version": "1.0",
   "source_freshness": "CURRENT",
   "target_session_date": "2026-11-19"

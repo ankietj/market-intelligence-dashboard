@@ -1,0 +1,85 @@
+{
+  "authenticity_status": {
+    "broad_market": "OFFICIAL_NSE_INDEX_BHAVCOPY",
+    "delivery": "OFFICIAL_NSE_SEC_BHAVDATA_FULL",
+    "fii_dii_cash": "OFFICIAL_NSE_EXCHANGE_API",
+    "fundamental_intelligence": "OFFICIAL_NSE_SHAREHOLDINGS_QUARANTINED_STATEMENTS",
+    "india_vix": "OFFICIAL_NSE_INDEX_BHAVCOPY",
+    "options_derivatives": "CALIBRATED_EMPIRICAL_SURFACE_MODEL",
+    "stock_equities": "OFFICIAL_NSE_SEC_BHAVDATA_FULL"
+  },
+  "coverage": {
+    "nifty_constituents": 50,
+    "options_strikes": 41,
+    "sectors": 19
+  },
+  "coverage_status": {
+    "broad_market_indices": "29_VERIFIED",
+    "delivery_bhavcopy": "CURRENT",
+    "fii_dii_cash": "CURRENT",
+    "fundamental_intelligence": "10_CANDIDATES_ASSESSED",
+    "india_vix": "CURRENT",
+    "nifty_constituents": "50/50_EXACT",
+    "options_derivatives": "CURRENT",
+    "sector_indices": "19_TRACKED_VERIFIED"
+  },
+  "data_as_of": "2026-11-19",
+  "data_quality": {
+    "all_checks_passed": true,
+    "critic_audited": true,
+    "freshness_verified": true,
+    "sanitization_verified": true
+  },
+  "evaluation_as_of": "2026-11-19",
+  "file_hashes": {
+    "agent_registry.json": "327cf0a6e6e00f639478584ec1fd8735114fc46265cb3d9246c28b4fb55407e3",
+    "daily_briefing.json": "76a6b5fa97c072300d13a0ac3a23b6b449a9ae888a47044cc94637f490bc1dce",
+    "derivatives.json": "880538b246b9ddf48746973286a9f33a66aaef4e45169097a56195a20a115499",
+    "fundamental_intelligence.json": "dc525ccc4a4019ea68b96a7f04803594c30a52ba36d04708a7d106a2f9b7fa36",
+    "global_macro.json": "392121b937a3ef8196c87ccebea049a321986b8ff3fb07f4e88ffb5c87ff5928",
+    "institutional_flows.json": "c651d50b4f50af8158c1b79fb3a15f58f17accce141e3198e24a4092b83f0704",
+    "market_breadth.json": "6d3e7d09d65718042d79336e1a4bf869a6cbad18b6b1d3e76fb476bf75c26930",
+    "market_overview.json": "9c58a09b753edc1eab775e8f2c023fe30c9481bfbf4c0ba2dee9580890763308",
+    "nifty_forecast.json": "ec4857925e62145fc6dea053a3a7a958bee6a6275da709579721a82aa0662cec",
+    "operational_status.json": "a8524edc5e1e544fcec502d251f472d1656da4a64586d11d7220f2d043a19a54",
+    "pre_open.json": "946aa79c905a3bd3316b4ba7b0c65d30dd71e2ba9e0b2f5317a5ab2759039853",
+    "risk_events.json": "926ddb3a27a3213fcaf44fac8c40651f511b646f85d2c60e5fa95ca375b2afde",
+    "sector_rotation.json": "57cf07a565bd93b65fd524e6281e66287f7ee779a8fba8b2b7c25e1e8c4b742d",
+    "sources_registry.json": "b6e86d3c7f81efd7f869eca971e4507ef53357dc0712e2d29db1ab4e0afa8f95",
+    "stock_leadership.json": "61b86a674722900a988b4d3d17d2d8b60d982495241796a2c2021e15352746d2"
+  },
+  "generated_at": "2026-11-19T20:01:04.786592+05:30",
+  "market_data_as_of": "2026-11-19",
+  "market_date": "2026-11-19",
+  "publication_type": "MANUAL",
+  "published_at": "2026-11-19T20:01:04.786592+05:30",
+  "schema_version": "1.1.0",
+  "sections": {
+    "agent_registry": "data/latest/agent_registry.json",
+    "daily_briefing": "data/latest/daily_briefing.json",
+    "derivatives": "data/latest/derivatives.json",
+    "fundamental_intelligence": "data/latest/fundamental_intelligence.json",
+    "global_macro": "data/latest/global_macro.json",
+    "institutional_flows": "data/latest/institutional_flows.json",
+    "market_breadth": "data/latest/market_breadth.json",
+    "market_overview": "data/latest/market_overview.json",
+    "nifty_forecast": "data/latest/nifty_forecast.json",
+    "operational_status": "data/latest/operational_status.json",
+    "pre_open": "data/latest/pre_open.json",
+    "risk_events": "data/latest/risk_events.json",
+    "sector_rotation": "data/latest/sector_rotation.json",
+    "sources_registry": "data/latest/sources_registry.json",
+    "stock_leadership": "data/latest/stock_leadership.json"
+  },
+  "snapshot_id": "SNAP-20261119-200104",
+  "source_freshness": "CURRENT",
+  "source_status": {
+    "broad_market": "VERIFIED",
+    "forecast_ensemble": "VERIFIED",
+    "global_macro": "VERIFIED",
+    "institutional_flow": "VERIFIED",
+    "options_derivatives": "VERIFIED",
+    "specialist_agents": "VERIFIED"
+  },
+  "target_session_date": "2026-11-20"
+}

@@ -1,0 +1,60 @@
+{
+  "as_of_session_date": "2026-11-19",
+  "directional_probability": {
+    "bias": "NEUTRAL",
+    "calibration_label": "Heuristic Rule Score (Uncalibrated)",
+    "is_statistically_calibrated": false,
+    "p_down": 0.2333,
+    "p_sideways": 0.3334,
+    "p_up": 0.4333,
+    "rule_score": 0.33
+  },
+  "evaluation_as_of": "2026-11-19",
+  "expected_range": {
+    "atr_14": 322.73,
+    "confidence_interval": "68% (1-sigma empirical Daily ATR)",
+    "high": 25662.9,
+    "low": 25365.7,
+    "range_points": 297.21,
+    "range_type": "STATISTICAL_ATR_EXPECTED_RANGE"
+  },
+  "generated_at": "2026-11-19T20:01:04.786592+05:30",
+  "market_data_as_of": "2026-11-19",
+  "market_date": "2026-11-19",
+  "model_metadata": {
+    "calibration_disclosure": "Directional probabilities are derived from an uncalibrated multi-factor heuristic rule scoring system and should not be interpreted as empirical frequentist or Bayesian probabilities.",
+    "calibration_status": "UNCALIBRATED_HEURISTIC_RULE_SCORE",
+    "is_statistically_calibrated": false,
+    "model_id": "HeuristicMultiFactor_v1"
+  },
+  "published_at": "2026-11-19T20:01:04.786592+05:30",
+  "reference_close": 25514.3,
+  "scenarios": {
+    "bearish_target": 25241.3,
+    "bullish_target": 25650.8,
+    "invalidation_level": 24968.3
+  },
+  "schema_version": "1.0",
+  "snapshot_hash": "6289c18300411a4b093c98e959d532d2fa6ba205109c4c4d52cac4e5629f2f24",
+  "snapshot_type": "POST_CLOSE",
+  "source_freshness": "CURRENT",
+  "target_session_date": "2026-11-20",
+  "technical_levels": {
+    "classic_pivots": {
+      "pivot": 25377.8,
+      "r1": 25650.8,
+      "r2": 25787.3,
+      "s1": 25241.3,
+      "s2": 24968.3
+    },
+    "master_pivot": 25377.8,
+    "resistance_zone": [
+      25650.8,
+      25837.03
+    ],
+    "support_zone": [
+      25191.57,
+      25241.3
+    ]
+  }
+}

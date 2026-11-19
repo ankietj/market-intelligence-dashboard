@@ -1,0 +1,86 @@
+{
+  "breadth_summary": {
+    "advance_percentage": 82.0,
+    "advances": 41,
+    "coverage_percentage": 100.0,
+    "declines": 9,
+    "missing": 0,
+    "reconciled_sum": 50,
+    "reconciliation_status": "EXACT",
+    "unchanged": 0,
+    "universe_size": 50
+  },
+  "data_provenance": {
+    "pit_enforced": true,
+    "source": "CANONICAL_DUCKDB_AND_EXCHANGE_FEEDS",
+    "verification_status": "VERIFIED"
+  },
+  "evaluation_as_of": "2026-11-19",
+  "generated_at": "2026-11-19T20:01:04.786592+05:30",
+  "headline_regime": {
+    "cyclical_defensive_spread": 1.26,
+    "overall_tilt": "RISK_ON",
+    "vix_level": 16.11,
+    "volatility_regime": "BENIGN_EXPANSION"
+  },
+  "indices": [
+    {
+      "change_pct": 1.14,
+      "change_pts": 286.35,
+      "close": 25514.3,
+      "name": "NIFTY 50 Benchmark",
+      "symbol": "NIFTY 50",
+      "trend": "BULLISH"
+    },
+    {
+      "change_pct": 1.65,
+      "change_pts": 1024.35,
+      "close": 63063.0,
+      "name": "NIFTY Bank Index",
+      "symbol": "NIFTY BANK",
+      "trend": "BULLISH"
+    },
+    {
+      "change_pct": 1.06,
+      "change_pts": 645.05,
+      "close": 61624.4,
+      "name": "NIFTY Midcap 100",
+      "symbol": "NIFTY MIDCAP 100",
+      "trend": "BULLISH"
+    },
+    {
+      "change_pct": 3.5,
+      "change_pts": 0.55,
+      "close": 16.11,
+      "name": "India Volatility Index",
+      "symbol": "INDIA VIX",
+      "trend": "BENIGN"
+    }
+  ],
+  "institutional_summary": {
+    "cash_flow_type": "NET_CASH_FLOW",
+    "dii_net_cash_cr": -1356.57,
+    "fii_long_ratio_pct": 21.1,
+    "fii_long_share_pct": 21.1,
+    "fii_net_cash_cr": 7411.41,
+    "positioning_bias": "BEARISH_DOMINANCE",
+    "total_net_cash_cr": 6054.84
+  },
+  "market_data_as_of": "2026-11-19",
+  "market_date": "2026-11-19",
+  "overall_takeaway": "Exposure Bias: AGGRESSIVE_BULLISH. Sector Preference: Focus long setups in NIFTY AUTO; avoid lagging clusters. Key options support anchored at Put Wall 25,500.",
+  "published_at": "2026-11-19T20:01:04.786592+05:30",
+  "schema_version": "1.0",
+  "source_freshness": "CURRENT",
+  "top_drivers_positive": [
+    "Foreign institutions recorded net cash inflows of \u20b97,411.4 Cr.",
+    "Sector leadership firmly anchored in NIFTY AUTO (RS spread +1.26%).",
+    "Options Put Wall at 25,500 provides strong systematic downside demand floor."
+  ],
+  "top_risks_negative": [
+    "Domestic institutions recorded net cash selling of \u20b91,356.6 Cr.",
+    "FII Index Futures positioning reflects net short crowding (21.1% longs).",
+    "Heavy Call writing concentration at 26,000 forms immediate overhead supply barrier.",
+    "Overnight crude & dollar volatility (Brent: $74.20, USD/INR: \u20b984.42)."
+  ]
+}
