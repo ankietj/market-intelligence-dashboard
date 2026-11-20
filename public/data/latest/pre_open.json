@@ -1,31 +1,31 @@
 {
   "auction_action_rules": [
-    "FLAT OPEN EXECUTION: Expected open at ~25526.8 (+12.5 pts). Market is opening near previous close balance.",
-    "Directional bias is NEUTRAL. Monitor whether 25377.8 acts as support or resistance.",
+    "FLAT OPEN EXECUTION: Expected open at ~25813.1 (+12.5 pts). Market is opening near previous close balance.",
+    "Directional bias is NEUTRAL. Monitor whether 25651.5 acts as support or resistance.",
     "Focus trades on relative strength leader sectors identified in latest EOD specialist intelligence.",
-    "OPTIONS BOUNDARIES: Call Wall resistance at 26,000 | Put Wall support at 25,500 | PCR: 0.89 | Max Pain: 25,500."
+    "OPTIONS BOUNDARIES: Call Wall resistance at 26,000 | Put Wall support at 25,500 | PCR: 0.81 | Max Pain: 25,800."
   ],
-  "auction_bracket_high": 25556.8,
-  "auction_bracket_low": 25496.8,
+  "auction_bracket_high": 25843.1,
+  "auction_bracket_low": 25783.1,
   "derivatives_boundaries": {
     "call_wall_strike": 26000.0,
-    "options_max_pain": 25500.0,
-    "options_pcr": 0.893,
+    "options_max_pain": 25800.0,
+    "options_pcr": 0.809,
     "put_wall_strike": 25500.0
   },
-  "evaluation_as_of": "2026-11-19",
-  "expected_open": 25526.8,
+  "evaluation_as_of": "2026-11-20",
+  "expected_open": 25813.1,
   "gap_classification": "FLAT",
-  "generated_at": "2026-11-19T20:01:04.786592+05:30",
-  "key_inflection_level": 25377.8,
+  "generated_at": "2026-11-20T20:00:49.803490+05:30",
+  "key_inflection_level": 25651.53,
   "macro_headwind_level": "MODERATE",
-  "market_data_as_of": "2026-11-19",
-  "market_date": "2026-11-19",
+  "market_data_as_of": "2026-11-20",
+  "market_date": "2026-11-20",
   "overnight_gap_points": 12.5,
-  "published_at": "2026-11-19T20:01:04.786592+05:30",
-  "report_hash": "c4678d37cc7d2442ec4eca6a14b4afd31a620bbab4604c19724b172ab37037ba",
+  "published_at": "2026-11-20T20:00:49.803490+05:30",
+  "report_hash": "ac49e186f5169148b1cef58438dcbff4dcace8f336cb8e5b81a5bf2595987a5b",
   "schema_version": "1.0",
   "snapshot_type": "PRE_OPEN",
   "source_freshness": "CURRENT",
-  "target_session_date": "2026-11-20"
+  "target_session_date": "2026-11-23"
 }

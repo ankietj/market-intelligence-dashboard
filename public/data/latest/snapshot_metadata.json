@@ -23,36 +23,36 @@
     "options_derivatives": "CURRENT",
     "sector_indices": "19_TRACKED_VERIFIED"
   },
-  "data_as_of": "2026-11-19",
+  "data_as_of": "2026-11-20",
   "data_quality": {
     "all_checks_passed": true,
     "critic_audited": true,
     "freshness_verified": true,
     "sanitization_verified": true
   },
-  "evaluation_as_of": "2026-11-19",
+  "evaluation_as_of": "2026-11-20",
   "file_hashes": {
-    "agent_registry.json": "327cf0a6e6e00f639478584ec1fd8735114fc46265cb3d9246c28b4fb55407e3",
-    "daily_briefing.json": "76a6b5fa97c072300d13a0ac3a23b6b449a9ae888a47044cc94637f490bc1dce",
-    "derivatives.json": "880538b246b9ddf48746973286a9f33a66aaef4e45169097a56195a20a115499",
-    "fundamental_intelligence.json": "dc525ccc4a4019ea68b96a7f04803594c30a52ba36d04708a7d106a2f9b7fa36",
-    "global_macro.json": "392121b937a3ef8196c87ccebea049a321986b8ff3fb07f4e88ffb5c87ff5928",
-    "institutional_flows.json": "c651d50b4f50af8158c1b79fb3a15f58f17accce141e3198e24a4092b83f0704",
-    "market_breadth.json": "6d3e7d09d65718042d79336e1a4bf869a6cbad18b6b1d3e76fb476bf75c26930",
-    "market_overview.json": "9c58a09b753edc1eab775e8f2c023fe30c9481bfbf4c0ba2dee9580890763308",
-    "nifty_forecast.json": "ec4857925e62145fc6dea053a3a7a958bee6a6275da709579721a82aa0662cec",
-    "operational_status.json": "a8524edc5e1e544fcec502d251f472d1656da4a64586d11d7220f2d043a19a54",
-    "pre_open.json": "946aa79c905a3bd3316b4ba7b0c65d30dd71e2ba9e0b2f5317a5ab2759039853",
-    "risk_events.json": "926ddb3a27a3213fcaf44fac8c40651f511b646f85d2c60e5fa95ca375b2afde",
-    "sector_rotation.json": "57cf07a565bd93b65fd524e6281e66287f7ee779a8fba8b2b7c25e1e8c4b742d",
-    "sources_registry.json": "b6e86d3c7f81efd7f869eca971e4507ef53357dc0712e2d29db1ab4e0afa8f95",
-    "stock_leadership.json": "61b86a674722900a988b4d3d17d2d8b60d982495241796a2c2021e15352746d2"
+    "agent_registry.json": "f971ae264f6e90e6d99f148860175f0d7522c866a8c0e083abedfd64d1afad26",
+    "daily_briefing.json": "18a8c434d7a068ede6b9c00a307e31df1acc6a7572e8ea52ca7ff5ce2b45dbd8",
+    "derivatives.json": "0dadbd183c9da3887d7f94cd820de45337a07b7200a3dc88ea4752f240b98e69",
+    "fundamental_intelligence.json": "c1fd9ed654153a58408646a20cc5417dc4697b3f53772d047f91578fcaf92e6e",
+    "global_macro.json": "7f0f4e82276515466edd6ff79dd20fd30d400f0a8de39b7a909e7ef5973f8904",
+    "institutional_flows.json": "fc363f6843ef14c1e879e601fab7e7ff17b1e9ce63fe1c1dbf64de5b3c0cd006",
+    "market_breadth.json": "c7588e6041b461cb714f1a260f87e8016d701fb797b14f901ef9b2326ee35c24",
+    "market_overview.json": "7cf69887e0bf975dc8c6ae600ce710f527acd9b7dd41d0298bf147cb8317a886",
+    "nifty_forecast.json": "5a0978ecedfdae8c0440d3068d5463f420667ce0d8157a99407f6dccf77f8caf",
+    "operational_status.json": "bb7192e1e67be9c17cde214d77847fab001f70db777b4352db0bdca36f21e5f8",
+    "pre_open.json": "0fafc8b74c9e84d6f1f4ad7b03ba25f302ed6659feaffb0336118071cebaf4e5",
+    "risk_events.json": "d86f7bd9c0e553c311a05224f25a26bb1e49c95bdb3b31ea92bdd311d8989a52",
+    "sector_rotation.json": "82bab5b90ee153fc5087626e7195f9e00a64b0cb51867f9415bbf8fdaedd0b09",
+    "sources_registry.json": "325da4cab0c4c56fe8d127710638d65eab9423ea4d131d371ff2e0cb9b744997",
+    "stock_leadership.json": "20b0e31a663ba207c76dce71194493323def8a96b5b98b0a7d5bd763404f040b"
   },
-  "generated_at": "2026-11-19T20:01:04.786592+05:30",
-  "market_data_as_of": "2026-11-19",
-  "market_date": "2026-11-19",
+  "generated_at": "2026-11-20T20:00:49.803490+05:30",
+  "market_data_as_of": "2026-11-20",
+  "market_date": "2026-11-20",
   "publication_type": "MANUAL",
-  "published_at": "2026-11-19T20:01:04.786592+05:30",
+  "published_at": "2026-11-20T20:00:49.803490+05:30",
   "schema_version": "1.1.0",
   "sections": {
     "agent_registry": "data/latest/agent_registry.json",
@@ -71,7 +71,7 @@
     "sources_registry": "data/latest/sources_registry.json",
     "stock_leadership": "data/latest/stock_leadership.json"
   },
-  "snapshot_id": "SNAP-20261119-200104",
+  "snapshot_id": "SNAP-20261120-200049",
   "source_freshness": "CURRENT",
   "source_status": {
     "broad_market": "VERIFIED",
@@ -81,5 +81,5 @@
     "options_derivatives": "VERIFIED",
     "specialist_agents": "VERIFIED"
   },
-  "target_session_date": "2026-11-20"
+  "target_session_date": "2026-11-23"
 }

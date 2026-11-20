@@ -1,0 +1,147 @@
+{
+  "evaluation_as_of": "2026-11-20",
+  "generated_at": "2026-11-20T20:00:49.803490+05:30",
+  "leading_sector": "NIFTY BANK",
+  "market_data_as_of": "2026-11-20",
+  "market_date": "2026-11-20",
+  "published_at": "2026-11-20T20:00:49.803490+05:30",
+  "rotation_takeaway": "Favor long exposure in NIFTY BANK and NIFTY REALTY on intraday setups.",
+  "schema_version": "1.0",
+  "sectors": [
+    {
+      "change_pct": 3.01,
+      "momentum": "LEADING",
+      "name": "NIFTY PRIVATE BANK",
+      "rs_vs_nifty": 1.89,
+      "type": "CYCLICAL"
+    },
+    {
+      "change_pct": 2.49,
+      "momentum": "LEADING",
+      "name": "NIFTY BANK",
+      "rs_vs_nifty": 1.37,
+      "type": "CYCLICAL"
+    },
+    {
+      "change_pct": 2.02,
+      "momentum": "LEADING",
+      "name": "NIFTY FINANCIAL SERVICES",
+      "rs_vs_nifty": 0.9,
+      "type": "CYCLICAL"
+    },
+    {
+      "change_pct": 1.71,
+      "momentum": "LEADING",
+      "name": "NIFTY REALTY",
+      "rs_vs_nifty": 0.59,
+      "type": "CYCLICAL"
+    },
+    {
+      "change_pct": 1.3,
+      "momentum": "IMPROVING",
+      "name": "NIFTY IT",
+      "rs_vs_nifty": 0.18,
+      "type": "DEFENSIVE"
+    },
+    {
+      "change_pct": 1.23,
+      "momentum": "IMPROVING",
+      "name": "NIFTY PSU BANK",
+      "rs_vs_nifty": 0.11,
+      "type": "CYCLICAL"
+    },
+    {
+      "change_pct": 0.78,
+      "momentum": "WEAKENING",
+      "name": "NIFTY HEALTHCARE INDEX",
+      "rs_vs_nifty": -0.34,
+      "type": "DEFENSIVE"
+    },
+    {
+      "change_pct": 0.77,
+      "momentum": "WEAKENING",
+      "name": "NIFTY INDIA DIGITAL",
+      "rs_vs_nifty": -0.35,
+      "type": "CYCLICAL"
+    },
+    {
+      "change_pct": 0.65,
+      "momentum": "WEAKENING",
+      "name": "NIFTY AUTO",
+      "rs_vs_nifty": -0.47,
+      "type": "CYCLICAL"
+    },
+    {
+      "change_pct": 0.57,
+      "momentum": "LAGGING",
+      "name": "NIFTY EV & NEW AGE AUTOMOTIVE",
+      "rs_vs_nifty": -0.55,
+      "type": "CYCLICAL"
+    },
+    {
+      "change_pct": 0.42,
+      "momentum": "LAGGING",
+      "name": "NIFTY OIL & GAS",
+      "rs_vs_nifty": -0.7,
+      "type": "COMMODITY"
+    },
+    {
+      "change_pct": 0.32,
+      "momentum": "LAGGING",
+      "name": "NIFTY COMMODITIES",
+      "rs_vs_nifty": -0.8,
+      "type": "COMMODITY"
+    },
+    {
+      "change_pct": 0.05,
+      "momentum": "LAGGING",
+      "name": "NIFTY PHARMA",
+      "rs_vs_nifty": -1.07,
+      "type": "DEFENSIVE"
+    },
+    {
+      "change_pct": -0.06,
+      "momentum": "LAGGING",
+      "name": "NIFTY FMCG",
+      "rs_vs_nifty": -1.18,
+      "type": "DEFENSIVE"
+    },
+    {
+      "change_pct": -0.11,
+      "momentum": "LAGGING",
+      "name": "NIFTY CAPITAL MARKETS",
+      "rs_vs_nifty": -1.23,
+      "type": "CYCLICAL"
+    },
+    {
+      "change_pct": -0.22,
+      "momentum": "LAGGING",
+      "name": "NIFTY ENERGY",
+      "rs_vs_nifty": -1.34,
+      "type": "COMMODITY"
+    },
+    {
+      "change_pct": -0.23,
+      "momentum": "LAGGING",
+      "name": "NIFTY METAL",
+      "rs_vs_nifty": -1.35,
+      "type": "CYCLICAL"
+    },
+    {
+      "change_pct": -0.4,
+      "momentum": "LAGGING",
+      "name": "NIFTY CONSUMER DURABLES",
+      "rs_vs_nifty": -1.52,
+      "type": "CYCLICAL"
+    },
+    {
+      "change_pct": -1.68,
+      "momentum": "LAGGING",
+      "name": "NIFTY MEDIA",
+      "rs_vs_nifty": -2.8,
+      "type": "CYCLICAL"
+    }
+  ],
+  "source_freshness": "CURRENT",
+  "spread_cyclical_defensive": 0.73
+}

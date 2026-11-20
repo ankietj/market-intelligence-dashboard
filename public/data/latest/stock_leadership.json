@@ -1,83 +1,83 @@
 {
-  "evaluation_as_of": "2026-11-19",
-  "generated_at": "2026-11-19T20:01:04.786592+05:30",
-  "market_data_as_of": "2026-11-19",
-  "market_date": "2026-11-19",
-  "published_at": "2026-11-19T20:01:04.786592+05:30",
+  "evaluation_as_of": "2026-11-20",
+  "generated_at": "2026-11-20T20:00:49.803490+05:30",
+  "market_data_as_of": "2026-11-20",
+  "market_date": "2026-11-20",
+  "published_at": "2026-11-20T20:00:49.803490+05:30",
   "schema_version": "1.0",
   "source_freshness": "CURRENT",
   "top_gainers": [
     {
-      "change_pct": 7.58,
-      "close": 13589.0,
+      "change_pct": 5.29,
+      "close": 9200.0,
+      "name": "APOLLOHOSP",
+      "symbol": "APOLLOHOSP",
+      "turnover_cr": 1291.42
+    },
+    {
+      "change_pct": 4.72,
+      "close": 1446.0,
+      "name": "AXISBANK",
+      "symbol": "AXISBANK",
+      "turnover_cr": 3056.71
+    },
+    {
+      "change_pct": 3.88,
+      "close": 1081.0,
+      "name": "MAXHEALTH",
+      "symbol": "MAXHEALTH",
+      "turnover_cr": 1028.01
+    },
+    {
+      "change_pct": 3.11,
+      "close": 14011.0,
       "name": "MARUTI",
       "symbol": "MARUTI",
-      "turnover_cr": 1832.59
+      "turnover_cr": 2285.89
     },
     {
-      "change_pct": 4.66,
-      "close": 8058.5,
-      "name": "EICHERMOT",
-      "symbol": "EICHERMOT",
-      "turnover_cr": 704.59
-    },
-    {
-      "change_pct": 4.46,
-      "close": 3509.0,
-      "name": "M&M",
-      "symbol": "M&M",
-      "turnover_cr": 1675.98
-    },
-    {
-      "change_pct": 4.34,
-      "close": 263.5,
-      "name": "TMPV",
-      "symbol": "TMPV",
-      "turnover_cr": 575.7
-    },
-    {
-      "change_pct": 4.07,
-      "close": 2074.2,
-      "name": "HINDUNILVR",
-      "symbol": "HINDUNILVR",
-      "turnover_cr": 579.2
+      "change_pct": 3.02,
+      "close": 12939.0,
+      "name": "ULTRACEMCO",
+      "symbol": "ULTRACEMCO",
+      "turnover_cr": 631.8
     }
   ],
   "top_losers": [
     {
-      "change_pct": -1.55,
-      "close": 2342.7,
-      "name": "TCS",
-      "symbol": "TCS",
-      "turnover_cr": 579.59
+      "change_pct": -1.7,
+      "close": 4620.0,
+      "name": "TITAN",
+      "symbol": "TITAN",
+      "turnover_cr": 676.91
     },
     {
-      "change_pct": -1.54,
-      "close": 1723.0,
-      "name": "TECHM",
-      "symbol": "TECHM",
-      "turnover_cr": 311.86
+      "change_pct": -1.6,
+      "close": 178.0,
+      "name": "TATASTEEL",
+      "symbol": "TATASTEEL",
+      "turnover_cr": 814.5
     },
     {
-      "change_pct": -1.52,
-      "close": 1091.9,
-      "name": "INFY",
-      "symbol": "INFY",
-      "turnover_cr": 1225.2
+      "change_pct": -1.08,
+      "close": 321.5,
+      "name": "NTPC",
+      "symbol": "NTPC",
+      "turnover_cr": 305.59
     },
     {
-      "change_pct": -0.94,
-      "close": 8738.0,
-      "name": "APOLLOHOSP",
-      "symbol": "APOLLOHOSP",
-      "turnover_cr": 277.26
+      "change_pct": -1.05,
+      "close": 2052.5,
+      "name": "HINDUNILVR",
+      "symbol": "HINDUNILVR",
+      "turnover_cr": 323.06
     },
     {
-      "change_pct": -0.88,
-      "close": 1332.9,
-      "name": "HCLTECH",
-      "symbol": "HCLTECH",
-      "turnover_cr": 463.25
+      "change_pct": -0.81,
+      "close": 224.97,
+      "name": "JIOFIN",
+      "symbol": "JIOFIN",
+      "turnover_cr": 248.75
     }
   ],
   "volume_breakouts": [
