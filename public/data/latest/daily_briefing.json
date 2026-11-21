@@ -1,42 +1,37 @@
 {
   "cross_specialist_agreements": [
-    "Macro and Breadth specialists agree on NEUTRAL_BALANCED tilt.",
-    "Institutional and Options specialists agree on DEFENSIVE_ROTATION tilt."
+    "Macro and Breadth specialists agree on NEUTRAL_BALANCED tilt."
   ],
-  "cross_specialist_disagreements": [
-    "Flow vs Sector Divergence: FIIs remain net short in index derivatives despite domestic cyclical sector bidding."
-  ],
+  "cross_specialist_disagreements": [],
   "evaluation_as_of": "2026-11-20",
   "executive_synthesis_points": [
-    "1. As-Of Evaluation Date: 2026-11-20 (Generated: 2026-11-20T20:00:49 IST).",
-    "2. Multi-Agent Verification Status: 5/5 specialists passed independent audit (All Verified).",
+    "1. As-Of Evaluation Date: 2026-11-20 (Generated: 2026-11-21T19:45:57 IST).",
+    "2. Multi-Agent Independent Verification: 5/5 specialists passed Critic gate (All Verified). Consensus Regime Tilt: NEUTRAL_BALANCED (Composite Score: +0.20).",
     "3. Macro Volatility Context: India VIX at 17.32 (BENIGN_EXPANSION) dictates position sizing and tail risk controls.",
-    "4. Broad Market Appetite: Multi-cap tier dispersion shows Small/Midcap relative performance vs NIFTY 50 at -1.25%.",
-    "5. Constituent Breadth Health: NIFTY 50 breadth recorded 64.0% advancing stocks (32 adv / 18 dec across 100% coverage).",
-    "6. Leadership Concentration: Breadth specialist flags 'BALANCED_CHOP' with a concentration spread of +0.49%.",
-    "7. Sector Rotation Dynamics: Primary leadership in NIFTY BANK; Cyclical vs Defensive RS spread stands at +0.73%.",
-    "8. Institutional Positioning & Liquidity: FII Index Futures Long ratio at 21.1% (BEARISH_DOMINANCE); Total institutional net cash turnover at +5,448.62 Cr (FII: +10,308.42 Cr, DII: -4,859.80 Cr).",
-    "9. Options Market Structure: Total PCR at 0.81; Key Call Wall at 26,000 and Put Wall at 25,500; Max Pain at 25,800; ATM straddle projects +/-256 pts expiry band.",
-    "10. Next-Session Watchpoint: Watch for volatility spikes above 20-DMA as an early de-risking catalyst."
+    "4. Market Breadth & Thrust Telemetry: NIFTY 50 breadth recorded 64.0% advancing stocks (32 adv / 18 dec across 100% coverage; Signal: BALANCED_CHOP).",
+    "5. 15-Sector RRG Leadership Dynamics: Primary leadership in NIFTY PRIVATE BANK; Cyclical vs Defensive RS spread stands at +0.61%.",
+    "6. Multi-Cap Tier Risk Appetite: Small/Midcap relative performance vs NIFTY 50 at -1.25%.",
+    "7. Institutional Derivatives Flow: FII Index Futures Long Share at 34.1% (Odds: 1.00x, BEARISH_DOMINANCE); Institutional Net Cash at +5,448.62 Cr (FII: +10,308.42 Cr, DII: -4,859.80 Cr).",
+    "8. Cross-Specialist Consensus: Macro and Breadth specialists agree on NEUTRAL_BALANCED tilt.",
+    "9. Tactical Market Implication: Favor long exposure in NIFTY PRIVATE BANK and NIFTY BANK on intraday setups.",
+    "10. Consensus Synthesis & Watchpoint: Monitor opening gap and sector leadership persistence."
   ],
-  "generated_at": "2026-11-20T20:00:49.803490+05:30",
+  "generated_at": "2026-11-21T19:45:56.869048+05:30",
   "market_data_as_of": "2026-11-20",
   "market_date": "2026-11-20",
   "next_session_watchpoints": [
     "NIFTY Key Reaction Pivot: Observe whether opening price sustains above session VWAP.",
-    "Volatility Barrier: India VIX threshold at 18.3; break above triggers de-risking.",
+    "Volatility Barrier: India VIX threshold at 18.3; break above triggers systematic de-risking.",
     "Breadth Health Gate: NIFTY 50 advance percentage must remain above 50% to validate trend continuation.",
-    "Institutional Squeeze Trigger: Watch for session high breakouts to force FII short-covering rally.",
-    "Options Gamma Wall: Monitor Put Wall at 25,500 for institutional dip buying."
+    "Institutional Flow Pivot: Watch for session high breakouts to trigger FII short-covering acceleration."
   ],
-  "published_at": "2026-11-20T20:00:49.803490+05:30",
+  "published_at": "2026-11-21T19:45:56.869048+05:30",
   "schema_version": "1.0",
   "source_freshness": "CURRENT",
   "tactical_positioning_implications": [
-    "Exposure Bias: CONSERVATIVE_NEUTRAL.",
-    "Sector Preference: Focus long setups in NIFTY BANK; avoid lagging clusters.",
-    "Institutional Safeguard: Respect FII derivatives positioning bias (BEARISH_DOMINANCE); avoid chasing gap openings unsupported by institutional flow.",
-    "Options Boundary Execution: Use Put Wall (25,500) as anchor support and scale out near Call Wall (26,000)."
+    "Consensus Exposure Bias: NEUTRAL_BALANCED (Score: +0.20).",
+    "Sector Allocation: Overweight leading clusters in NIFTY PRIVATE BANK; avoid lagging quadrants.",
+    "Capital Preservation Guardrail: Adhere to BENIGN_EXPANSION allocation sizing (100%)."
   ],
   "verification_status": {
     "accepted_specialist_count": 5,

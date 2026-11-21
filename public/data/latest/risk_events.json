@@ -6,15 +6,15 @@
     "max_pain": 25800.0,
     "put_wall_support": 25500.0
   },
-  "generated_at": "2026-11-20T20:00:49.803490+05:30",
+  "generated_at": "2026-11-21T19:45:56.869048+05:30",
   "institutional_crowding": {
-    "alert": "SHORT_CROWDING_SQUEEZE_RISK",
-    "fii_long_pct": 21.1
+    "alert": "NORMAL",
+    "fii_long_pct": 34.1
   },
   "macro_risk_level": "MODERATE",
   "market_data_as_of": "2026-11-20",
   "market_date": "2026-11-20",
-  "published_at": "2026-11-20T20:00:49.803490+05:30",
+  "published_at": "2026-11-21T19:45:56.869048+05:30",
   "schema_version": "1.0",
   "source_freshness": "CURRENT",
   "upcoming_catalysts": [

@@ -1,6 +1,6 @@
 {
   "evaluation_as_of": "2026-11-20",
-  "generated_at": "2026-11-20T20:00:49.803490+05:30",
+  "generated_at": "2026-11-21T19:45:56.869048+05:30",
   "global_indices": [
     {
       "change_pct": 0.42,
@@ -70,7 +70,7 @@
   "macro_risk_tilt": "NEUTRAL",
   "market_data_as_of": "2026-11-20",
   "market_date": "2026-11-20",
-  "published_at": "2026-11-20T20:00:49.803490+05:30",
+  "published_at": "2026-11-21T19:45:56.869048+05:30",
   "schema_version": "1.0",
   "source_freshness": "CURRENT"
 }

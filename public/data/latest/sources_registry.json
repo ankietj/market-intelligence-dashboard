@@ -1,9 +1,9 @@
 {
   "evaluation_as_of": "2026-11-20",
-  "generated_at": "2026-11-20T20:00:51.466731+05:30",
+  "generated_at": "2026-11-21T19:45:59.729710+05:30",
   "market_data_as_of": "2026-11-20",
   "market_date": "2026-11-20",
-  "published_at": "2026-11-20T20:00:49.803490+05:30",
+  "published_at": "2026-11-21T19:45:56.869048+05:30",
   "schema_version": "1.0",
   "source_freshness": "CURRENT",
   "sources": [
@@ -115,13 +115,13 @@
       ],
       "freshness_max_hours": 24.0,
       "id": "SRC_NSE_PARTICIPANTS",
-      "latency": "NOT_MEASURED (Storage Unpopulated)",
+      "latency": "File I/O < 10ms (DuckDB Parquet, SLA: 24h)",
       "licensing": "NSE Daily Participant Open Interest Report; institutional flow analysis.",
       "methodology": "Institutional participant breakdown (FII, DII, Pro, Client) of futures and options open interest.",
       "name": "NSE Derivatives Participant Open Interest",
       "primary_url": "https://www.nseindia.com/all-reports",
       "provider": "National Stock Exchange of India (NSE Clearing)",
-      "status": "UNAVAILABLE",
+      "status": "OPERATIONAL",
       "verification": "Total contract sum reconciliation and FII Long Share (L/(L+S)) vs Long/Short verification"
     },
     {

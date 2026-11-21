@@ -22,9 +22,7 @@
         "balance_sheet": {
           "current_ratio": null,
           "is_net_cash": null,
-          "limitations": [
-            "Insufficient data or calculator unavailable."
-          ],
+          "limitations": [],
           "net_debt_to_ebitda": null,
           "status": "INSUFFICIENT_DATA"
         },
@@ -39,7 +37,7 @@
           "sector_note": "",
           "status": "INSUFFICIENT_DATA"
         },
-        "cache_expires_at": "",
+        "cache_expires_at": "2026-12-20T14:30:57.042219+00:00",
         "canonical_sector": "generic",
         "company_name": "Central Bank of India",
         "composite_score": null,
@@ -134,9 +132,7 @@
         "balance_sheet": {
           "current_ratio": null,
           "is_net_cash": null,
-          "limitations": [
-            "Insufficient data or calculator unavailable."
-          ],
+          "limitations": [],
           "net_debt_to_ebitda": null,
           "status": "INSUFFICIENT_DATA"
         },
@@ -151,7 +147,7 @@
           "sector_note": "",
           "status": "INSUFFICIENT_DATA"
         },
-        "cache_expires_at": "",
+        "cache_expires_at": "2026-12-20T14:30:57.090206+00:00",
         "canonical_sector": "generic",
         "company_name": "Greaves Cotton Limited",
         "composite_score": null,
@@ -246,9 +242,7 @@
         "balance_sheet": {
           "current_ratio": null,
           "is_net_cash": null,
-          "limitations": [
-            "Insufficient data or calculator unavailable."
-          ],
+          "limitations": [],
           "net_debt_to_ebitda": null,
           "status": "INSUFFICIENT_DATA"
         },
@@ -263,7 +257,7 @@
           "sector_note": "BANK: Debt is raw material, not financing. ROCE/ROIC/EV/EBITDA suppressed. Use ROA + ROE with NIM, cost-to-income, credit cost, CET1.",
           "status": "INSUFFICIENT_DATA"
         },
-        "cache_expires_at": "",
+        "cache_expires_at": "2026-12-20T14:30:57.144859+00:00",
         "canonical_sector": "banks",
         "company_name": "Axis Bank Limited",
         "composite_score": null,
@@ -360,9 +354,7 @@
         "balance_sheet": {
           "current_ratio": null,
           "is_net_cash": null,
-          "limitations": [
-            "Insufficient data or calculator unavailable."
-          ],
+          "limitations": [],
           "net_debt_to_ebitda": null,
           "status": "INSUFFICIENT_DATA"
         },
@@ -377,7 +369,7 @@
           "sector_note": "",
           "status": "INSUFFICIENT_DATA"
         },
-        "cache_expires_at": "",
+        "cache_expires_at": "2026-12-20T14:30:57.197764+00:00",
         "canonical_sector": "generic",
         "company_name": "Indian Renewable Energy Development Agency Limited",
         "composite_score": null,
@@ -472,9 +464,7 @@
         "balance_sheet": {
           "current_ratio": null,
           "is_net_cash": null,
-          "limitations": [
-            "Insufficient data or calculator unavailable."
-          ],
+          "limitations": [],
           "net_debt_to_ebitda": null,
           "status": "INSUFFICIENT_DATA"
         },
@@ -489,7 +479,7 @@
           "sector_note": "",
           "status": "INSUFFICIENT_DATA"
         },
-        "cache_expires_at": "",
+        "cache_expires_at": "2026-12-20T14:30:57.239309+00:00",
         "canonical_sector": "generic",
         "company_name": "Indiabulls Limited",
         "composite_score": null,
@@ -584,9 +574,7 @@
         "balance_sheet": {
           "current_ratio": null,
           "is_net_cash": null,
-          "limitations": [
-            "Insufficient data or calculator unavailable."
-          ],
+          "limitations": [],
           "net_debt_to_ebitda": null,
           "status": "INSUFFICIENT_DATA"
         },
@@ -601,7 +589,7 @@
           "sector_note": "",
           "status": "INSUFFICIENT_DATA"
         },
-        "cache_expires_at": "",
+        "cache_expires_at": "2026-12-20T14:30:57.285864+00:00",
         "canonical_sector": "generic",
         "company_name": "Meesho Limited",
         "composite_score": null,
@@ -698,9 +686,7 @@
         "balance_sheet": {
           "current_ratio": null,
           "is_net_cash": null,
-          "limitations": [
-            "Insufficient data or calculator unavailable."
-          ],
+          "limitations": [],
           "net_debt_to_ebitda": null,
           "status": "INSUFFICIENT_DATA"
         },
@@ -715,7 +701,7 @@
           "sector_note": "BANK: Debt is raw material, not financing. ROCE/ROIC/EV/EBITDA suppressed. Use ROA + ROE with NIM, cost-to-income, credit cost, CET1.",
           "status": "INSUFFICIENT_DATA"
         },
-        "cache_expires_at": "",
+        "cache_expires_at": "2026-12-20T14:30:57.332900+00:00",
         "canonical_sector": "banks",
         "company_name": "The South Indian Bank Limited",
         "composite_score": null,
@@ -812,9 +798,7 @@
         "balance_sheet": {
           "current_ratio": null,
           "is_net_cash": null,
-          "limitations": [
-            "Insufficient data or calculator unavailable."
-          ],
+          "limitations": [],
           "net_debt_to_ebitda": null,
           "status": "INSUFFICIENT_DATA"
         },
@@ -829,7 +813,7 @@
           "sector_note": "",
           "status": "INSUFFICIENT_DATA"
         },
-        "cache_expires_at": "",
+        "cache_expires_at": "2026-12-20T14:30:57.380871+00:00",
         "canonical_sector": "generic",
         "company_name": "Canara Bank",
         "composite_score": null,
@@ -924,9 +908,7 @@
         "balance_sheet": {
           "current_ratio": null,
           "is_net_cash": null,
-          "limitations": [
-            "Insufficient data or calculator unavailable."
-          ],
+          "limitations": [],
           "net_debt_to_ebitda": null,
           "status": "INSUFFICIENT_DATA"
         },
@@ -941,7 +923,7 @@
           "sector_note": "",
           "status": "INSUFFICIENT_DATA"
         },
-        "cache_expires_at": "",
+        "cache_expires_at": "2026-12-20T14:30:57.424870+00:00",
         "canonical_sector": "generic",
         "company_name": "Welspun Living Limited",
         "composite_score": null,
@@ -1036,9 +1018,7 @@
         "balance_sheet": {
           "current_ratio": null,
           "is_net_cash": null,
-          "limitations": [
-            "Insufficient data or calculator unavailable."
-          ],
+          "limitations": [],
           "net_debt_to_ebitda": null,
           "status": "INSUFFICIENT_DATA"
         },
@@ -1053,7 +1033,7 @@
           "sector_note": "BANK: Debt is raw material, not financing. ROCE/ROIC/EV/EBITDA suppressed. Use ROA + ROE with NIM, cost-to-income, credit cost, CET1.",
           "status": "INSUFFICIENT_DATA"
         },
-        "cache_expires_at": "",
+        "cache_expires_at": "2026-12-20T14:30:57.472291+00:00",
         "canonical_sector": "banks",
         "company_name": "HDFC Bank Limited",
         "composite_score": null,
@@ -1141,12 +1121,12 @@
   ],
   "disclaimer": "Research and educational analysis only. Past performance does not guarantee future results. No live capital allocation is authorized.",
   "evaluation_as_of": "2026-11-20",
-  "generated_at": "2026-11-20T20:00:51.471730+05:30",
+  "generated_at": "2026-11-21T19:45:59.735718+05:30",
   "is_investable": false,
   "market_data_as_of": "2026-11-20",
   "market_date": "2026-11-20",
   "provenance_statement": "Fundamental analysis generated by the 7-agent interpretative engine with deterministic fallbacks. Financial statements remain quarantined due to publication timestamp verification gaps. Governance and ownership metrics are sourced from official NSE shareholding disclosures. This assessment is strictly for research and education. Invariant: is_investable = False.",
-  "published_at": "2026-11-20T20:00:51.471730+05:30",
+  "published_at": "2026-11-21T19:45:59.735718+05:30",
   "schema_version": "1.0",
   "source_freshness": "CURRENT",
   "strategy_id": "VOLUME_BREAKOUT_V1",

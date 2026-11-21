@@ -16,9 +16,9 @@
     "verification_status": "VERIFIED"
   },
   "evaluation_as_of": "2026-11-20",
-  "generated_at": "2026-11-20T20:00:49.803490+05:30",
+  "generated_at": "2026-11-21T19:45:56.869048+05:30",
   "headline_regime": {
-    "cyclical_defensive_spread": 0.73,
+    "cyclical_defensive_spread": 0.61,
     "overall_tilt": "NEUTRAL_BALANCED",
     "vix_level": 17.32,
     "volatility_regime": "BENIGN_EXPANSION"
@@ -60,26 +60,26 @@
   "institutional_summary": {
     "cash_flow_type": "NET_CASH_FLOW",
     "dii_net_cash_cr": -4859.8,
-    "fii_long_ratio_pct": 21.1,
-    "fii_long_share_pct": 21.1,
+    "fii_long_ratio_pct": 34.1,
+    "fii_long_share_pct": 34.1,
     "fii_net_cash_cr": 10308.42,
     "positioning_bias": "BEARISH_DOMINANCE",
     "total_net_cash_cr": 5448.62
   },
   "market_data_as_of": "2026-11-20",
   "market_date": "2026-11-20",
-  "overall_takeaway": "Exposure Bias: CONSERVATIVE_NEUTRAL. Sector Preference: Focus long setups in NIFTY BANK; avoid lagging clusters. Key options support anchored at Put Wall 25,500.",
-  "published_at": "2026-11-20T20:00:49.803490+05:30",
+  "overall_takeaway": "Consensus Exposure Bias: NEUTRAL_BALANCED (Score: +0.20). Sector Allocation: Overweight leading clusters in NIFTY PRIVATE BANK; avoid lagging quadrants. Key options support anchored at Put Wall 25,500.",
+  "published_at": "2026-11-21T19:45:56.869048+05:30",
   "schema_version": "1.0",
   "source_freshness": "CURRENT",
   "top_drivers_positive": [
     "Foreign institutions recorded net cash inflows of \u20b910,308.4 Cr.",
-    "Sector leadership firmly anchored in NIFTY BANK (RS spread +0.73%).",
+    "Sector leadership firmly anchored in NIFTY PRIVATE BANK (RS spread +0.61%).",
     "Options Put Wall at 25,500 provides strong systematic downside demand floor."
   ],
   "top_risks_negative": [
     "Domestic institutions recorded net cash selling of \u20b94,859.8 Cr.",
-    "FII Index Futures positioning reflects net short crowding (21.1% longs).",
+    "FII Index Futures positioning reflects net short crowding (34.1% longs).",
     "Heavy Call writing concentration at 26,000 forms immediate overhead supply barrier.",
     "Overnight crude & dollar volatility (Brent: $74.20, USD/INR: \u20b984.42)."
   ]

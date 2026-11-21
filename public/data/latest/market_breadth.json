@@ -6,7 +6,7 @@
   "declines": 18,
   "divergence_signal": "BALANCED_CHOP",
   "evaluation_as_of": "2026-11-20",
-  "generated_at": "2026-11-20T20:00:49.803490+05:30",
+  "generated_at": "2026-11-21T19:45:56.869048+05:30",
   "market_data_as_of": "2026-11-20",
   "market_date": "2026-11-20",
   "missing": 0,
@@ -15,7 +15,7 @@
     "pct_above_20dma": 82.0,
     "pct_above_50dma": 86.0
   },
-  "published_at": "2026-11-20T20:00:49.803490+05:30",
+  "published_at": "2026-11-21T19:45:56.869048+05:30",
   "reconciled_sum": 50,
   "reconciliation_status": "EXACT",
   "schema_version": "1.0",

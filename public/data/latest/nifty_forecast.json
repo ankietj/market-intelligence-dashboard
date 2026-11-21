@@ -18,7 +18,7 @@
     "range_points": 316.26,
     "range_type": "STATISTICAL_ATR_EXPECTED_RANGE"
   },
-  "generated_at": "2026-11-20T20:00:49.803490+05:30",
+  "generated_at": "2026-11-21T19:45:56.869048+05:30",
   "market_data_as_of": "2026-11-20",
   "market_date": "2026-11-20",
   "model_metadata": {
@@ -27,7 +27,7 @@
     "is_statistically_calibrated": false,
     "model_id": "HeuristicMultiFactor_v1"
   },
-  "published_at": "2026-11-20T20:00:49.803490+05:30",
+  "published_at": "2026-11-21T19:45:56.869048+05:30",
   "reference_close": 25800.6,
   "scenarios": {
     "bearish_target": 25494.26,
