@@ -13,6 +13,7 @@ import {
   DailyBriefingData,
   SourcesRegistryData,
   OperationalStatusData,
+  FundamentalIntelligenceData,
 } from '../types/market';
 
 /**
@@ -154,6 +155,13 @@ export class MarketDataService {
       ? `data/history/${historyDate}/operational_status.json`
       : 'data/latest/operational_status.json';
     return fetchJson<OperationalStatusData>(path);
+  }
+
+  public async getFundamentalIntelligence(historyDate?: string): Promise<FundamentalIntelligenceData> {
+    const path = historyDate
+      ? `data/history/${historyDate}/fundamental_intelligence.json`
+      : 'data/latest/fundamental_intelligence.json';
+    return fetchJson<FundamentalIntelligenceData>(path);
   }
 
   public getCachedManifest(): SnapshotManifest | null {

@@ -27,6 +27,7 @@ import { RiskEventsSection } from './components/sections/RiskEventsSection';
 import { DailyBriefingSection } from './components/sections/DailyBriefingSection';
 import { DataSourcesMethodology } from './components/sections/DataSourcesMethodology';
 import { OperationalStatusSection } from './components/sections/OperationalStatusSection';
+import { FundamentalIntelligenceSection } from './components/sections/FundamentalIntelligenceSection';
 import {
   LayoutDashboard,
   Globe,
@@ -40,6 +41,7 @@ import {
   RefreshCw,
   Database,
   Activity,
+  Scale,
 } from 'lucide-react';
 
 type ActiveTab = 
@@ -49,6 +51,7 @@ type ActiveTab =
   | 'SECTOR_ROTATION'
   | 'DERIVATIVES'
   | 'FORECAST'
+  | 'FUNDAMENTAL_INTELLIGENCE'
   | 'RISK_EVENTS'
   | 'DAILY_REPORT'
   | 'SOURCES'
@@ -75,6 +78,7 @@ export const App: React.FC = () => {
   const [briefing, setBriefing] = useState<DailyBriefingData | null>(null);
   const [sources, setSources] = useState<SourcesRegistryData | null>(null);
   const [opsStatus, setOpsStatus] = useState<OperationalStatusData | null>(null);
+  const [fundamental, setFundamental] = useState<any>(null);
 
   const loadAllData = async () => {
     try {
@@ -96,6 +100,7 @@ export const App: React.FC = () => {
         db,
         srcReg,
         opStat,
+        fundData,
       ] = await Promise.all([
         svc.getManifest(),
         svc.getMarketOverview(),
@@ -111,6 +116,10 @@ export const App: React.FC = () => {
         svc.getDailyBriefing(),
         svc.getSourcesRegistry(),
         svc.getOperationalStatus(),
+        svc.getFundamentalIntelligence().catch((e) => {
+          console.warn('Fundamental intelligence not available:', e);
+          return null;
+        }),
       ]);
 
       setManifest(man);
@@ -127,6 +136,7 @@ export const App: React.FC = () => {
       setBriefing(db);
       setSources(srcReg);
       setOpsStatus(opStat);
+      setFundamental(fundData);
     } catch (err: any) {
       console.error('Failed to load published snapshot:', err);
       setError(err?.message || 'Error loading market intelligence snapshot.');
@@ -227,6 +237,13 @@ export const App: React.FC = () => {
           publishedAt: forecast?.published_at || forecast?.generated_at || manifest?.published_at || manifest?.generated_at || '—',
           sourceName: 'Heuristic Multi-Factor Rule Scoring & 1-Sigma ATR Model',
         };
+      case 'FUNDAMENTAL_INTELLIGENCE':
+        return {
+          title: 'Strategy Fundamental Intelligence',
+          dateUsed: fundamental?.market_data_as_of || fundamental?.market_date || manifest?.market_date || '—',
+          publishedAt: fundamental?.published_at || fundamental?.generated_at || manifest?.published_at || manifest?.generated_at || '—',
+          sourceName: 'Volume Breakout Overlay & 7-Agent Interpretive Engine',
+        };
       case 'RISK_EVENTS':
         return {
           title: 'Risk & Event Volatility Monitor',
@@ -265,6 +282,7 @@ export const App: React.FC = () => {
     { id: 'SECTOR_ROTATION', label: 'Sector Rotation', icon: PieChart },
     { id: 'DERIVATIVES', label: 'Derivatives & Options', icon: Target },
     { id: 'FORECAST', label: 'NIFTY Forecast', icon: Compass },
+    { id: 'FUNDAMENTAL_INTELLIGENCE', label: 'Fundamentals', icon: Scale },
     { id: 'RISK_EVENTS', label: 'Risk & Events', icon: ShieldAlert },
     { id: 'DAILY_REPORT', label: 'Daily Briefing', icon: FileText },
     { id: 'SOURCES', label: 'Data Sources', icon: Database },
@@ -393,6 +411,9 @@ export const App: React.FC = () => {
         )}
         {activeTab === 'FORECAST' && (
           <NiftyForecastSection forecast={forecast} preOpen={preOpen} />
+        )}
+        {activeTab === 'FUNDAMENTAL_INTELLIGENCE' && (
+          <FundamentalIntelligenceSection data={fundamental} />
         )}
         {activeTab === 'RISK_EVENTS' && (
           <RiskEventsSection data={risk} />

@@ -493,3 +493,137 @@ export interface OperationalStatusData {
     audit_decision: string;
   };
 }
+
+export interface CandidateTechnicalContext {
+  breakout_strength?: number | null;
+  relative_volume?: number | null;
+  rs_percentile?: number | null;
+  strategy_rank?: number | null;
+  strategy_score?: number | null;
+  price_at_signal?: number | null;
+}
+
+export interface CandidateFundamentalAssessment {
+  assessment_id: string;
+  security_id: string;
+  ticker: string;
+  isin: string;
+  company_name: string;
+  sector_key: string;
+  canonical_sector: string;
+  as_of_date: string;
+  strategy_signal_date: string;
+  strategy_id: string;
+  status: 'COMPLETE' | 'PARTIAL' | 'INSUFFICIENT_DATA' | 'QUARANTINED' | 'ERROR' | string;
+  authenticity_summary: string;
+  composite_score?: number | null;
+  score_grade?: string | null;
+  score_coverage_pct: number;
+  score_indicative_only: boolean;
+  score_suppressed_by_gate: boolean;
+  governance_veto: boolean;
+  governance_veto_reason?: string;
+  signal_alignment: string;
+  alignment_rationale?: string;
+  thesis_support?: string;
+  thesis_risks?: string;
+  missing_evidence?: string;
+  business_quality?: {
+    status: string;
+    revenue_cagr_pct?: number | null;
+    pat_cagr_pct?: number | null;
+    ebitda_margin_pct?: number | null;
+    roce_pct?: number | null;
+    sector_note?: string;
+    limitations?: string[];
+  };
+  earnings_quality?: {
+    status: string;
+    cfo_to_pat_ratio?: number | null;
+    fcf_margin_pct?: number | null;
+    accrual_ratio?: number | null;
+    forensic_flags?: string[];
+    limitations?: string[];
+  };
+  balance_sheet?: {
+    status: string;
+    net_debt_to_ebitda?: number | null;
+    current_ratio?: number | null;
+    is_net_cash?: boolean | null;
+    limitations?: string[];
+  };
+  governance?: {
+    status: string;
+    promoter_holding_pct?: number | null;
+    promoter_pledge_pct?: number | null;
+    governance_veto: boolean;
+    material_events?: string[];
+    limitations?: string[];
+  };
+  valuation?: {
+    status: string;
+    pe_x?: number | null;
+    pb_x?: number | null;
+    ev_ebitda_x?: number | null;
+    sector_note?: string;
+    limitations?: string[];
+  };
+  evidence?: {
+    coverage_pct: number;
+    data_confidence: string;
+    intake_gate_status: string;
+    known_limitations: string[];
+    metrics_missing: string[];
+  };
+  is_investable: boolean;
+}
+
+export interface FundamentalCandidateItem {
+  ticker: string;
+  company_name: string;
+  isin: string;
+  canonical_sector: string;
+  signal_date: string;
+  fundamental_status: string;
+  signal_alignment: 'ALIGNED' | 'CONFLICTED' | 'FUNDAMENTAL_CAUTION' | 'FUNDAMENTAL_VETO' | 'INSUFFICIENT_DATA' | string;
+  governance_veto: boolean;
+  governance_veto_reason: string;
+  technical: CandidateTechnicalContext;
+  fundamental: CandidateFundamentalAssessment | null;
+  thesis_support: string;
+  thesis_risks: string;
+  technical_fundamental_agreement: string;
+  disagreement_detail: string;
+  missing_evidence: string;
+  is_investable: boolean;
+}
+
+export interface FundamentalIntelligenceData {
+  schema_version: string;
+  market_date: string;
+  market_data_as_of?: string;
+  evaluation_as_of?: string;
+  generated_at: string;
+  published_at?: string;
+  source_freshness?: string;
+  strategy_id: string;
+  strategy_name: string;
+  is_investable: boolean;
+  summary: {
+    total_candidates: number;
+    aligned_count: number;
+    caution_count: number;
+    veto_count: number;
+    insufficient_data_count: number;
+  };
+  candidates: FundamentalCandidateItem[];
+  authenticity_tier_status: {
+    tier_1_verified_primary: string;
+    tier_2_verified_exchange: string;
+    tier_3_verified_secondary: string;
+    quarantined_datasets: string[];
+    governance_verification: string;
+  };
+  provenance_statement: string;
+  disclaimer: string;
+}
